@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\interfaz\\interfazregistro\\interfazregistro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|solutionrelative:interfazregistro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\interfaz\\interfazregistro\\interfazregistro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|solutionrelative:interfazregistro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\interfaz\\interfazregistro\\interfazregistro\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA3E3C1D-F4F6-4317-BB5E-E8CB41DA6B7C}|InterfazRegistro\\InterfazRegistro.csproj|solutionrelative:interfazregistro\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 159,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\models\\Usuario.cs",
+              "RelativeDocumentMoniker": "InterfazRegistro\\models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\models\\Usuario.cs",
+              "RelativeToolTip": "InterfazRegistro\\models\\Usuario.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T03:27:27.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\Form1.cs",
+              "RelativeDocumentMoniker": "InterfazRegistro\\Form1.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\Form1.cs",
+              "RelativeToolTip": "InterfazRegistro\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T03:14:16.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\Form1.cs",
+              "RelativeDocumentMoniker": "InterfazRegistro\\Form1.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\Interfaz\\InterfazRegistro\\InterfazRegistro\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InterfazRegistro\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T03:09:29.03Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
