@@ -1,0 +1,12 @@
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\bin\Debug\LogIn.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\bin\Debug\LogIn.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\bin\Debug\LogIn.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.LogIn.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.forms.ClienteFrm.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\Interfaz\LogIn\LogIn\obj\Debug\LogIn.forms.ColaboradorFrm.resources
