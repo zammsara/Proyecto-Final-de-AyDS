@@ -33,12 +33,17 @@
             // 
             // btnCerrarSesion
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(289, 368);
+            this.btnCerrarSesion.AutoSize = true;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(335, 406);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrarSesion.TabIndex = 0;
-            this.btnCerrarSesion.Text = "Cerrar";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(123, 32);
+            this.btnCerrarSesion.TabIndex = 2;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // Colaborador
             // 
@@ -47,8 +52,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCerrarSesion);
             this.Name = "Colaborador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colaborador";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

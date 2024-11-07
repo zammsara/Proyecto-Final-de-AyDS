@@ -14,11 +14,32 @@ namespace BunBunHub.Usuarios
 {
     public partial class RegistrarUsuario : Form
     {
-        private static string rutaUsuarios = "usuarios.dat";
-        private static string rutaClientes = "clientes.dat";
+        public static string rutaUsuarios = "usuarios.dat";
+        public static string rutaClientes = "clientes.dat";
         public RegistrarUsuario()
         {
             InitializeComponent();
+        }
+
+        // Métodos públicos para obtener el texto de los TextBox
+        public string ObtenerUsuario()
+        {
+            return txtUsuarioNombre.Text;
+        }
+
+        public string ObtenerContraseña()
+        {
+            return txtContraseña.Text;
+        }
+
+        public string ObtenerRol()
+        {
+            return cmbRol.Text;
+        }
+
+        public string ObtenerEstado()
+        {
+            return cmbEstado.Text;
         }
 
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -165,6 +186,18 @@ namespace BunBunHub.Usuarios
 
         private void txtConfirmarContraseña_TextChanged(object sender, EventArgs e)
         {
+            /*string confirmarContraseña = txtConfirmarContraseña.Text;
+            string contraseña = txtContraseña.Text;
+
+            // Comparar las contraseñas
+            if (confirmarContraseña.Length -1 != contraseña.Length - 1)
+            {
+                // Mostrar mensaje de error, por ejemplo:
+                MessageBox.Show("Las contraseñas no coinciden, por favor intenta de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Limpiar el campo de 'Confirmar Contraseña'
+                txtConfirmarContraseña.Clear();
+            }*/
         }
 
         private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
@@ -211,7 +244,7 @@ namespace BunBunHub.Usuarios
         {
             if (string.IsNullOrWhiteSpace(txtUsuarioNombre.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text) || string.IsNullOrWhiteSpace(txtConfirmarContraseña.Text))
             {
-                MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Campos Vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, complete todos los campos.", "Campos Vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -222,31 +255,33 @@ namespace BunBunHub.Usuarios
             string correo = txtCorreo.Text;
             string telefono = txtTelefono.Text;
 
-            int rol = cmbRol.SelectedIndex + 1; // 1: Administrador, 2: Colaborador, 3: Cliente
-            int estado = cmbEstado.SelectedIndex == 0 ? 1 : 0; // 1: Activo, 0: Inactivo
+            string rol = cmbRol.Text; // Administrador, Colaborador, Cliente
+            string estado = cmbEstado.Text; // 1: Activo, 0: Inactivo
 
             ModeloDeDatos.Usuarios usuarioOB = new ModeloDeDatos.Usuarios(usuario, contraseña, rol, estado);
             ModeloDeDatos.DetallesCliente ClienteOB = null;
 
-            if (rol == 3)
+            if (rol == "Cliente")
             {
                 ClienteOB = new DetallesCliente(usuario, contraseña, nombre, apellido, correo, int.Parse(telefono), estado);
             }
 
             switch (rol)
             {
-                case 1: // Administrador
+                case "Administrador":
                     GuardarAdministrador(usuarioOB);
                     break;
 
-                case 2: // Colaborador
+                case "Colaborador":
                     GuardarColaborador(usuarioOB);
                     break;
 
-                case 3: // Cliente
+                case "Cliente":
+                    GuardarCliente(usuarioOB);
+
                     if (ClienteOB != null)
                     {
-                        GuardarCliente(usuarioOB, ClienteOB);
+                        GuardarDetallesCliente(usuarioOB, ClienteOB);
                     }
                     break;
 
@@ -269,6 +304,17 @@ namespace BunBunHub.Usuarios
             cmbEstado.SelectedIndex = -1; // Restablece la selección
         }
 
+        private void GuardarCliente(ModeloDeDatos.Usuarios usuarioOB)
+        {
+            using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
+            using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
+            {
+                Escritor.Write(usuarioOB.Usuario);
+                Escritor.Write(usuarioOB.Contraseña);
+                Escritor.Write("Cliente");
+                Escritor.Write(usuarioOB.Estado);
+            }
+        }
         private void GuardarAdministrador(ModeloDeDatos.Usuarios usuarioOB)
         {
             using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
@@ -276,7 +322,7 @@ namespace BunBunHub.Usuarios
             {
                 Escritor.Write(usuarioOB.Usuario);
                 Escritor.Write(usuarioOB.Contraseña);
-                Escritor.Write(usuarioOB.Rol);
+                Escritor.Write("Administrador");
                 Escritor.Write(usuarioOB.Estado);
             }
 
@@ -290,14 +336,14 @@ namespace BunBunHub.Usuarios
             {
                 Escritor.Write(usuarioOB.Usuario);
                 Escritor.Write(usuarioOB.Contraseña);
-                Escritor.Write(usuarioOB.Rol);
+                Escritor.Write("Colaborador");
                 Escritor.Write(usuarioOB.Estado);
             }
 
             MessageBox.Show("Colaborador registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void GuardarCliente(ModeloDeDatos.Usuarios usuarioOB, DetallesCliente clienteOB)
+        private void GuardarDetallesCliente(ModeloDeDatos.Usuarios usuarioOB, DetallesCliente clienteOB)
         {
             // Guardar los datos del cliente en el archivo clientes.dat
             using (FileStream mCliente = new FileStream(rutaClientes, FileMode.Append))

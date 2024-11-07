@@ -16,5 +16,13 @@ namespace BunBunHub.Panel_de_Control
         {
             InitializeComponent();
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Acceso iniciarSesion = new Acceso();
+            iniciarSesion.Show();
+            this.Hide();
+        }
     }
 }

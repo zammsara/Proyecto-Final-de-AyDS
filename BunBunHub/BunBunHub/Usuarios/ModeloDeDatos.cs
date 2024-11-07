@@ -12,11 +12,11 @@ namespace BunBunHub.Usuarios
         {
             public string Usuario;
             public string Contraseña;
-            public int Rol; // [Administrador] [Colaborador] [Cliente]
-            public int Estado; // [Activo] [Inhabilitado]
+            public string Rol; // [Administrador] [Colaborador] [Cliente]
+            public string Estado; // [Activo] [Inhabilitado]
 
             // Constructor para inicializar un objeto de la clase Usuarios
-            public Usuarios(string usuario, string contraseña, int rol, int estado)
+            public Usuarios(string usuario, string contraseña, string rol, string estado)
             {
                 Usuario = usuario;
                 Contraseña = contraseña;
@@ -34,10 +34,10 @@ namespace BunBunHub.Usuarios
             public string Apellido;
             public string Correo;
             public int Telefono;
-            public int Estado; // Estado del cliente: [Activo] [Inhabilitado]
+            public string Estado; // [Activo] [Inhabilitado]
 
             // Constructor para inicializar un objeto de la clase DetallesCliente
-            public DetallesCliente(string usuario, string contraseña, string nombre, string apellido, string correo, int telefono, int estado)
+            public DetallesCliente(string usuario, string contraseña, string nombre, string apellido, string correo, int telefono, string estado)
             {
                 Usuario = usuario;
                 Contraseña = contraseña;
