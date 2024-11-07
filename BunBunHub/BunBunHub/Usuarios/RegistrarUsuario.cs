@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BunBunHub.Usuarios.ModeloDeDatos;
 
 namespace BunBunHub.Usuarios
 {
     public partial class RegistrarUsuario : Form
     {
+        private static string rutaUsuarios = "usuarios.dat";
+        private static string rutaClientes = "clientes.dat";
         public RegistrarUsuario()
         {
             InitializeComponent();
@@ -29,7 +33,6 @@ namespace BunBunHub.Usuarios
 
         private void dtpFechaNac_ValueChanged(object sender, EventArgs e)
         {
-
         }
 
         private void RegistrarUsuario_Load(object sender, EventArgs e)
@@ -49,19 +52,18 @@ namespace BunBunHub.Usuarios
 
         private void cmbRol_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             // Comprobar si hay un elemento seleccionado (SelectedIndex != -1)
             if (cmbRol.SelectedIndex != -1)
             {
                 // Verificar si el rol seleccionado es "Cliente"
                 if (cmbRol.SelectedItem.ToString() == "Cliente")
                 {
-                    // Habilitar los GroupBox si el rol es "Cliente"
                     grpDatosCliente.Enabled = true;
                     grpContacto.Enabled = true;
                 }
                 else
                 {
-                    // Deshabilitar los GroupBox si el rol no es "Cliente"
                     grpDatosCliente.Enabled = false;
                     grpContacto.Enabled = false;
                 }
@@ -77,9 +79,12 @@ namespace BunBunHub.Usuarios
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("¿Está seguro de que desea cerrar sin registrar? Los datos no se guardarán.", "Cerrar sin Registrar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            GestionUsuario gestionUsuario = new GestionUsuario();
-            gestionUsuario.Show();
-            this.Hide();
+            if (result == DialogResult.Yes)
+            {
+                GestionUsuario gestionUsuario = new GestionUsuario();
+                gestionUsuario.Show();
+                this.Hide();
+            }
         }
 
         private void tbNombre_StyleChanged(object sender, EventArgs e)
@@ -132,14 +137,13 @@ namespace BunBunHub.Usuarios
                 // Verificar que el primer dígito sea uno de los válidos (8, 9, 7, 6, 2)
                 if (telefono[0] == '8' || telefono[0] == '9' || telefono[0] == '7' || telefono[0] == '6' || telefono[0] == '2')
                 {
-                    // Si el número es válido, no hacemos nada adicional
                 }
                 else
                 {
                     // Mostrar un mensaje de advertencia si el primer dígito no es válido
                     MessageBox.Show("El número de teléfono debe comenzar con 8, 9, 7, 6 (para móviles) o 2 (para fijos).",
                                     "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtTelefono.Clear();  // Limpiar el campo de entrada
+                    txtTelefono.Clear();
                 }
             }
             else if (telefono.Length > 8)
@@ -153,47 +157,104 @@ namespace BunBunHub.Usuarios
 
         private void txtUsuarioNombre_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtConfirmarContraseña_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtApellido_TextChanged(object sender, EventArgs e)
         {
-
         }
 
-        private void tbDireccion_TextChanged(object sender, EventArgs e)
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void txtCorreo_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Se limpiarán todos los controles ¿Está seguro de que desea limpiar sin registrar?", "Limpiar Formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                txtTelefono.Clear();
+                txtUsuarioNombre.Clear();
+                txtContraseña.Clear();
+                txtConfirmarContraseña.Clear();
+                txtCorreo.Clear();
+                txtNombre.Clear();
+                txtApellido.Clear();
+                txtDireccion.Clear();
+
+                // Limpiar los ComboBox
+                cmbRol.SelectedIndex = -1; // Restablece la selección
+                cmbEstado.SelectedIndex = -1; // Restablece la selección
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtUsuarioNombre.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text) || string.IsNullOrWhiteSpace(txtConfirmarContraseña.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Campos Vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string usuario = txtUsuarioNombre.Text;
+            string contraseña = txtContraseña.Text;
+            string nombre = txtNombre.Text;
+            string apellido = txtApellido.Text;
+            string correo = txtCorreo.Text;
+            string telefono = txtTelefono.Text;
+
+            int rol = cmbRol.SelectedIndex + 1; // 1: Administrador, 2: Colaborador, 3: Cliente
+            int estado = cmbEstado.SelectedIndex == 0 ? 1 : 0; // 1: Activo, 0: Inactivo
+
+            ModeloDeDatos.Usuarios usuarioOB = new ModeloDeDatos.Usuarios(usuario, contraseña, rol, estado);
+            ModeloDeDatos.DetallesCliente ClienteOB = null;
+
+            if (rol == 3)
+            {
+                ClienteOB = new DetallesCliente(usuario, contraseña, nombre, apellido, correo, int.Parse(telefono), estado);
+            }
+
+            switch (rol)
+            {
+                case 1: // Administrador
+                    GuardarAdministrador(usuarioOB);
+                    break;
+
+                case 2: // Colaborador
+                    GuardarColaborador(usuarioOB);
+                    break;
+
+                case 3: // Cliente
+                    if (ClienteOB != null)
+                    {
+                        GuardarCliente(usuarioOB, ClienteOB);
+                    }
+                    break;
+
+                default:
+                    MessageBox.Show("Rol no válido. Por favor seleccione un rol.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
+
             txtTelefono.Clear();
             txtUsuarioNombre.Clear();
             txtContraseña.Clear();
@@ -201,11 +262,58 @@ namespace BunBunHub.Usuarios
             txtCorreo.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            tbDireccion.Clear();
+            txtDireccion.Clear();
 
             // Limpiar los ComboBox
             cmbRol.SelectedIndex = -1; // Restablece la selección
             cmbEstado.SelectedIndex = -1; // Restablece la selección
+        }
+
+        private void GuardarAdministrador(ModeloDeDatos.Usuarios usuarioOB)
+        {
+            using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
+            using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
+            {
+                Escritor.Write(usuarioOB.Usuario);
+                Escritor.Write(usuarioOB.Contraseña);
+                Escritor.Write(usuarioOB.Rol);
+                Escritor.Write(usuarioOB.Estado);
+            }
+
+            MessageBox.Show("Administrador registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void GuardarColaborador(ModeloDeDatos.Usuarios usuarioOB)
+        {
+            using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
+            using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
+            {
+                Escritor.Write(usuarioOB.Usuario);
+                Escritor.Write(usuarioOB.Contraseña);
+                Escritor.Write(usuarioOB.Rol);
+                Escritor.Write(usuarioOB.Estado);
+            }
+
+            MessageBox.Show("Colaborador registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void GuardarCliente(ModeloDeDatos.Usuarios usuarioOB, DetallesCliente clienteOB)
+        {
+            // Guardar los datos del cliente en el archivo clientes.dat
+            using (FileStream mCliente = new FileStream(rutaClientes, FileMode.Append))
+            using (BinaryWriter Escritor = new BinaryWriter(mCliente, Encoding.UTF8))
+            {
+                Escritor.Write(usuarioOB.Usuario);
+                Escritor.Write(usuarioOB.Contraseña);
+                Escritor.Write(clienteOB.Nombre);
+                Escritor.Write(clienteOB.Apellido);
+                Escritor.Write(clienteOB.Correo);
+                Escritor.Write(clienteOB.Telefono);
+                Escritor.Write(usuarioOB.Rol);
+                Escritor.Write(usuarioOB.Estado);
+            }
+
+            MessageBox.Show("Cliente registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

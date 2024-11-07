@@ -45,7 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblAdministrador = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
-            this.tbDireccion = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpFechaNac = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -109,6 +109,7 @@
             // 
             // txtUsuarioNombre
             // 
+            this.txtUsuarioNombre.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuarioNombre.Location = new System.Drawing.Point(104, 21);
             this.txtUsuarioNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuarioNombre.Name = "txtUsuarioNombre";
@@ -233,18 +234,18 @@
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministrador.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblAdministrador.Location = new System.Drawing.Point(246, 114);
             this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(273, 32);
+            this.lblAdministrador.Size = new System.Drawing.Size(225, 27);
             this.lblAdministrador.TabIndex = 37;
             this.lblAdministrador.Text = "Registrar Usuario";
             // 
             // grpDatosCliente
             // 
-            this.grpDatosCliente.Controls.Add(this.tbDireccion);
+            this.grpDatosCliente.Controls.Add(this.txtDireccion);
             this.grpDatosCliente.Controls.Add(this.label6);
             this.grpDatosCliente.Controls.Add(this.dtpFechaNac);
             this.grpDatosCliente.Controls.Add(this.label3);
@@ -264,14 +265,14 @@
             this.grpDatosCliente.Text = "Información Personal";
             this.grpDatosCliente.Enter += new System.EventHandler(this.grpDatosCliente_Enter);
             // 
-            // tbDireccion
+            // txtDireccion
             // 
-            this.tbDireccion.Location = new System.Drawing.Point(104, 103);
-            this.tbDireccion.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(522, 22);
-            this.tbDireccion.TabIndex = 7;
-            this.tbDireccion.TextChanged += new System.EventHandler(this.tbDireccion_TextChanged);
+            this.txtDireccion.Location = new System.Drawing.Point(104, 103);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(522, 22);
+            this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // label6
             // 
@@ -406,12 +407,12 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label11.Location = new System.Drawing.Point(246, 320);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(258, 32);
+            this.label11.Size = new System.Drawing.Size(212, 27);
             this.label11.TabIndex = 40;
             this.label11.Text = "Datos del Cliente";
             // 
@@ -427,6 +428,7 @@
             this.btnGuardar.TabIndex = 41;
             this.btnGuardar.Text = "Registrar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -515,7 +517,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox tbDireccion;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox grpContacto;
         private System.Windows.Forms.TextBox txtTelefono;

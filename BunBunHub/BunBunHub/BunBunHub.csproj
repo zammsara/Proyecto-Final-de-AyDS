@@ -78,6 +78,7 @@
     <Compile Include="Usuarios\GestionUsuario.Designer.cs">
       <DependentUpon>GestionUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuarios\ModeloDeDatos.cs" />
     <Compile Include="Usuarios\RegistrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>

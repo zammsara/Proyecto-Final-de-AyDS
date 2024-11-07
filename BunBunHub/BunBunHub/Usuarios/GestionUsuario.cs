@@ -41,5 +41,15 @@ namespace BunBunHub.Usuarios
             registrarUsuarioForm.Show();
             this.Hide();
         }
+
+        private void btnUsuariosSistema_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

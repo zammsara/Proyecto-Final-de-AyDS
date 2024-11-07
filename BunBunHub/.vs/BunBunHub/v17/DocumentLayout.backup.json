@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\",
+  "WorkspaceRootPath": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\usuarios\\registrarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\registrarusuario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\proyecto-final-de-ayds\\bunbunhub\\bunbunhub\\usuarios\\modelodedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\modelodedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\proyecto-final-de-ayds\\bunbunhub\\bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\acceso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\interfaces\\bunbunhub\\bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\usuarios\\gestionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C701D6E9-0760-48F0-8402-9F7083F0F5FB}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\panel de control\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +46,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Acceso.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Acceso.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Acceso.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Acceso.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Acceso.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Acceso.cs [Dise\u00F1o]",
               "RelativeToolTip": "BunBunHub\\Acceso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T01:12:47.898Z",
@@ -63,11 +63,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Acceso.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Acceso.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Acceso.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Acceso.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Acceso.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Acceso.cs",
               "RelativeToolTip": "BunBunHub\\Acceso.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -79,9 +79,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Administrador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Panel de Control\\Administrador.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs [Dise\u00F1o]",
               "RelativeToolTip": "BunBunHub\\Panel de Control\\Administrador.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T01:22:42.802Z",
@@ -90,11 +90,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Administrador.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Panel de Control\\Administrador.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Panel de Control\\Administrador.cs",
               "RelativeToolTip": "BunBunHub\\Panel de Control\\Administrador.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAIwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -104,12 +104,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "GestionUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\GestionUsuario.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Usuarios\\GestionUsuario.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "BunBunHub\\Usuarios\\GestionUsuario.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T02:56:39.659Z",
               "IsPinned": true,
@@ -117,13 +117,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RegistrarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\RegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
               "RelativeToolTip": "BunBunHub\\Usuarios\\RegistrarUsuario.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAAAMMAAACaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T04:50:42.504Z",
               "IsPinned": true,
@@ -142,12 +142,29 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModeloDeDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\ModeloDeDatos.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\ModeloDeDatos.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\ModeloDeDatos.cs",
+              "RelativeToolTip": "BunBunHub\\Usuarios\\ModeloDeDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T15:10:00.157Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "RegistrarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\RegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "BunBunHub\\Usuarios\\RegistrarUsuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T04:29:47.207Z",
@@ -155,26 +172,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistrarUsuario.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.Designer.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\RegistrarUsuario.Designer.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\RegistrarUsuario.Designer.cs",
-              "RelativeToolTip": "BunBunHub\\Usuarios\\RegistrarUsuario.Designer.cs",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAAAHUBAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T05:40:02.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "GestionUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Usuarios\\GestionUsuario.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Interfaces\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs",
-              "RelativeToolTip": "BunBunHub\\Usuarios\\GestionUsuario.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCkAAAAYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Usuarios\\GestionUsuario.cs*",
+              "RelativeToolTip": "BunBunHub\\Usuarios\\GestionUsuario.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T04:47:50.449Z",
               "EditorCaption": ""

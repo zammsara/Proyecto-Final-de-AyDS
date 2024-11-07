@@ -32,11 +32,11 @@
             this.lblSistema = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.grpAccesoRápido = new System.Windows.Forms.GroupBox();
-            this.lblAdministrador = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnUsuariosSistema = new System.Windows.Forms.Button();
+            this.lblAdministrador = new System.Windows.Forms.Label();
             this.btnCerrarSistema = new System.Windows.Forms.Button();
             this.btnVentanaAnterior = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,52 +83,29 @@
             // 
             this.grpAccesoRápido.Controls.Add(this.label2);
             this.grpAccesoRápido.Controls.Add(this.label1);
-            this.grpAccesoRápido.Controls.Add(this.button3);
-            this.grpAccesoRápido.Controls.Add(this.button2);
+            this.grpAccesoRápido.Controls.Add(this.btnClientes);
+            this.grpAccesoRápido.Controls.Add(this.btnUsuariosSistema);
             this.grpAccesoRápido.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAccesoRápido.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.grpAccesoRápido.Location = new System.Drawing.Point(15, 150);
+            this.grpAccesoRápido.Location = new System.Drawing.Point(15, 164);
             this.grpAccesoRápido.Name = "grpAccesoRápido";
             this.grpAccesoRápido.Size = new System.Drawing.Size(200, 258);
             this.grpAccesoRápido.TabIndex = 23;
             this.grpAccesoRápido.TabStop = false;
             this.grpAccesoRápido.Text = "Acceso Rápido";
             // 
-            // lblAdministrador
+            // label2
             // 
-            this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblAdministrador.Location = new System.Drawing.Point(306, 118);
-            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(290, 32);
-            this.lblAdministrador.TabIndex = 24;
-            this.lblAdministrador.Text = "Gestión de Usuario";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(58, 49);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 42);
-            this.button2.TabIndex = 25;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(58, 156);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 42);
-            this.button3.TabIndex = 27;
-            this.button3.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(55, 211);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Clientes";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
@@ -143,18 +120,43 @@
             this.label1.Text = "Usuarios del \r\nSistema";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // btnClientes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(55, 202);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 18);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Clientes";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnClientes.BackColor = System.Drawing.Color.White;
+            this.btnClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.BackgroundImage")));
+            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClientes.Location = new System.Drawing.Point(58, 155);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(75, 52);
+            this.btnClientes.TabIndex = 27;
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnUsuariosSistema
+            // 
+            this.btnUsuariosSistema.BackColor = System.Drawing.Color.White;
+            this.btnUsuariosSistema.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuariosSistema.BackgroundImage")));
+            this.btnUsuariosSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUsuariosSistema.Location = new System.Drawing.Point(58, 42);
+            this.btnUsuariosSistema.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUsuariosSistema.Name = "btnUsuariosSistema";
+            this.btnUsuariosSistema.Size = new System.Drawing.Size(75, 49);
+            this.btnUsuariosSistema.TabIndex = 25;
+            this.btnUsuariosSistema.UseVisualStyleBackColor = false;
+            this.btnUsuariosSistema.Click += new System.EventHandler(this.btnUsuariosSistema_Click);
+            // 
+            // lblAdministrador
+            // 
+            this.lblAdministrador.AutoSize = true;
+            this.lblAdministrador.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblAdministrador.Location = new System.Drawing.Point(327, 120);
+            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdministrador.Name = "lblAdministrador";
+            this.lblAdministrador.Size = new System.Drawing.Size(240, 27);
+            this.lblAdministrador.TabIndex = 24;
+            this.lblAdministrador.Text = "Gestión de Usuario";
             // 
             // btnCerrarSistema
             // 
@@ -178,7 +180,7 @@
             this.btnVentanaAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVentanaAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentanaAnterior.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVentanaAnterior.Location = new System.Drawing.Point(26, 428);
+            this.btnVentanaAnterior.Location = new System.Drawing.Point(27, 438);
             this.btnVentanaAnterior.Margin = new System.Windows.Forms.Padding(4);
             this.btnVentanaAnterior.Name = "btnVentanaAnterior";
             this.btnVentanaAnterior.Size = new System.Drawing.Size(81, 46);
@@ -193,7 +195,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(36, 475);
+            this.label3.Location = new System.Drawing.Point(37, 484);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 18);
@@ -282,7 +284,7 @@
             this.btnAcceso.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnAcceso.Location = new System.Drawing.Point(469, 449);
             this.btnAcceso.Name = "btnAcceso";
-            this.btnAcceso.Size = new System.Drawing.Size(136, 52);
+            this.btnAcceso.Size = new System.Drawing.Size(127, 52);
             this.btnAcceso.TabIndex = 38;
             this.btnAcceso.Text = "Acceso \r\nUsuario";
             this.btnAcceso.UseVisualStyleBackColor = true;
@@ -302,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 526);
+            this.ClientSize = new System.Drawing.Size(681, 541);
             this.Controls.Add(this.btnAcceso);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnActualizar);
@@ -341,8 +343,8 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.GroupBox grpAccesoRápido;
         private System.Windows.Forms.Label lblAdministrador;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnUsuariosSistema;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrarSistema;
