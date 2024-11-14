@@ -109,7 +109,7 @@
             // 
             // txtUsuarioNombre
             // 
-            this.txtUsuarioNombre.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioNombre.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtUsuarioNombre.Location = new System.Drawing.Point(104, 21);
             this.txtUsuarioNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuarioNombre.Name = "txtUsuarioNombre";
@@ -150,18 +150,20 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Items.AddRange(new object[] {
             "Activo",
             "Inhabilitado"});
             this.cmbEstado.Location = new System.Drawing.Point(104, 120);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(121, 26);
+            this.cmbEstado.Size = new System.Drawing.Size(121, 25);
             this.cmbEstado.TabIndex = 43;
             this.cmbEstado.SelectedIndexChanged += new System.EventHandler(this.cmbEstado_SelectedIndexChanged);
             // 
             // cmbRol
             // 
+            this.cmbRol.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.cmbRol.FormattingEnabled = true;
             this.cmbRol.Items.AddRange(new object[] {
             "Administrador",
@@ -169,7 +171,7 @@
             "Cliente"});
             this.cmbRol.Location = new System.Drawing.Point(104, 86);
             this.cmbRol.Name = "cmbRol";
-            this.cmbRol.Size = new System.Drawing.Size(121, 26);
+            this.cmbRol.Size = new System.Drawing.Size(121, 25);
             this.cmbRol.TabIndex = 42;
             this.cmbRol.SelectedIndexChanged += new System.EventHandler(this.cmbRol_SelectedIndexChanged);
             // 
@@ -195,6 +197,7 @@
             // 
             // txtConfirmarContraseña
             // 
+            this.txtConfirmarContraseña.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtConfirmarContraseña.Location = new System.Drawing.Point(419, 55);
             this.txtConfirmarContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
@@ -204,6 +207,7 @@
             // 
             // txtContraseña
             // 
+            this.txtContraseña.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtContraseña.Location = new System.Drawing.Point(104, 54);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
@@ -267,10 +271,11 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtDireccion.Location = new System.Drawing.Point(104, 103);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(522, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(522, 25);
             this.txtDireccion.TabIndex = 7;
             this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
@@ -286,6 +291,7 @@
             // 
             // dtpFechaNac
             // 
+            this.dtpFechaNac.CalendarFont = new System.Drawing.Font("Lucida Bright", 9F);
             this.dtpFechaNac.Location = new System.Drawing.Point(342, 63);
             this.dtpFechaNac.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaNac.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
@@ -307,20 +313,22 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtApellido.Location = new System.Drawing.Point(104, 63);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(219, 22);
+            this.txtApellido.Size = new System.Drawing.Size(219, 25);
             this.txtApellido.TabIndex = 3;
             this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombre
             // 
+            this.txtNombre.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtNombre.Location = new System.Drawing.Point(104, 27);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(219, 22);
+            this.txtNombre.Size = new System.Drawing.Size(219, 25);
             this.txtNombre.TabIndex = 2;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
@@ -367,20 +375,22 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtTelefono.Location = new System.Drawing.Point(104, 70);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(251, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(251, 25);
             this.txtTelefono.TabIndex = 3;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtCorreo
             // 
+            this.txtCorreo.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.txtCorreo.Location = new System.Drawing.Point(104, 30);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(251, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(251, 25);
             this.txtCorreo.TabIndex = 2;
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
@@ -420,7 +430,7 @@
             // 
             this.btnGuardar.AutoSize = true;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.btnGuardar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnGuardar.Location = new System.Drawing.Point(485, 508);
             this.btnGuardar.Name = "btnGuardar";
@@ -434,7 +444,7 @@
             // 
             this.btnLimpiar.AutoSize = true;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.btnLimpiar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.btnLimpiar.Location = new System.Drawing.Point(485, 546);
             this.btnLimpiar.Name = "btnLimpiar";
@@ -448,7 +458,7 @@
             // 
             this.btnCerrar.AutoSize = true;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Font = new System.Drawing.Font("Lucida Bright", 9F);
             this.btnCerrar.ForeColor = System.Drawing.Color.DarkRed;
             this.btnCerrar.Location = new System.Drawing.Point(485, 584);
             this.btnCerrar.Name = "btnCerrar";

@@ -70,12 +70,12 @@
             // 
             this.tbUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsuario.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsuario.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsuario.ForeColor = System.Drawing.Color.DarkGray;
             this.tbUsuario.Location = new System.Drawing.Point(105, 339);
             this.tbUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(333, 23);
+            this.tbUsuario.Size = new System.Drawing.Size(333, 24);
             this.tbUsuario.TabIndex = 14;
             this.tbUsuario.Text = "Usuario";
             this.tbUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -85,12 +85,12 @@
             // tbContrasena
             // 
             this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbContrasena.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbContrasena.Font = new System.Drawing.Font("Lucida Bright", 12F);
             this.tbContrasena.ForeColor = System.Drawing.Color.DarkGray;
             this.tbContrasena.Location = new System.Drawing.Point(108, 381);
             this.tbContrasena.Margin = new System.Windows.Forms.Padding(4);
             this.tbContrasena.Name = "tbContrasena";
-            this.tbContrasena.Size = new System.Drawing.Size(333, 23);
+            this.tbContrasena.Size = new System.Drawing.Size(333, 24);
             this.tbContrasena.TabIndex = 15;
             this.tbContrasena.Text = "Contraseña";
             this.tbContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -102,12 +102,12 @@
             this.btnIniciarSesion.AutoSize = true;
             this.btnIniciarSesion.BackColor = System.Drawing.Color.Blue;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Lucida Bright", 12F);
             this.btnIniciarSesion.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnIniciarSesion.Location = new System.Drawing.Point(200, 437);
             this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(149, 44);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(152, 44);
             this.btnIniciarSesion.TabIndex = 16;
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
