@@ -24,5 +24,10 @@ namespace BunBunHub.Panel_de_Control
             iniciarSesion.Show();
             this.Hide();
         }
+
+        private void lblAdministrador_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
