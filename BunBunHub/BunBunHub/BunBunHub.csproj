@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C701D6E9-0760-48F0-8402-9F7083F0F5FB}</ProjectGuid>
+    <ProjectGuid>{5D8A27ED-C7D3-4A19-8C20-4E23FCA55F80}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>BunBunHub</RootNamespace>
     <AssemblyName>BunBunHub</AssemblyName>
@@ -55,50 +55,57 @@
     <Compile Include="Acceso.Designer.cs">
       <DependentUpon>Acceso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panel de Control\Administrador.cs">
+    <Compile Include="Dao\ComponentesVisuales.cs" />
+    <Compile Include="Formularios\GestionUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel de Control\Administrador.Designer.cs">
-      <DependentUpon>Administrador.cs</DependentUpon>
+    <Compile Include="Formularios\GestionUsuarios.Designer.cs">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panel de Control\Cliente.cs">
+    <Compile Include="Formularios\PanelAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel de Control\Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <Compile Include="Formularios\PanelAdministrador.Designer.cs">
+      <DependentUpon>PanelAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panel de Control\Colaborador.cs">
+    <Compile Include="Formularios\PanelCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel de Control\Colaborador.Designer.cs">
-      <DependentUpon>Colaborador.cs</DependentUpon>
+    <Compile Include="Formularios\PanelCliente.Designer.cs">
+      <DependentUpon>PanelCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usuarios\GestionUsuario.cs">
+    <Compile Include="Formularios\PanelColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\GestionUsuario.Designer.cs">
-      <DependentUpon>GestionUsuario.cs</DependentUpon>
+    <Compile Include="Formularios\PanelColaborador.Designer.cs">
+      <DependentUpon>PanelColaborador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\ModeloDeDatos.cs" />
-    <Compile Include="Usuarios\RegistrarUsuario.cs">
+    <Compile Include="Formularios\RegistrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\RegistrarUsuario.Designer.cs">
+    <Compile Include="Formularios\RegistrarUsuario.Designer.cs">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\ModeloDeDatos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Acceso.resx">
       <DependentUpon>Acceso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel de Control\Administrador.resx">
-      <DependentUpon>Administrador.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\GestionUsuarios.resx">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel de Control\Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\PanelAdministrador.resx">
+      <DependentUpon>PanelAdministrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel de Control\Colaborador.resx">
-      <DependentUpon>Colaborador.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\PanelCliente.resx">
+      <DependentUpon>PanelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PanelColaborador.resx">
+      <DependentUpon>PanelColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,13 +115,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Usuarios\GestionUsuario.resx">
-      <DependentUpon>GestionUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\RegistrarUsuario.resx">
-      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,6 +130,123 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoAcceso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcessoBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineaWeb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Servicios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoAdministrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarioAcceso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerfilBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Publicidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsuariosBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PedidosBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinanzasBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionUsuarioFondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volverBtn %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistroUsuariobtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccesoUsuariobtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualizarUsuariosBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizarClientebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarUsuariosBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualizarUsuarioBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActualizarDatosBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccesoUsuarioBTN %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanaIZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrarUsuarioLanaIz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccesoUsuariosLanaDr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoRegistroUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistroUsuariosFondo%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpiarFormulario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeBtn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

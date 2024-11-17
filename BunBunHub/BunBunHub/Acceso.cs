@@ -1,12 +1,13 @@
-﻿using BunBunHub.Panel_de_Control;
-using BunBunHub.Usuarios;
+﻿using BunBunHub.Dao;
+using BunBunHub.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,15 +16,27 @@ namespace BunBunHub
 {
     public partial class Acceso : Form
     {
+        PanelAdministrador ventanaAdministrador;
         public Acceso()
         {
             InitializeComponent();
+            btnSitioWeb.MouseEnter += ComponentesVisuales.EfectosVisuales.OnBtn_MouseEnter;
+            btnSitioWeb.MouseLeave += ComponentesVisuales.EfectosVisuales.OnBtn_MouseLeave;
+            btnSitioWeb.MouseDown += ComponentesVisuales.EfectosVisuales.OnBtn_MouseDown;
+            btnSitioWeb.MouseUp += ComponentesVisuales.EfectosVisuales.OnBtn_MouseUp;
+            btnIniciarSesion.MouseDown += ComponentesVisuales.EfectosVisuales.OnBtn_MouseDown;
+            btnIniciarSesion.MouseUp += ComponentesVisuales.EfectosVisuales.OnBtn_MouseUp;
+        }
+
+        private void btnCerrarSistema_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            string usuarioIngresado = tbUsuario.Text;
-            string contrasenaIngresada = tbContrasena.Text;
+            string usuarioIngresado = txtUsuario.Text;
+            string contrasenaIngresada = txtContrasena.Text;
 
             bool credencialesValidas = false;
             string rol = "";
@@ -63,20 +76,20 @@ namespace BunBunHub
                 switch (rol)
                 {
                     case "Administrador": // Administrador
-                        Administrador administradorForm = new Administrador();
-                        administradorForm.Show();
+                        PanelAdministrador administradorPanel = new PanelAdministrador();
+                        administradorPanel.Show();
                         this.Hide();
                         break;
 
                     case "Colaborador": // Colaborador
-                        Colaborador colaboradorForm = new Colaborador();
-                        colaboradorForm.Show();
+                        PanelColaborador colaboradorPanel = new PanelColaborador();
+                        colaboradorPanel.Show();
                         this.Hide();
                         break;
 
                     case "Cliente": // Cliente
-                        Cliente clienteForm = new Cliente();
-                        clienteForm.Show();
+                        PanelCliente clientePanel= new PanelCliente();
+                        clientePanel.Show();
                         this.Hide();
                         break;
 
@@ -87,11 +100,29 @@ namespace BunBunHub
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos, o el usuario está inactivo.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        // Dirigir al sitio web
+        private void btnSitioWeb_Click(object sender, EventArgs e)
+        {
+            // URL que quieres abrir
+            string url = "https://bunbunstitches.carrd.co/";
 
+            try
+            {
+                // Intenta abrir la URL en el navegador predeterminado
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                // Maneja cualquier error (si ocurre)
+                MessageBox.Show("No se pudo abrir la página web: " + ex.Message);
+            }
+        }
+
+        // Evento: mover a Dao
         private void answer_Enter(object sender, EventArgs e)
         {
             //Seleccione la respuesta completa en el control TextBox.
@@ -103,24 +134,10 @@ namespace BunBunHub
             }
         }
 
-        private void tbUsuario_TextChanged(object sender, EventArgs e)
+        // Contraseña oculta
+        private void txtContrasena_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void tbContrasena_TextChanged(object sender, EventArgs e)
-        {
-            tbContrasena.UseSystemPasswordChar = true;
-        }
-
-        private void Acceso_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCerrarSistema_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            txtContrasena.UseSystemPasswordChar = true;
         }
     }
 }
