@@ -139,5 +139,10 @@ namespace BunBunHub
         {
             txtContrasena.UseSystemPasswordChar = true;
         }
+
+        private void Acceso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
