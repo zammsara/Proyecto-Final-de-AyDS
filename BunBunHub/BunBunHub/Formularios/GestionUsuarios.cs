@@ -37,5 +37,12 @@ namespace BunBunHub.Formularios
             registrarUsuarios.Show();
             this.Hide();
         }
+
+        private void btnVisualizarUsuario_Click(object sender, EventArgs e)
+        {
+            //VisualizarUsuarios visualizarUsuarios = new VisualizarUsuarios();
+            //visualizarUsuarios.Show();
+            //this.Hide();
+        }
     }
 }
