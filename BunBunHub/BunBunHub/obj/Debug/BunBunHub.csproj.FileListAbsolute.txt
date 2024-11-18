@@ -13,6 +13,7 @@ C:\Users\Arelys Castillo\Desktop\BunBunHub_\BunBunHub\BunBunHub\obj\Debug\BunBun
 C:\Users\Arelys Castillo\Desktop\BunBunHub_\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub_\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub_\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+<<<<<<< HEAD
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
@@ -28,3 +29,21 @@ C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
 C:\Users\Arelys Castillo\Desktop\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+=======
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Acceso.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarUsuarios.resources
+>>>>>>> 56f84fa61be2c3f3f312c750428dfd514b7c3285
