@@ -17,10 +17,15 @@ namespace BunBunHub.Formularios
             InitializeComponent();
         }
 
+        private void btnCerrarSistema_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            Acceso iniciarSesion = new Acceso();
+            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Principal iniciarSesion = new Principal();
             iniciarSesion.Show();
             this.Hide();
         }

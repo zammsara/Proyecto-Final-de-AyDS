@@ -118,124 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AccesoUsuariobtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AccesoUsuariobtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnPaginaWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnPaginaWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoAcceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoAcceso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnFinanzas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnFinanzas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoCompleto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoCompleto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnRegistrarUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnRegistrarUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UsuariosBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UsuariosBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnActualizarRegistros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnActualizarRegistros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CerrarSistemaCeleste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CerrarSistemaCeleste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Informes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Informes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VolverBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolverBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RegistroUsuariobtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegistroUsuariobtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnPublicidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPublicidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CerrarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CerrarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UsuarioBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UsuarioBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VisualizarUsuarioBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VisualizarUsuarioBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnIniciarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnIniciarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="limpiar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPerfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Botón" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Botón.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoGestionUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoGestionUsuarios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Publicidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Publicidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomeAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnInforme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInforme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="actualizarClientebtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\actualizarClientebtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoTeal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoTeal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AccesoUsuarioBTN (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AccesoUsuarioBTN (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoRegistrarUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoRegistrarUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PerfilBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PerfilBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCerrarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCerrarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RegistrarUsuariosBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegistrarUsuariosBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VolverAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolverAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VisualizarUsuariosBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VisualizarUsuariosBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoPanelAdministrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoPanelAdministrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CerrarSistemaAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CerrarSistemaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guardar (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guardar (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnGestionUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnGestionUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lanaIZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lanaIZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoInicioSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoInicioSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoAdministrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoAdministrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnPedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnPedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RegistrarUsuarioLanaIz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegistrarUsuarioLanaIz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomeBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoRegistroUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoRegistroUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnInstagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInstagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="limpiarFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\limpiarFormulario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoLisoTeal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoLisoTeal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GestionUsuarioFondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GestionUsuarioFondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PedidosBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PedidosBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FinanzasBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FinanzasBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LineaWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineaWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volver (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volver (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AcessoBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AcessoBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volverBtn (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volverBtn (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccesoUsuariosLanaDr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AccesoUsuariosLanaDr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RegistroUsuariosFondo(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegistroUsuariosFondo(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ActualizarDatosBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ActualizarDatosBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usuarioAcceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuarioAcceso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoTeal_Encabezado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoTeal_Encabezado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static BunBunHub.Modelos.ModeloDeDatos;
+using static BunBunHub.Modelos.ModelosDeDatos;
 
 namespace BunBunHub.Formularios
 {
@@ -23,14 +23,12 @@ namespace BunBunHub.Formularios
             InitializeComponent();
         }
 
-        //salir del proyecto
-        private void btnCerrarSistema_Click_1(object sender, EventArgs e)
+        private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        //volver al forms anterior
-        private void toolbtnvolver_Click(object sender, EventArgs e)
+        private void btnVolver_Click(object sender, EventArgs e)
         {
             // Verificar si al menos uno de los controles tiene datos
             bool hayDatos = false;
@@ -69,8 +67,7 @@ namespace BunBunHub.Formularios
             }
         }
 
-        //volver al panel de administradores
-        private void home_Click(object sender, EventArgs e)
+        private void btnPanelControl_Click(object sender, EventArgs e)
         {
             // Verificar si al menos uno de los controles tiene datos
             bool hayDatos = false;
@@ -109,8 +106,16 @@ namespace BunBunHub.Formularios
             }
         }
 
-        // Limpiar Controles
-        private void toolBtnLimpiar_Click(object sender, EventArgs e)
+
+
+        private void tlsbtnVisualizarRegistros_Click(object sender, EventArgs e)
+        {
+            ActualizarRegistro actualizarRegistro = new ActualizarRegistro();
+            actualizarRegistro.Show();
+            this.Hide();
+        }
+
+        private void tlsbtnLimpiar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Se limpiarán todos los controles ¿Está seguro de que desea limpiar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -129,13 +134,12 @@ namespace BunBunHub.Formularios
 
                 // Limpiar los ComboBox
                 cmbRol.SelectedIndex = -1;
-                cmbEstado.SelectedIndex = -1; 
+                cmbEstado.SelectedIndex = -1;
             }
         }
 
-        // Guardar Registro
-        private void toolbtnGuardar_Click(object sender, EventArgs e)
-        { 
+        private void tlsbtnGuardar_Click(object sender, EventArgs e)
+        {
             // Verificar que todos los controles tengan información
             if (string.IsNullOrWhiteSpace(txtUsuarioNombre.Text) ||
                 string.IsNullOrWhiteSpace(txtContraseña.Text) ||
@@ -210,8 +214,8 @@ namespace BunBunHub.Formularios
                 }
             }
 
-            ModeloDeDatos.Usuarios usuarioOB = new ModeloDeDatos.Usuarios(usuario, contraseña, rol, estado);
-            ModeloDeDatos.DetallesCliente ClienteOB = null;
+            ModelosDeDatos.Usuarios usuarioOB = new ModelosDeDatos.Usuarios(usuario, contraseña, rol, estado);
+            ModelosDeDatos.DetallesCliente ClienteOB = null;
 
             // Si el rol es "Cliente", crear el objeto DetallesCliente
             if (rol == "Cliente")
@@ -255,7 +259,6 @@ namespace BunBunHub.Formularios
             txtUsuarioNombre.Focus();
         }
 
-        // Método para limpiar los campos
         private void LimpiarCampos()
         {
             txtTelefono.Clear();
@@ -275,7 +278,7 @@ namespace BunBunHub.Formularios
             cmbEstado.SelectedIndex = -1;
         }
 
-        private void GuardarCliente(ModeloDeDatos.Usuarios usuarioOB)
+        private void GuardarCliente(ModelosDeDatos.Usuarios usuarioOB)
         {
             using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
             using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
@@ -287,7 +290,7 @@ namespace BunBunHub.Formularios
             }
         }
 
-        private void GuardarAdministrador(ModeloDeDatos.Usuarios usuarioOB)
+        private void GuardarAdministrador(ModelosDeDatos.Usuarios usuarioOB)
         {
             using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
             using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
@@ -301,7 +304,7 @@ namespace BunBunHub.Formularios
             MessageBox.Show("Administrador registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void GuardarColaborador(ModeloDeDatos.Usuarios usuarioOB)
+        private void GuardarColaborador(ModelosDeDatos.Usuarios usuarioOB)
         {
             using (FileStream mUsuario = new FileStream(rutaUsuarios, FileMode.Append))
             using (BinaryWriter Escritor = new BinaryWriter(mUsuario, Encoding.UTF8))
@@ -315,7 +318,7 @@ namespace BunBunHub.Formularios
             MessageBox.Show("Colaborador registrado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void GuardarDetallesCliente(ModeloDeDatos.Usuarios usuarioOB, DetallesCliente clienteOB)
+        private void GuardarDetallesCliente(ModelosDeDatos.Usuarios usuarioOB, DetallesCliente clienteOB)
         {
             // Guardar los datos del cliente en el archivo clientes.dat
             using (FileStream mCliente = new FileStream(rutaClientes, FileMode.Append))
@@ -353,13 +356,6 @@ namespace BunBunHub.Formularios
                 }
             }
         }
-
-        private void txtDireccion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        // Validación de Datos
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -368,7 +364,6 @@ namespace BunBunHub.Formularios
                 return;
             }
         }
-
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -412,6 +407,31 @@ namespace BunBunHub.Formularios
                 lblValidacion.Text = "Contraseña Válida";
             }
         }
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite solo números y la tecla de retroceso (Backspace)
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite solo números y la tecla de retroceso (Backspace)
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+        private void txtUsuarioNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Si la tecla presionada es un espacio (código ASCII 32), no se permite
+            if (e.KeyChar == ' ' || e.KeyChar == (char)Keys.Space)
+            {
+                e.Handled = true;
+            }
+        }
 
         private void txtConfirmarContraseña_TextChanged(object sender, EventArgs e)
         {
@@ -431,15 +451,6 @@ namespace BunBunHub.Formularios
             {
                 lblConfirmación.ForeColor = System.Drawing.Color.Green;
                 lblConfirmación.Text = "Las contraseñas cohinciden";
-            }
-        }
-
-        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Permite solo números y la tecla de retroceso (Backspace)
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
-            {
-                e.Handled = true;
             }
         }
 
@@ -480,21 +491,5 @@ namespace BunBunHub.Formularios
             }
         }
 
-        private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Permite solo números y la tecla de retroceso (Backspace)
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
-            {
-                e.Handled = true;
-            }
-        }
-        private void txtUsuarioNombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Si la tecla presionada es un espacio (código ASCII 32), no se permite
-            if (e.KeyChar == ' ' || e.KeyChar == (char)Keys.Space)
-            {
-                e.Handled = true;
-            }
-        }
     }
 }

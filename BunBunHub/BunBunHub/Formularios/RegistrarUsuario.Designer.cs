@@ -28,8 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblRegistrarUsuario = new System.Windows.Forms.Label();
-            this.lblDatosCliente = new System.Windows.Forms.Label();
+            this.btnPanelControl = new System.Windows.Forms.Button();
+            this.grpContacto = new System.Windows.Forms.GroupBox();
+            this.lblValidarTelefono = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.grpDatosCliente = new System.Windows.Forms.GroupBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.grpCredenciales = new System.Windows.Forms.GroupBox();
             this.lblConfirmación = new System.Windows.Forms.Label();
             this.lblValidacion = new System.Windows.Forms.Label();
@@ -43,56 +55,202 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtUsuarioNombre = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.grpDatosCliente = new System.Windows.Forms.GroupBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.grpContacto = new System.Windows.Forms.GroupBox();
-            this.lblValidarTelefono = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolbtnvolver = new System.Windows.Forms.ToolStripButton();
-            this.toolbtnGuardar = new System.Windows.Forms.ToolStripButton();
-            this.toolBtnLimpiar = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPaneldeControl = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnCerrarSistema = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.grpCredenciales.SuspendLayout();
-            this.grpDatosCliente.SuspendLayout();
+            this.tlsRegistrarUsuario = new System.Windows.Forms.ToolStrip();
+            this.tlsbtnGuardar = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnLimpiar = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnVisualizarRegistros = new System.Windows.Forms.ToolStripButton();
+            this.lblBunBunHub = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.grpContacto.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.grpDatosCliente.SuspendLayout();
+            this.grpCredenciales.SuspendLayout();
+            this.tlsRegistrarUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblRegistrarUsuario
+            // btnPanelControl
             // 
-            this.lblRegistrarUsuario.AutoSize = true;
-            this.lblRegistrarUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblRegistrarUsuario.Font = new System.Drawing.Font("Segoe UI", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrarUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblRegistrarUsuario.Location = new System.Drawing.Point(48, 157);
-            this.lblRegistrarUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRegistrarUsuario.Name = "lblRegistrarUsuario";
-            this.lblRegistrarUsuario.Size = new System.Drawing.Size(304, 47);
-            this.lblRegistrarUsuario.TabIndex = 65;
-            this.lblRegistrarUsuario.Text = "Registrar Usuario";
+            this.btnPanelControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnPanelControl.BackgroundImage = global::BunBunHub.Properties.Resources.HomeAzul;
+            this.btnPanelControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPanelControl.FlatAppearance.BorderSize = 0;
+            this.btnPanelControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPanelControl.Location = new System.Drawing.Point(1016, 582);
+            this.btnPanelControl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPanelControl.Name = "btnPanelControl";
+            this.btnPanelControl.Size = new System.Drawing.Size(50, 41);
+            this.btnPanelControl.TabIndex = 124;
+            this.btnPanelControl.UseVisualStyleBackColor = false;
+            this.btnPanelControl.Click += new System.EventHandler(this.btnPanelControl_Click);
             // 
-            // lblDatosCliente
+            // grpContacto
             // 
-            this.lblDatosCliente.AutoSize = true;
-            this.lblDatosCliente.BackColor = System.Drawing.Color.Transparent;
-            this.lblDatosCliente.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatosCliente.ForeColor = System.Drawing.Color.White;
-            this.lblDatosCliente.Location = new System.Drawing.Point(618, 146);
-            this.lblDatosCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDatosCliente.Name = "lblDatosCliente";
-            this.lblDatosCliente.Size = new System.Drawing.Size(249, 40);
-            this.lblDatosCliente.TabIndex = 66;
-            this.lblDatosCliente.Text = "Datos del Cliente";
+            this.grpContacto.BackColor = System.Drawing.Color.Transparent;
+            this.grpContacto.Controls.Add(this.lblValidarTelefono);
+            this.grpContacto.Controls.Add(this.txtTelefono);
+            this.grpContacto.Controls.Add(this.txtCorreo);
+            this.grpContacto.Controls.Add(this.label4);
+            this.grpContacto.Controls.Add(this.label10);
+            this.grpContacto.Enabled = false;
+            this.grpContacto.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.grpContacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.grpContacto.Location = new System.Drawing.Point(629, 358);
+            this.grpContacto.Margin = new System.Windows.Forms.Padding(4);
+            this.grpContacto.Name = "grpContacto";
+            this.grpContacto.Padding = new System.Windows.Forms.Padding(4);
+            this.grpContacto.Size = new System.Drawing.Size(367, 167);
+            this.grpContacto.TabIndex = 123;
+            this.grpContacto.TabStop = false;
+            this.grpContacto.Text = "Contacto";
+            // 
+            // lblValidarTelefono
+            // 
+            this.lblValidarTelefono.AutoSize = true;
+            this.lblValidarTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.lblValidarTelefono.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValidarTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblValidarTelefono.Location = new System.Drawing.Point(24, 141);
+            this.lblValidarTelefono.Name = "lblValidarTelefono";
+            this.lblValidarTelefono.Size = new System.Drawing.Size(0, 15);
+            this.lblValidarTelefono.TabIndex = 46;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTelefono.Location = new System.Drawing.Point(24, 114);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(219, 27);
+            this.txtTelefono.TabIndex = 3;
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCorreo.Location = new System.Drawing.Point(24, 45);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(318, 27);
+            this.txtCorreo.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label4.Location = new System.Drawing.Point(24, 92);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Teléfono";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label10.Location = new System.Drawing.Point(21, 24);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Correo";
+            // 
+            // grpDatosCliente
+            // 
+            this.grpDatosCliente.BackColor = System.Drawing.Color.Transparent;
+            this.grpDatosCliente.Controls.Add(this.txtEdad);
+            this.grpDatosCliente.Controls.Add(this.txtApellido);
+            this.grpDatosCliente.Controls.Add(this.txtNombre);
+            this.grpDatosCliente.Controls.Add(this.lblEdad);
+            this.grpDatosCliente.Controls.Add(this.label5);
+            this.grpDatosCliente.Controls.Add(this.lblNombre);
+            this.grpDatosCliente.Enabled = false;
+            this.grpDatosCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.grpDatosCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.grpDatosCliente.Location = new System.Drawing.Point(629, 184);
+            this.grpDatosCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.grpDatosCliente.Name = "grpDatosCliente";
+            this.grpDatosCliente.Padding = new System.Windows.Forms.Padding(4);
+            this.grpDatosCliente.Size = new System.Drawing.Size(367, 158);
+            this.grpDatosCliente.TabIndex = 122;
+            this.grpDatosCliente.TabStop = false;
+            this.grpDatosCliente.Text = "Información Personal";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEdad.ForeColor = System.Drawing.Color.Black;
+            this.txtEdad.Location = new System.Drawing.Point(266, 53);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(76, 27);
+            this.txtEdad.TabIndex = 38;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtApellido.ForeColor = System.Drawing.Color.Black;
+            this.txtApellido.Location = new System.Drawing.Point(24, 105);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(219, 27);
+            this.txtApellido.TabIndex = 37;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombre.ForeColor = System.Drawing.Color.Black;
+            this.txtNombre.Location = new System.Drawing.Point(24, 53);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(219, 27);
+            this.txtNombre.TabIndex = 36;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
+            this.lblEdad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblEdad.Location = new System.Drawing.Point(263, 33);
+            this.lblEdad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(38, 17);
+            this.lblEdad.TabIndex = 4;
+            this.lblEdad.Text = "Edad";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label5.Location = new System.Drawing.Point(24, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Apellido";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
+            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblNombre.Location = new System.Drawing.Point(21, 32);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(58, 17);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre";
             // 
             // grpCredenciales
             // 
@@ -111,11 +269,11 @@
             this.grpCredenciales.Controls.Add(this.label7);
             this.grpCredenciales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.grpCredenciales.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.grpCredenciales.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.grpCredenciales.Location = new System.Drawing.Point(69, 298);
+            this.grpCredenciales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.grpCredenciales.Location = new System.Drawing.Point(92, 212);
             this.grpCredenciales.Name = "grpCredenciales";
             this.grpCredenciales.Size = new System.Drawing.Size(342, 313);
-            this.grpCredenciales.TabIndex = 67;
+            this.grpCredenciales.TabIndex = 121;
             this.grpCredenciales.TabStop = false;
             this.grpCredenciales.Text = "Credenciales de Acceso";
             // 
@@ -260,285 +418,188 @@
             this.label7.TabIndex = 34;
             this.label7.Text = "Usuario";
             // 
-            // grpDatosCliente
+            // label1
             // 
-            this.grpDatosCliente.BackColor = System.Drawing.Color.Transparent;
-            this.grpDatosCliente.Controls.Add(this.txtEdad);
-            this.grpDatosCliente.Controls.Add(this.txtApellido);
-            this.grpDatosCliente.Controls.Add(this.txtNombre);
-            this.grpDatosCliente.Controls.Add(this.lblEdad);
-            this.grpDatosCliente.Controls.Add(this.label5);
-            this.grpDatosCliente.Controls.Add(this.lblNombre);
-            this.grpDatosCliente.Enabled = false;
-            this.grpDatosCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.grpDatosCliente.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.grpDatosCliente.Location = new System.Drawing.Point(566, 215);
-            this.grpDatosCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.grpDatosCliente.Name = "grpDatosCliente";
-            this.grpDatosCliente.Padding = new System.Windows.Forms.Padding(4);
-            this.grpDatosCliente.Size = new System.Drawing.Size(367, 158);
-            this.grpDatosCliente.TabIndex = 68;
-            this.grpDatosCliente.TabStop = false;
-            this.grpDatosCliente.Text = "Información Personal";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(719, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 35);
+            this.label1.TabIndex = 120;
+            this.label1.Text = "Datos del cliente";
             // 
-            // txtEdad
+            // lblPaneldeControl
             // 
-            this.txtEdad.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEdad.ForeColor = System.Drawing.Color.Black;
-            this.txtEdad.Location = new System.Drawing.Point(266, 53);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(76, 27);
-            this.txtEdad.TabIndex = 38;
-            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
+            this.lblPaneldeControl.AutoSize = true;
+            this.lblPaneldeControl.BackColor = System.Drawing.Color.Transparent;
+            this.lblPaneldeControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lblPaneldeControl.ForeColor = System.Drawing.Color.White;
+            this.lblPaneldeControl.Location = new System.Drawing.Point(52, 128);
+            this.lblPaneldeControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPaneldeControl.Name = "lblPaneldeControl";
+            this.lblPaneldeControl.Size = new System.Drawing.Size(216, 35);
+            this.lblPaneldeControl.TabIndex = 119;
+            this.lblPaneldeControl.Text = "Registrar Usuario";
             // 
-            // txtApellido
+            // btnVolver
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtApellido.ForeColor = System.Drawing.Color.Black;
-            this.txtApellido.Location = new System.Drawing.Point(24, 105);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(219, 27);
-            this.txtApellido.TabIndex = 37;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombre.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre.Location = new System.Drawing.Point(24, 53);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(219, 27);
-            this.txtNombre.TabIndex = 36;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
-            this.lblEdad.ForeColor = System.Drawing.Color.Black;
-            this.lblEdad.Location = new System.Drawing.Point(263, 33);
-            this.lblEdad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(38, 17);
-            this.lblEdad.TabIndex = 4;
-            this.lblEdad.Text = "Edad";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(24, 84);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Apellido";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
-            this.lblNombre.ForeColor = System.Drawing.Color.Black;
-            this.lblNombre.Location = new System.Drawing.Point(21, 32);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(58, 17);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // grpContacto
-            // 
-            this.grpContacto.BackColor = System.Drawing.Color.White;
-            this.grpContacto.Controls.Add(this.lblValidarTelefono);
-            this.grpContacto.Controls.Add(this.txtTelefono);
-            this.grpContacto.Controls.Add(this.txtCorreo);
-            this.grpContacto.Controls.Add(this.label4);
-            this.grpContacto.Controls.Add(this.label10);
-            this.grpContacto.Enabled = false;
-            this.grpContacto.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.grpContacto.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.grpContacto.Location = new System.Drawing.Point(566, 381);
-            this.grpContacto.Margin = new System.Windows.Forms.Padding(4);
-            this.grpContacto.Name = "grpContacto";
-            this.grpContacto.Padding = new System.Windows.Forms.Padding(4);
-            this.grpContacto.Size = new System.Drawing.Size(367, 151);
-            this.grpContacto.TabIndex = 70;
-            this.grpContacto.TabStop = false;
-            this.grpContacto.Text = "Contacto";
-            // 
-            // lblValidarTelefono
-            // 
-            this.lblValidarTelefono.AutoSize = true;
-            this.lblValidarTelefono.BackColor = System.Drawing.Color.Transparent;
-            this.lblValidarTelefono.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValidarTelefono.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblValidarTelefono.Location = new System.Drawing.Point(24, 125);
-            this.lblValidarTelefono.Name = "lblValidarTelefono";
-            this.lblValidarTelefono.Size = new System.Drawing.Size(0, 15);
-            this.lblValidarTelefono.TabIndex = 46;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTelefono.Location = new System.Drawing.Point(24, 98);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(219, 27);
-            this.txtTelefono.TabIndex = 3;
-            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
-            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCorreo.Location = new System.Drawing.Point(24, 45);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(318, 27);
-            this.txtCorreo.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(24, 76);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Teléfono";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(21, 24);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 17);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Correo";
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.AllowDrop = true;
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.White;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolbtnvolver,
-            this.toolbtnGuardar,
-            this.toolBtnLimpiar});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1080, 40);
-            this.toolStrip1.TabIndex = 71;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolbtnvolver
-            // 
-            this.toolbtnvolver.BackColor = System.Drawing.Color.White;
-            this.toolbtnvolver.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolbtnvolver.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolbtnvolver.Image = global::BunBunHub.Properties.Resources.back;
-            this.toolbtnvolver.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolbtnvolver.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.toolbtnvolver.Name = "toolbtnvolver";
-            this.toolbtnvolver.Size = new System.Drawing.Size(29, 28);
-            this.toolbtnvolver.Text = "toolStripButton1";
-            this.toolbtnvolver.ToolTipText = "Volver";
-            this.toolbtnvolver.Click += new System.EventHandler(this.toolbtnvolver_Click);
-            // 
-            // toolbtnGuardar
-            // 
-            this.toolbtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.toolbtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolbtnGuardar.Image = global::BunBunHub.Properties.Resources.guardar;
-            this.toolbtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolbtnGuardar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.toolbtnGuardar.Name = "toolbtnGuardar";
-            this.toolbtnGuardar.Size = new System.Drawing.Size(29, 28);
-            this.toolbtnGuardar.Text = "toolStripButton2";
-            this.toolbtnGuardar.ToolTipText = "Guardar registro";
-            this.toolbtnGuardar.Click += new System.EventHandler(this.toolbtnGuardar_Click);
-            // 
-            // toolBtnLimpiar
-            // 
-            this.toolBtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.toolBtnLimpiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolBtnLimpiar.Image = global::BunBunHub.Properties.Resources.limpiar;
-            this.toolBtnLimpiar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolBtnLimpiar.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.toolBtnLimpiar.Name = "toolBtnLimpiar";
-            this.toolBtnLimpiar.Size = new System.Drawing.Size(29, 28);
-            this.toolBtnLimpiar.Text = "toolStripButton3";
-            this.toolBtnLimpiar.ToolTipText = "Limpiar formulario";
-            this.toolBtnLimpiar.Click += new System.EventHandler(this.toolBtnLimpiar_Click);
+            this.btnVolver.BackColor = System.Drawing.Color.Transparent;
+            this.btnVolver.BackgroundImage = global::BunBunHub.Properties.Resources.VolverBeige;
+            this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVolver.FlatAppearance.BorderSize = 0;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Location = new System.Drawing.Point(13, 583);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(45, 41);
+            this.btnVolver.TabIndex = 118;
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnCerrarSistema
             // 
-            this.btnCerrarSistema.BackColor = System.Drawing.Color.White;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.cerrar;
+            this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSistema.Location = new System.Drawing.Point(1036, 9);
+            this.btnCerrarSistema.Location = new System.Drawing.Point(1035, 13);
             this.btnCerrarSistema.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSistema.Name = "btnCerrarSistema";
-            this.btnCerrarSistema.Size = new System.Drawing.Size(31, 26);
-            this.btnCerrarSistema.TabIndex = 72;
+            this.btnCerrarSistema.Size = new System.Drawing.Size(32, 30);
+            this.btnCerrarSistema.TabIndex = 117;
             this.btnCerrarSistema.UseVisualStyleBackColor = false;
-            this.btnCerrarSistema.Click += new System.EventHandler(this.btnCerrarSistema_Click_1);
+            this.btnCerrarSistema.Click += new System.EventHandler(this.btnCerrarSistema_Click);
             // 
-            // button1
+            // tlsRegistrarUsuario
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::BunBunHub.Properties.Resources.homeBtn;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1030, 590);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 35);
-            this.button1.TabIndex = 73;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.home_Click);
+            this.tlsRegistrarUsuario.AllowDrop = true;
+            this.tlsRegistrarUsuario.AutoSize = false;
+            this.tlsRegistrarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.tlsRegistrarUsuario.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tlsRegistrarUsuario.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.tlsRegistrarUsuario.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsbtnGuardar,
+            this.tlsbtnLimpiar,
+            this.tlsbtnVisualizarRegistros});
+            this.tlsRegistrarUsuario.Location = new System.Drawing.Point(0, 0);
+            this.tlsRegistrarUsuario.Name = "tlsRegistrarUsuario";
+            this.tlsRegistrarUsuario.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.tlsRegistrarUsuario.Size = new System.Drawing.Size(1080, 57);
+            this.tlsRegistrarUsuario.TabIndex = 114;
+            // 
+            // tlsbtnGuardar
+            // 
+            this.tlsbtnGuardar.AutoSize = false;
+            this.tlsbtnGuardar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tlsbtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlsbtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tlsbtnGuardar.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tlsbtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnGuardar.Margin = new System.Windows.Forms.Padding(15, 12, 15, 12);
+            this.tlsbtnGuardar.MergeIndex = 0;
+            this.tlsbtnGuardar.Name = "tlsbtnGuardar";
+            this.tlsbtnGuardar.Size = new System.Drawing.Size(110, 37);
+            this.tlsbtnGuardar.Text = "Guardar";
+            this.tlsbtnGuardar.ToolTipText = "Guardar registro de usuario";
+            this.tlsbtnGuardar.Click += new System.EventHandler(this.tlsbtnGuardar_Click);
+            // 
+            // tlsbtnLimpiar
+            // 
+            this.tlsbtnLimpiar.AutoSize = false;
+            this.tlsbtnLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tlsbtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlsbtnLimpiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnLimpiar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tlsbtnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnLimpiar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnLimpiar.Margin = new System.Windows.Forms.Padding(0, 12, 15, 12);
+            this.tlsbtnLimpiar.Name = "tlsbtnLimpiar";
+            this.tlsbtnLimpiar.Size = new System.Drawing.Size(110, 37);
+            this.tlsbtnLimpiar.Text = "Limpiar";
+            this.tlsbtnLimpiar.ToolTipText = "Limpiar todos los controles";
+            this.tlsbtnLimpiar.Click += new System.EventHandler(this.tlsbtnLimpiar_Click);
+            // 
+            // tlsbtnVisualizarRegistros
+            // 
+            this.tlsbtnVisualizarRegistros.AutoSize = false;
+            this.tlsbtnVisualizarRegistros.BackColor = System.Drawing.Color.SteelBlue;
+            this.tlsbtnVisualizarRegistros.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnVisualizarRegistros.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.tlsbtnVisualizarRegistros.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnVisualizarRegistros.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnVisualizarRegistros.Margin = new System.Windows.Forms.Padding(56, 12, 15, 12);
+            this.tlsbtnVisualizarRegistros.Name = "tlsbtnVisualizarRegistros";
+            this.tlsbtnVisualizarRegistros.Size = new System.Drawing.Size(210, 37);
+            this.tlsbtnVisualizarRegistros.Text = "Visualizar Registros";
+            this.tlsbtnVisualizarRegistros.ToolTipText = "Visualizar los usuarios del sistema";
+            this.tlsbtnVisualizarRegistros.Click += new System.EventHandler(this.tlsbtnVisualizarRegistros_Click);
+            // 
+            // lblBunBunHub
+            // 
+            this.lblBunBunHub.AutoSize = true;
+            this.lblBunBunHub.BackColor = System.Drawing.Color.Transparent;
+            this.lblBunBunHub.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBunBunHub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblBunBunHub.Location = new System.Drawing.Point(604, 582);
+            this.lblBunBunHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBunBunHub.Name = "lblBunBunHub";
+            this.lblBunBunHub.Size = new System.Drawing.Size(137, 29);
+            this.lblBunBunHub.TabIndex = 116;
+            this.lblBunBunHub.Text = "BunBunHub";
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoTeal;
+            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLogo.Location = new System.Drawing.Point(542, 567);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 61);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 115;
+            this.picLogo.TabStop = false;
             // 
             // RegistrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoRegistroUsuario;
+            this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoRegistrarUsuarios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnCerrarSistema);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.btnPanelControl);
             this.Controls.Add(this.grpContacto);
             this.Controls.Add(this.grpDatosCliente);
             this.Controls.Add(this.grpCredenciales);
-            this.Controls.Add(this.lblDatosCliente);
-            this.Controls.Add(this.lblRegistrarUsuario);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblPaneldeControl);
+            this.Controls.Add(this.btnVolver);
+            this.Controls.Add(this.btnCerrarSistema);
+            this.Controls.Add(this.tlsRegistrarUsuario);
+            this.Controls.Add(this.lblBunBunHub);
+            this.Controls.Add(this.picLogo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RegistrarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarUsuario";
-            this.grpCredenciales.ResumeLayout(false);
-            this.grpCredenciales.PerformLayout();
-            this.grpDatosCliente.ResumeLayout(false);
-            this.grpDatosCliente.PerformLayout();
             this.grpContacto.ResumeLayout(false);
             this.grpContacto.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.grpDatosCliente.ResumeLayout(false);
+            this.grpDatosCliente.PerformLayout();
+            this.grpCredenciales.ResumeLayout(false);
+            this.grpCredenciales.PerformLayout();
+            this.tlsRegistrarUsuario.ResumeLayout(false);
+            this.tlsRegistrarUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -546,9 +607,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblRegistrarUsuario;
-        private System.Windows.Forms.Label lblDatosCliente;
+        private System.Windows.Forms.Button btnPanelControl;
+        private System.Windows.Forms.GroupBox grpContacto;
+        private System.Windows.Forms.Label lblValidarTelefono;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox grpDatosCliente;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.GroupBox grpCredenciales;
+        private System.Windows.Forms.Label lblConfirmación;
+        private System.Windows.Forms.Label lblValidacion;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Label label2;
@@ -559,26 +634,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtUsuarioNombre;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox grpDatosCliente;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblEdad;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.GroupBox grpContacto;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolbtnvolver;
-        private System.Windows.Forms.ToolStripButton toolbtnGuardar;
-        private System.Windows.Forms.ToolStripButton toolBtnLimpiar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPaneldeControl;
+        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnCerrarSistema;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.Label lblValidacion;
-        private System.Windows.Forms.Label lblConfirmación;
-        private System.Windows.Forms.Label lblValidarTelefono;
+        private System.Windows.Forms.ToolStrip tlsRegistrarUsuario;
+        private System.Windows.Forms.ToolStripButton tlsbtnGuardar;
+        private System.Windows.Forms.ToolStripButton tlsbtnLimpiar;
+        private System.Windows.Forms.Label lblBunBunHub;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.ToolStripButton tlsbtnVisualizarRegistros;
     }
 }

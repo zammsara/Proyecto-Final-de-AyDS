@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D8A27ED-C7D3-4A19-8C20-4E23FCA55F80}</ProjectGuid>
+    <ProjectGuid>{907DDCA0-7D8E-4068-9479-68D43C8F086F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>BunBunHub</RootNamespace>
     <AssemblyName>BunBunHub</AssemblyName>
@@ -49,13 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acceso.cs">
+    <Compile Include="Dao\GestionDeArchivos.cs" />
+    <Compile Include="Formularios\ActualizarRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Acceso.Designer.cs">
-      <DependentUpon>Acceso.cs</DependentUpon>
+    <Compile Include="Formularios\ActualizarRegistro.Designer.cs">
+      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dao\ComponentesVisuales.cs" />
     <Compile Include="Formularios\GestionUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,17 +86,17 @@
     <Compile Include="Formularios\RegistrarUsuario.Designer.cs">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\VisualizarUsuarios.cs">
+    <Compile Include="Modelos\ModelosDeDatos.cs" />
+    <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\VisualizarUsuarios.Designer.cs">
-      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modelos\ModeloDeDatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Acceso.resx">
-      <DependentUpon>Acceso.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ActualizarRegistro.resx">
+      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionUsuarios.resx">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
@@ -113,8 +113,8 @@
     <EmbeddedResource Include="Formularios\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\VisualizarUsuarios.resx">
-      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,121 +141,88 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FondoAcceso.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AcessoBlanco.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LineaWeb.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Botón.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Servicios\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FondoAdministrador.png" />
+    <None Include="Resources\FondoInicioSesion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logoAzul.png" />
+    <None Include="Resources\btnIniciarSesion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\usuarioAcceso.png" />
+    <None Include="Resources\BtnPaginaWeb.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PerfilBtn.png" />
+    <None Include="Resources\btnInstagram.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Publicidad.png" />
+    <None Include="Resources\CerrarSistemaAzul.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Informes.png" />
+    <None Include="Resources\LogoBeige.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CerrarSesion.png" />
+    <None Include="Resources\FondoPanelAdministrador.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\UsuariosBtn.png" />
+    <None Include="Resources\UsuarioBeige.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PedidosBtn.png" />
+    <None Include="Resources\btnPerfil.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FinanzasBtn.png" />
+    <None Include="Resources\btnPublicidad.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lana.png" />
+    <None Include="Resources\btnInforme.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\GestionUsuarioFondo.png" />
+    <None Include="Resources\btnCerrarSesion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\volverBtn %281%29.png" />
+    <None Include="Resources\CerrarSistemaCeleste.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RegistroUsuariobtn.png" />
+    <None Include="Resources\BtnGestionUsuarios.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AccesoUsuariobtn.png" />
+    <None Include="Resources\BtnPedidos.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\VisualizarUsuariosBtn.png" />
+    <None Include="Resources\BtnFinanzas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\actualizarClientebtn.png" />
+    <None Include="Resources\FondoGestionUsuarios.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RegistrarUsuariosBTN.png" />
+    <None Include="Resources\BtnRegistrarUsuarios.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\VisualizarUsuarioBTN.png" />
+    <None Include="Resources\BtnActualizarRegistros.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ActualizarDatosBTN.png" />
+    <None Include="Resources\VolverBeige.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AccesoUsuarioBTN %281%29.png" />
+    <None Include="Resources\LogoTeal.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lanaIZ.png" />
+    <None Include="Resources\FondoRegistrarUsuarios.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RegistrarUsuarioLanaIz.png" />
+    <None Include="Resources\HomeAzul.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AccesoUsuariosLanaDr.png" />
+    <None Include="Resources\FondoLisoTeal.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fondoRegistroUsuario.png" />
+    <None Include="Resources\HomeBeige.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RegistroUsuariosFondo%282%29.png" />
+    <None Include="Resources\VolverAzul.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guardar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\limpiar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\volver %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guardar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\limpiarFormulario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\homeBtn.png" />
+    <None Include="Resources\FondoTeal_Encabezado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
