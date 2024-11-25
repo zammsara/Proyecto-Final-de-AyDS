@@ -54,10 +54,9 @@
             this.btnFinanzas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFinanzas.FlatAppearance.BorderSize = 0;
             this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanzas.Location = new System.Drawing.Point(784, 311);
-            this.btnFinanzas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFinanzas.Location = new System.Drawing.Point(588, 253);
             this.btnFinanzas.Name = "btnFinanzas";
-            this.btnFinanzas.Size = new System.Drawing.Size(204, 245);
+            this.btnFinanzas.Size = new System.Drawing.Size(153, 199);
             this.btnFinanzas.TabIndex = 112;
             this.btnFinanzas.UseVisualStyleBackColor = false;
             // 
@@ -68,10 +67,9 @@
             this.btnPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPedidos.FlatAppearance.BorderSize = 0;
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedidos.Location = new System.Drawing.Point(538, 311);
-            this.btnPedidos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPedidos.Location = new System.Drawing.Point(404, 253);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(204, 245);
+            this.btnPedidos.Size = new System.Drawing.Size(153, 199);
             this.btnPedidos.TabIndex = 110;
             this.btnPedidos.UseVisualStyleBackColor = false;
             // 
@@ -82,10 +80,9 @@
             this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Location = new System.Drawing.Point(304, 311);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUsuarios.Location = new System.Drawing.Point(228, 253);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(204, 245);
+            this.btnUsuarios.Size = new System.Drawing.Size(153, 199);
             this.btnUsuarios.TabIndex = 111;
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
@@ -98,10 +95,9 @@
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnInformes.Location = new System.Drawing.Point(20, 290);
-            this.btnInformes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInformes.Location = new System.Drawing.Point(15, 236);
             this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Size = new System.Drawing.Size(168, 41);
+            this.btnInformes.Size = new System.Drawing.Size(126, 33);
             this.btnInformes.TabIndex = 109;
             this.btnInformes.UseVisualStyleBackColor = false;
             // 
@@ -113,10 +109,9 @@
             this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnCerrarSesion.Location = new System.Drawing.Point(20, 565);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(12, 462);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(168, 41);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(126, 33);
             this.btnCerrarSesion.TabIndex = 108;
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
@@ -129,10 +124,9 @@
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPerfil.Location = new System.Drawing.Point(20, 192);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPerfil.Location = new System.Drawing.Point(15, 156);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(168, 41);
+            this.btnPerfil.Size = new System.Drawing.Size(126, 33);
             this.btnPerfil.TabIndex = 107;
             this.btnPerfil.UseVisualStyleBackColor = false;
             // 
@@ -144,10 +138,9 @@
             this.btnPublicidad.FlatAppearance.BorderSize = 0;
             this.btnPublicidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublicidad.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPublicidad.Location = new System.Drawing.Point(20, 241);
-            this.btnPublicidad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPublicidad.Location = new System.Drawing.Point(15, 196);
             this.btnPublicidad.Name = "btnPublicidad";
-            this.btnPublicidad.Size = new System.Drawing.Size(168, 41);
+            this.btnPublicidad.Size = new System.Drawing.Size(126, 33);
             this.btnPublicidad.TabIndex = 106;
             this.btnPublicidad.UseVisualStyleBackColor = false;
             // 
@@ -157,10 +150,9 @@
             this.lblAdministrador.BackColor = System.Drawing.Color.Transparent;
             this.lblAdministrador.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministrador.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblAdministrador.Location = new System.Drawing.Point(78, 130);
-            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdministrador.Location = new System.Drawing.Point(58, 106);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(118, 23);
+            this.lblAdministrador.Size = new System.Drawing.Size(98, 19);
             this.lblAdministrador.TabIndex = 105;
             this.lblAdministrador.Text = "Administrador";
             // 
@@ -170,10 +162,9 @@
             this.lblNombreUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreUsuario.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(79, 111);
-            this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(59, 90);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
-            this.lblNombreUsuario.Size = new System.Drawing.Size(54, 17);
+            this.lblNombreUsuario.Size = new System.Drawing.Size(46, 13);
             this.lblNombreUsuario.TabIndex = 104;
             this.lblNombreUsuario.Text = "Usuario";
             // 
@@ -182,9 +173,10 @@
             this.picPerfil.BackColor = System.Drawing.Color.Transparent;
             this.picPerfil.BackgroundImage = global::BunBunHub.Properties.Resources.UsuarioBeige;
             this.picPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picPerfil.Location = new System.Drawing.Point(12, 100);
+            this.picPerfil.Location = new System.Drawing.Point(9, 81);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(60, 53);
+            this.picPerfil.Size = new System.Drawing.Size(45, 43);
             this.picPerfil.TabIndex = 103;
             this.picPerfil.TabStop = false;
             // 
@@ -194,10 +186,9 @@
             this.lblPaneldeControl.BackColor = System.Drawing.Color.Transparent;
             this.lblPaneldeControl.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaneldeControl.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblPaneldeControl.Location = new System.Drawing.Point(339, 170);
-            this.lblPaneldeControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPaneldeControl.Location = new System.Drawing.Point(254, 138);
             this.lblPaneldeControl.Name = "lblPaneldeControl";
-            this.lblPaneldeControl.Size = new System.Drawing.Size(311, 50);
+            this.lblPaneldeControl.Size = new System.Drawing.Size(251, 41);
             this.lblPaneldeControl.TabIndex = 102;
             this.lblPaneldeControl.Text = "Panel de Control";
             // 
@@ -207,10 +198,9 @@
             this.lblBienvenido.BackColor = System.Drawing.Color.Transparent;
             this.lblBienvenido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblBienvenido.Location = new System.Drawing.Point(343, 224);
-            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBienvenido.Location = new System.Drawing.Point(257, 182);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(346, 20);
+            this.lblBienvenido.Size = new System.Drawing.Size(275, 15);
             this.lblBienvenido.TabIndex = 101;
             this.lblBienvenido.Text = "Bienvenido al Panel de Control de Administradores";
             // 
@@ -220,10 +210,9 @@
             this.lblBunBunHub.BackColor = System.Drawing.Color.Transparent;
             this.lblBunBunHub.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBunBunHub.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblBunBunHub.Location = new System.Drawing.Point(64, 18);
-            this.lblBunBunHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBunBunHub.Location = new System.Drawing.Point(48, 15);
             this.lblBunBunHub.Name = "lblBunBunHub";
-            this.lblBunBunHub.Size = new System.Drawing.Size(137, 29);
+            this.lblBunBunHub.Size = new System.Drawing.Size(113, 23);
             this.lblBunBunHub.TabIndex = 122;
             this.lblBunBunHub.Text = "BunBunHub";
             // 
@@ -232,10 +221,9 @@
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoBeige;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLogo.Location = new System.Drawing.Point(1, 3);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.picLogo.Location = new System.Drawing.Point(1, 2);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(75, 61);
+            this.picLogo.Size = new System.Drawing.Size(56, 50);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 121;
             this.picLogo.TabStop = false;
@@ -247,21 +235,20 @@
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSistema.Location = new System.Drawing.Point(1035, 13);
-            this.btnCerrarSistema.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrarSistema.Location = new System.Drawing.Point(776, 11);
             this.btnCerrarSistema.Name = "btnCerrarSistema";
-            this.btnCerrarSistema.Size = new System.Drawing.Size(32, 30);
+            this.btnCerrarSistema.Size = new System.Drawing.Size(24, 24);
             this.btnCerrarSistema.TabIndex = 123;
             this.btnCerrarSistema.UseVisualStyleBackColor = false;
             this.btnCerrarSistema.Click += new System.EventHandler(this.btnCerrarSistema_Click);
             // 
             // PanelAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoPanelAdministrador;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1080, 637);
+            this.ClientSize = new System.Drawing.Size(810, 518);
             this.Controls.Add(this.btnCerrarSistema);
             this.Controls.Add(this.lblBunBunHub);
             this.Controls.Add(this.picLogo);
@@ -279,6 +266,7 @@
             this.Controls.Add(this.lblBienvenido);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PanelAdministrador";

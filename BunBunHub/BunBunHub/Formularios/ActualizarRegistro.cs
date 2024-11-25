@@ -233,30 +233,28 @@ namespace BunBunHub.Formularios
             int usuarioSeleccionado = dgvUsuario.SelectedRows[0].Index;
 
             // Actualizar los datos en la lista de usuarios
-            ListaUsuarios[usuarioSeleccionado].Usuario = txtEditarUsuario.Text;
-            ListaUsuarios[usuarioSeleccionado].Contraseña = txtEditarContraseña.Text;
-            ListaUsuarios[usuarioSeleccionado].Rol = cmbEditarRol.SelectedItem.ToString();
-            ListaUsuarios[usuarioSeleccionado].Estado = cmbEditarEstado.SelectedItem.ToString();
+            Usuarios usuario = ListaUsuarios[usuarioSeleccionado];
+            usuario.Usuario = txtEditarUsuario.Text;
+            usuario.Contraseña = txtEditarContraseña.Text;
+            usuario.Rol = cmbEditarRol.SelectedItem.ToString();
+            usuario.Estado = cmbEditarEstado.SelectedItem.ToString();
 
             // Sincronizar con la lista de clientes si el usuario es un cliente
-            //if (usuario.Rol == "Cliente")
-            //{
+            if (usuario.Rol == "Cliente")
+            {
                 // Buscar al cliente correspondiente en la lista de clientes
-               // var cliente = ListaDetallesClientes.FirstOrDefault(c => c.Usuario == usuario.Usuario);
-                //if (cliente != null)
-                //{
-                    //cliente.Contraseña = usuario.Contraseña;
-                    //cliente.Estado = usuario.Estado;
-                //}
-            //}
+               var cliente = ListaDetallesClientes.FirstOrDefault(c => c.Usuario == usuario.Usuario);
+                if (cliente != null)
+                {
+                    cliente.Contraseña = usuario.Contraseña;
+                    cliente.Estado = usuario.Estado;
+                }
+            }
 
-            // Actualizar los datos en la lista de clientes
-            //ListaDetallesClientes[usuarioSeleccionado].Contraseña = txtEditarContraseña.Text;
-            //ListaDetallesClientes[usuarioSeleccionado].Estado = cmbEditarEstado.SelectedItem.ToString();
-
-            // Guardar los datos actualizados en el archivo
+            // Guardar los datos actualizados en los archivos
             ManejoArchivos<Usuarios>.GuardarDatos(RegistrarUsuario.nuevarutaUsuarios, ListaUsuarios);
-            //ManejoArchivos<DetallesCliente>.GuardarDatos(RegistrarUsuario.nuevarutaClientes, ListaDetallesClientes);
+            ManejoArchivos<DetallesCliente>.GuardarDatos(RegistrarUsuario.nuevarutaClientes, ListaDetallesClientes);
+
 
             // Actualizar el DataGridView
             ActualizarDataGridView();
@@ -274,16 +272,23 @@ namespace BunBunHub.Formularios
                 return;
             }
 
-            // Actualizar los cambios en la lista de clientes
-            var usuarioSeleccionadoCliente = dgvClientes.SelectedRows[0].Index;
-            ListaDetallesClientes[usuarioSeleccionadoCliente].Estado = cmbEditarEstadoCliente.SelectedItem.ToString();
+            // Obtener el índice del cliente seleccionado
+            int clienteSeleccionado = dgvClientes.SelectedRows[0].Index;
 
-            // Actualizar los cambios relizados en la lista de usuarios
-            //ListaUsuarios[usuarioSeleccionadoCliente].Estado = cmbEditarEstadoCliente.SelectedItem.ToString();
+            // Actualizar los datos en la lista de clientes
+            DetallesCliente cliente = ListaDetallesClientes[clienteSeleccionado];
+            cliente.Estado = cmbEditarEstadoCliente.SelectedItem.ToString();
 
-            //Guardar los datos actualizados en el archivo
-            ManejoArchivos<DetallesCliente>.GuardarDatos(RegistrarUsuario.nuevarutaClientes,ListaDetallesClientes);
-            //ManejoArchivos<Usuarios>.GuardarDatos(RegistrarUsuario.nuevarutaUsuarios, ListaUsuarios);
+            // Sincronizar con la lista de usuarios
+            var usuario = ListaUsuarios.FirstOrDefault(u => u.Usuario == cliente.Usuario);
+            if (usuario != null)
+            {
+                usuario.Estado = cliente.Estado;
+            }
+
+            // Guardar los datos actualizados en los archivos
+            ManejoArchivos<DetallesCliente>.GuardarDatos(RegistrarUsuario.nuevarutaClientes, ListaDetallesClientes);
+            ManejoArchivos<Usuarios>.GuardarDatos(RegistrarUsuario.nuevarutaUsuarios, ListaUsuarios);
 
             // Actualizar el DataGriedView
             ActualizarDataGridView();
