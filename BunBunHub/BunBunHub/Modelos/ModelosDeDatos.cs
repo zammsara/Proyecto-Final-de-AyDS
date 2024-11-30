@@ -36,14 +36,15 @@ namespace BunBunHub.Modelos
         [Serializable]
         public class Pedidos
         {
-            public int NoOrden { get; set; } // Número de orden
+            public int IDPedido { get; set; } // Número de orden
             public string UsuarioCliente { get; set; } // Cliente
-            public string DireccionEnvio { get; set; }
+            public string PuntoEntrega { get; set; }
             public string UsuarioColaborador { get; set; } // Colaborador asignado al pedido
             public string FechaCompra { get; set; }
-            public string FechaEntrega { get; set; }
-            public string Estado { get; set; } // [Pendiente] [Completado] [Cancelado]
-            public string Progreso { get; set; } // [Iniciado] [En proceso] [Finalizado]
+            public string Descripcion { get; set; }
+            public string CostoCompra { get; set; }
+            public string CostoMaterial { get; set; }
+            public string Estado { get; set; } // [Recibido] [En Proceso] [Listo para Entrega] [Completado] [Cancelado]
 
 
         }

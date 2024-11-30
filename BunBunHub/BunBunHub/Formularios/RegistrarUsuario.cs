@@ -118,7 +118,7 @@ namespace BunBunHub.Formularios
 
         private void tlsbtnVisualizarRegistros_Click(object sender, EventArgs e)
         {
-            ActualizarRegistro actualizarRegistro = new ActualizarRegistro(listaUsuarios, listaClientes);
+            VisualizarUsuarios actualizarRegistro = new VisualizarUsuarios(listaUsuarios, listaClientes);
             actualizarRegistro.Show();
             this.Hide();
         }

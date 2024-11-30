@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BunBunHub.Modelos.Sesion;
 
 namespace BunBunHub.Formularios
 {
@@ -15,6 +16,13 @@ namespace BunBunHub.Formularios
         public PanelAdministrador()
         {
             InitializeComponent();
+
+            // Acceder al nombre y rol desde la clase estática
+            string nombreUsuario = UsuarioSesion.NombreUsuario;
+            string rolUsuario = UsuarioSesion.RolUsuario;
+
+            // Mostrar el nombre en un label
+            lblNombreUsuario.Text = nombreUsuario;
         }
         //Evetos Básicos
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -32,6 +40,13 @@ namespace BunBunHub.Formularios
         {
             GestionUsuarios GestionUsuariosForm = new GestionUsuarios();
             GestionUsuariosForm.Show();
+            this.Hide();
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            GestionPedidos GestionPedidosForm = new GestionPedidos();
+            GestionPedidosForm.Show();
             this.Hide();
         }
     }

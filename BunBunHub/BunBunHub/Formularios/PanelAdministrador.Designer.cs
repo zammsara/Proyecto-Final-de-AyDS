@@ -72,6 +72,7 @@
             this.btnPedidos.Size = new System.Drawing.Size(153, 199);
             this.btnPedidos.TabIndex = 110;
             this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // btnUsuarios
             // 
@@ -174,7 +175,7 @@
             this.picPerfil.BackgroundImage = global::BunBunHub.Properties.Resources.UsuarioBeige;
             this.picPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picPerfil.Location = new System.Drawing.Point(9, 81);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.picPerfil.Name = "picPerfil";
             this.picPerfil.Size = new System.Drawing.Size(45, 43);
             this.picPerfil.TabIndex = 103;
@@ -266,7 +267,7 @@
             this.Controls.Add(this.lblBienvenido);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PanelAdministrador";

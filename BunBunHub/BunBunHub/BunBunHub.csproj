@@ -50,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\ManejoArchivos.cs" />
-    <Compile Include="Formularios\ActualizarRegistro.cs">
+    <Compile Include="Formularios\GestionPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\ActualizarRegistro.Designer.cs">
-      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
+    <Compile Include="Formularios\GestionPedidos.Designer.cs">
+      <DependentUpon>GestionPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\GestionUsuarios.cs">
       <SubType>Form</SubType>
@@ -80,13 +80,32 @@
     <Compile Include="Formularios\PanelColaborador.Designer.cs">
       <DependentUpon>PanelColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RegistrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarPedido.Designer.cs">
+      <DependentUpon>RegistrarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\RegistrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\RegistrarUsuario.Designer.cs">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\VisualizarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VisualizarPedidos.Designer.cs">
+      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VisualizarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VisualizarUsuarios.Designer.cs">
+      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelos\ModelosDeDatos.cs" />
+    <Compile Include="Modelos\Sesion.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,8 +114,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\ActualizarRegistro.resx">
-      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\GestionPedidos.resx">
+      <DependentUpon>GestionPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionUsuarios.resx">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
@@ -110,8 +129,17 @@
     <EmbeddedResource Include="Formularios\PanelColaborador.resx">
       <DependentUpon>PanelColaborador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarPedido.resx">
+      <DependentUpon>RegistrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VisualizarPedidos.resx">
+      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VisualizarUsuarios.resx">
+      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

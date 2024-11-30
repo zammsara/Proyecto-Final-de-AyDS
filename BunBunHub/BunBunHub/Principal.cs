@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static BunBunHub.Modelos.ModelosDeDatos;
+using static BunBunHub.Modelos.Sesion;
 
 namespace BunBunHub
 {
@@ -51,6 +52,10 @@ namespace BunBunHub
 
             if (usuarioEncontrado != null)
             {
+                // Almacenar los datos del usuario en la clase estática
+                UsuarioSesion.NombreUsuario = usuarioEncontrado.Usuario;
+                UsuarioSesion.RolUsuario = usuarioEncontrado.Rol;
+
                 // Proceder según el rol del usuario encontrado
                 switch (usuarioEncontrado.Rol)
                 {

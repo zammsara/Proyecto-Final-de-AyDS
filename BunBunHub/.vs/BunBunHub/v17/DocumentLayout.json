@@ -1,151 +1,115 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\",
+  "WorkspaceRootPath": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\trabajandoen\\bunbunhub\\bunbunhub\\resources\\btnpedidos.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\resources\\btnpedidos.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\visualizarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\visualizarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\visualizarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\visualizarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\clone\\proyecto-final-de-ayds\\bunbunhub\\bunbunhub\\formularios\\visualizarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\visualizarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\visualizarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\visualizarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\visualizarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\visualizarusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\actualizarregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\actualizarregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\BunBunHub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\modelos\\modelosdedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\modelos\\modelosdedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\Visualiz.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\sara zambrana\\onedrive\\escritorio\\trabajandoen\\bunbunhub\\bunbunhub\\formularios\\actualizarregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\actualizarregistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\registrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\registrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\registrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\dao\\manejoarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\dao\\manejoarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\gestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\registrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\registrarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\paneladministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\gestionpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\gestionpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\formularios\\gestionpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\gestionpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\bunbunhub\\modelos\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\modelos\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 214,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegistrarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarUsuario.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "VisualizarPedidos.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T00:27:56.994Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegistrarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
-              "ViewState": "AgIAACMBAAAAAAAAAAAuwBEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T01:07:41.23Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActualizarRegistro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\ActualizarRegistro.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\ActualizarRegistro.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T01:24:12.575Z",
+              "WhenOpened": "2024-11-28T23:14:19.284Z",
               "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ActualizarRegistro.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\ActualizarRegistro.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAQwBoBAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:29:41.963Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BtnPedidos.png",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Resources\\BtnPedidos.png",
-              "RelativeDocumentMoniker": "BunBunHub\\Resources\\BtnPedidos.png",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Resources\\BtnPedidos.png",
-              "RelativeToolTip": "BunBunHub\\Resources\\BtnPedidos.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-11-25T14:33:21.015Z",
               "EditorCaption": ""
             },
             {
@@ -154,163 +118,252 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Program.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Program.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Program.cs",
-              "RelativeToolTip": "BunBunHub\\Program.cs",
+              "DocumentIndex": 5,
+              "Title": "BunBunHub.csproj",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\BunBunHub.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\trabajandoEN\\BunBunHub\\BunBunHub\\BunBunHub.csproj",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\BunBunHub.csproj",
+              "RelativeToolTip": "..\\..\\..\\trabajandoEN\\BunBunHub\\BunBunHub\\BunBunHub.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T00:16:03.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PanelColaborador.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelColaborador.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelColaborador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T23:26:08.918Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-30T00:52:49.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PanelCliente.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Visualiz.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\Visualiz.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\Visualiz.Designer.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\Visualiz.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\Visualiz.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T23:26:05.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PanelColaborador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelColaborador.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelColaborador.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T23:24:10.554Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PanelCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T23:24:09.445Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ManejoArchivos.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Dao\\ManejoArchivos.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Dao\\ManejoArchivos.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Dao\\ManejoArchivos.cs",
-              "RelativeToolTip": "BunBunHub\\Dao\\ManejoArchivos.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T22:05:32.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GestionUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAABAAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:40:21.166Z",
+              "WhenOpened": "2024-11-30T00:52:45.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GestionUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionUsuarios.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\GestionUsuarios.cs [Dise\u00F1o]",
+              "Title": "VisualizarUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\VisualizarUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.Designer.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\VisualizarUsuarios.Designer.cs",
+              "ViewState": "AgIAAGsCAAAAAAAAAAAuwHsCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:40:11.499Z",
+              "WhenOpened": "2024-11-29T23:57:15.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisualizarUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "ViewState": "AgIAANIBAAAAAAAAAAAAAOsBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T23:53:39.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VisualizarUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\VisualizarUsuarios.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\VisualizarUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T23:24:34.384Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Principal.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeToolTip": "BunBunHub\\Principal.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAqwFMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "PanelCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:02:59.367Z"
+              "WhenOpened": "2024-11-29T13:47:43.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Principal.cs [Dise\u00F1o]",
+              "DocumentIndex": 16,
+              "Title": "PanelCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:02:56.056Z"
+              "WhenOpened": "2024-11-29T13:47:42.822Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "PanelAdministrador.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelAdministrador.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
               "RelativeToolTip": "BunBunHub\\Formularios\\PanelAdministrador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T17:45:21.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T13:47:41.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "GestionUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwCsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:33:26.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PanelAdministrador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs",
               "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelAdministrador.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelAdministrador.cs [Dise\u00F1o]",
               "RelativeToolTip": "BunBunHub\\Formularios\\PanelAdministrador.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T17:37:12.575Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-29T01:30:30.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ModelosDeDatos.cs",
-              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Modelos\\ModelosDeDatos.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Modelos\\ModelosDeDatos.cs",
-              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\trabajandoEN\\BunBunHub\\BunBunHub\\Modelos\\ModelosDeDatos.cs",
-              "RelativeToolTip": "BunBunHub\\Modelos\\ModelosDeDatos.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "GestionUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionUsuarios.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\GestionUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:25:39.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T01:26:49.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GestionPedidos.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionPedidos.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionPedidos.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionPedidos.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\GestionPedidos.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:25:36.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GestionPedidos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionPedidos.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\GestionPedidos.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\GestionPedidos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\GestionPedidos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:25:33.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PanelColaborador.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelColaborador.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\PanelColaborador.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAtwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:45:06.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PanelColaborador.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelColaborador.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\PanelColaborador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\PanelColaborador.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:45:04.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistrarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAtwHgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:44:18.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegistrarPedido.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:44:08.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegistrarUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarUsuario.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:36:05.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Modelos\\Sesion.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Modelos\\Sesion.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Modelos\\Sesion.cs",
+              "RelativeToolTip": "BunBunHub\\Modelos\\Sesion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:25:24.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegistrarPedido.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\RegistrarPedido.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\RegistrarPedido.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\RegistrarPedido.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:06:38.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VisualizarPedidos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\VisualizarPedidos.cs",
+              "ToolTip": "C:\\Users\\Sara Zambrana\\OneDrive\\Escritorio\\clone\\Proyecto-Final-de-AyDS\\BunBunHub\\BunBunHub\\Formularios\\VisualizarPedidos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Formularios\\VisualizarPedidos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:55:50.245Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
