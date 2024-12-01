@@ -1,0 +1,121 @@
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarRegistro.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarRegistro.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarRegistro.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\safeDeMi\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarRegistro.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\Sara Zambrana\OneDrive\Escritorio\trabajandoEN\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionPedidos.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarPedido.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarPedidos.resources
+C:\Users\Sara Zambrana\OneDrive\Escritorio\clone\Proyecto-Final-de-AyDS\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarUsuarios.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionPedidos.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarPedido.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarPedidos.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarUsuarios.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\ferga\Documents\Clase meto\Dennis\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe.config
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\bin\Debug\BunBunHub.exe
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\bin\Debug\BunBunHub.pdb
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.AssemblyReference.cache
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionPedidos.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionUsuarios.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelAdministrador.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarPedido.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarUsuario.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarPedidos.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.VisualizarUsuarios.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Principal.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Properties.Resources.resources
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.GenerateResource.cache
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.csproj.CoreCompileInputs.cache
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.exe
+C:\Users\denis\Downloads\BunBunHub\BunBunHub\BunBunHub\obj\Debug\BunBunHub.pdb
