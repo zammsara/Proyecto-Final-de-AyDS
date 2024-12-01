@@ -24,7 +24,7 @@ namespace BunBunHub.Formularios
         {
             InitializeComponent();
             listaUsuarios = usuarios; // Cargar lista de usuarios al inicializar
-            listaPedidos = new List<Pedidos>();// Inicializar la lista vacía al cargar el formulario
+            listaPedidos = ManejoArchivos<Pedidos>.CargarDatos(RegistrarPedido.rutaPedidos); // Cargar datos desde el archivo
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -85,12 +85,7 @@ namespace BunBunHub.Formularios
             // Cargar la lista de usuarios
             listaUsuarios = ManejoArchivos<Usuarios>.CargarDatos("usuarios.dat");
             
-            // Mostrar la lista cargada para depuración
-            foreach (var usuario in listaUsuarios)
-            {
-                MessageBox.Show($"Usuario: {usuario.Usuario}, Rol: {usuario.Rol}, Estado: {usuario.Estado}");
-            }
-
+            
             // Verificar que todos los controles tengan información
             ValidarCampos();
 
@@ -107,10 +102,21 @@ namespace BunBunHub.Formularios
                 return;
             }
 
+            // Obtener el ID del pedido desde el TextBox
+            int idPedido = int.Parse(txtID.Text);
+
+            // Validar que el ID no sea duplicado
+            listaPedidos = ManejoArchivos<Pedidos>.CargarDatos(RegistrarPedido.rutaPedidos);
+            if (listaPedidos.Any(p => p.IDPedido == idPedido))
+            {
+                MessageBox.Show("El ID del pedido ya existe. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             // Crear un nuevo pedido
             Pedidos nuevoPedido = new Pedidos
             {
-                IDPedido = int.Parse(txtID.Text),
+                IDPedido = idPedido,
                 FechaCompra = dtpFechaCompra.Value.ToString("yyyy-MM-dd"),
                 UsuarioCliente = txtUsuarioCliente.Text,
                 Estado = cmbEstado.SelectedItem.ToString(),
@@ -122,8 +128,7 @@ namespace BunBunHub.Formularios
 
             };
 
-            //Leer los datos existentes
-            listaPedidos = ManejoArchivos<Pedidos>.CargarDatos(RegistrarPedido.rutaPedidos);
+            
 
             // Agregar nuevo pedido a la lista
             listaPedidos.Add(nuevoPedido);
@@ -132,6 +137,11 @@ namespace BunBunHub.Formularios
             ManejoArchivos<Pedidos>.GuardarDatos(RegistrarPedido.rutaPedidos, listaPedidos);
 
             MessageBox.Show("Pedido registrado correctamente!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Generar un nuevo ID después de agregar el pedido
+            int nuevoID = GenerarNuevoID();
+            txtID.Text = nuevoID.ToString(); // Asignar el nuevo ID al TextBox
+
             LimpiarCampos();
             txtUsuarioCliente.Focus();
         }
@@ -139,20 +149,20 @@ namespace BunBunHub.Formularios
         // Método para generar un nuevo IDPedido
         private int GenerarNuevoID()
         {
-            // Si no hay pedidos, comenzamos en 1
-            if (listaPedidos.Count == 0)
-                return 1;
+            if (listaPedidos == null || listaPedidos.Count == 0)
+            {
+                return 1; // Si no hay pedidos, el primer ID será 1
+            }
 
-            // Encontrar el ID más alto en la lista de pedidos
-            int maxID = listaPedidos.Max(pedido => pedido.IDPedido);
+            // Encuentra el ID más alto existente
+            int idMasAlto = listaPedidos.Max(pedido => pedido.IDPedido);
 
-            // Retornar el siguiente ID
-            return maxID + 1;
+            // Retorna el siguiente ID disponible
+            return idMasAlto + 1;
         }
 
         private void LimpiarCampos()
         {
-            txtID.Clear();
             txtUsuarioCliente.Clear();
             txtDescripcion.Clear();
             txtUsuarioColaborador.Clear();
@@ -208,6 +218,18 @@ namespace BunBunHub.Formularios
             GestionPedidos GestionPedidosForm = new GestionPedidos();
             GestionPedidosForm.Show();
             this.Hide();
+        }
+
+        private void btnVisualizarPedidos_Click(object sender, EventArgs e)
+        {
+            VisualizarPedidos VisualizarPedidosForm = new VisualizarPedidos(listaPedidos);
+            VisualizarPedidosForm.Show();
+            this.Hide();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

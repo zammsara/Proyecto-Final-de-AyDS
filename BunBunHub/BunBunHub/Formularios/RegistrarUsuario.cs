@@ -17,8 +17,7 @@ namespace BunBunHub.Formularios
 {
     public partial class RegistrarUsuario : Form
     {
-        //public static string rutaUsuarios = "usuarios.dat";
-        //public static string rutaClientes = "clientes.dat";
+
         public static string nuevarutaUsuarios = "usuario.dat";
         public static string nuevarutaClientes = "cliente.dat";
 
@@ -109,9 +108,26 @@ namespace BunBunHub.Formularios
             else
             {
                 // Si no hay datos, solo volver sin mostrar mensaje
-                PanelAdministrador panelAdministrador = new PanelAdministrador();
-                panelAdministrador.Show();
-                this.Hide();
+
+                // Verificar el rol del usuario actual almacenado en la clase Sesion
+                string rolUsuario = Sesion.UsuarioSesion.RolUsuario;
+
+                // Comprobar el rol y mostrar el formulario adecuado
+                if (rolUsuario == "Administrador")
+                {
+                    // Si el rol es "Administrador", abrir el panel de administrador
+                    PanelAdministrador panelAdministrador = new PanelAdministrador();
+                    panelAdministrador.Show();
+                }
+                else if (rolUsuario == "Colaborador")
+                {
+                    // Si el rol es "Colaborador", abrir el panel de colaborador
+                    PanelColaborador panelColaborador = new PanelColaborador();
+                    panelColaborador.Show();
+                }
+
+                // Cerrar el formulario actual de GestionPedido
+                this.Close();
             }
         }
 

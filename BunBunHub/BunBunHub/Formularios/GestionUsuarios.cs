@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BunBunHub.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,9 +35,25 @@ namespace BunBunHub.Formularios
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            PanelAdministrador panelAdministrador = new PanelAdministrador();
-            panelAdministrador.Show();
-            this.Hide();
+            // Verificar el rol del usuario actual almacenado en la clase Sesion
+            string rolUsuario = Sesion.UsuarioSesion.RolUsuario;
+
+            // Comprobar el rol y mostrar el formulario adecuado
+            if (rolUsuario == "Administrador")
+            {
+                // Si el rol es "Administrador", abrir el panel de administrador
+                PanelAdministrador panelAdministrador = new PanelAdministrador();
+                panelAdministrador.Show();
+            }
+            else if (rolUsuario == "Colaborador")
+            {
+                // Si el rol es "Colaborador", abrir el panel de colaborador
+                PanelColaborador panelColaborador = new PanelColaborador();
+                panelColaborador.Show();
+            }
+
+            // Cerrar el formulario actual de GestionUsuarios
+            this.Close();
         }
 
         private void btnActualizarRegistro_Click(object sender, EventArgs e)

@@ -69,6 +69,7 @@
             this.btnLimpiar.TabIndex = 136;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnVisualizarPedidos
             // 
@@ -79,6 +80,7 @@
             this.btnVisualizarPedidos.TabIndex = 135;
             this.btnVisualizarPedidos.Text = "Visualizar pedidos";
             this.btnVisualizarPedidos.UseVisualStyleBackColor = true;
+            this.btnVisualizarPedidos.Click += new System.EventHandler(this.btnVisualizarPedidos_Click);
             // 
             // btnGuardar
             // 

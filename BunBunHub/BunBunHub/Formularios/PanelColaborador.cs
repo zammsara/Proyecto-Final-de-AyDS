@@ -44,5 +44,12 @@ namespace BunBunHub.Formularios
             GestionPedidosForm.Show();
             this.Hide();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            GestionUsuarios GestionUsuariosForm = new GestionUsuarios();
+            GestionUsuariosForm.Show();
+            this.Hide();
+        }
     }
 }

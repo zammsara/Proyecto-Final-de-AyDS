@@ -36,6 +36,7 @@
             this.lblColaborador = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.picPerfil = new System.Windows.Forms.PictureBox();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             this.btnPedidosCo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPedidosCo.FlatAppearance.BorderSize = 0;
             this.btnPedidosCo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedidosCo.Location = new System.Drawing.Point(223, 254);
+            this.btnPedidosCo.Location = new System.Drawing.Point(394, 253);
             this.btnPedidosCo.Name = "btnPedidosCo";
             this.btnPedidosCo.Size = new System.Drawing.Size(153, 199);
             this.btnPedidosCo.TabIndex = 122;
@@ -142,6 +143,20 @@
             this.picPerfil.TabIndex = 125;
             this.picPerfil.TabStop = false;
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.BackgroundImage = global::BunBunHub.Properties.Resources.BtnGestionUsuarios;
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Location = new System.Drawing.Point(211, 253);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(153, 199);
+            this.btnUsuarios.TabIndex = 128;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
             // PanelColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +164,7 @@
             this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoPanelAdministrador;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(810, 518);
+            this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.lblColaborador);
             this.Controls.Add(this.lblNombreUsuario);
             this.Controls.Add(this.picPerfil);
@@ -179,5 +195,6 @@
         private System.Windows.Forms.Label lblColaborador;
         private System.Windows.Forms.Label lblNombreUsuario;
         private System.Windows.Forms.PictureBox picPerfil;
+        private System.Windows.Forms.Button btnUsuarios;
     }
 }

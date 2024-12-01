@@ -1,4 +1,5 @@
 ﻿using BunBunHub.Dao;
+using BunBunHub.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,30 +33,62 @@ namespace BunBunHub.Formularios
 
         private void tlsVolverBtn_Click(object sender, EventArgs e)
         {
-            RegistrarUsuario registroUsuario = new RegistrarUsuario();
-            registroUsuario.Show();
+            GestionUsuarios GestionUsuariosForm = new GestionUsuarios();
+            GestionUsuariosForm.Show();
             this.Hide();
         }
 
         private void tlsHomeBtn_Click(object sender, EventArgs e)
         {
-            PanelAdministrador panelAdministrador = new PanelAdministrador();
-            panelAdministrador.Show();
-            this.Hide();
+            // Verificar el rol del usuario actual almacenado en la clase Sesion
+            string rolUsuario = Sesion.UsuarioSesion.RolUsuario;
+
+            // Comprobar el rol y mostrar el formulario adecuado
+            if (rolUsuario == "Administrador")
+            {
+                // Si el rol es "Administrador", abrir el panel de administrador
+                PanelAdministrador panelAdministrador = new PanelAdministrador();
+                panelAdministrador.Show();
+            }
+            else if (rolUsuario == "Colaborador")
+            {
+                // Si el rol es "Colaborador", abrir el panel de colaborador
+                PanelColaborador panelColaborador = new PanelColaborador();
+                panelColaborador.Show();
+            }
+
+            // Cerrar el formulario actual de GestionPedido
+            this.Close();
         }
 
         private void tlsbtnVolver_Click(object sender, EventArgs e)
         {
-            RegistrarUsuario registroUsuario = new RegistrarUsuario();
-            registroUsuario.Show();
+            GestionUsuarios GestionUsuariosForm = new GestionUsuarios();
+            GestionUsuariosForm.Show();
             this.Hide();
         }
 
         private void tlsbtnHome_Click(object sender, EventArgs e)
         {
-            PanelAdministrador panelAdministrador = new PanelAdministrador();
-            panelAdministrador.Show();
-            this.Hide();
+            // Verificar el rol del usuario actual almacenado en la clase Sesion
+            string rolUsuario = Sesion.UsuarioSesion.RolUsuario;
+
+            // Comprobar el rol y mostrar el formulario adecuado
+            if (rolUsuario == "Administrador")
+            {
+                // Si el rol es "Administrador", abrir el panel de administrador
+                PanelAdministrador panelAdministrador = new PanelAdministrador();
+                panelAdministrador.Show();
+            }
+            else if (rolUsuario == "Colaborador")
+            {
+                // Si el rol es "Colaborador", abrir el panel de colaborador
+                PanelColaborador panelColaborador = new PanelColaborador();
+                panelColaborador.Show();
+            }
+
+            // Cerrar el formulario actual de GestionPedido
+            this.Close();
         }
 
         // Leer los datos de los archivos de usuarios y clientes
@@ -196,6 +229,7 @@ namespace BunBunHub.Formularios
                 return;
             }
 
+            // Validar que se haya seleccionado una opción de los ComboBoxes
             if (cmbEditarRol.SelectedItem == null)
             {
                 MessageBox.Show("Por favor, seleccione un rol antes de guardar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -266,8 +300,9 @@ namespace BunBunHub.Formularios
             }
         }
 
-    // Guardar cambios relizados en la lista de clientes
-    private void btnGuardarCambiosC_Click(object sender, EventArgs e)
+    
+        // Guardar cambios relizados en la lista de clientes
+        private void btnGuardarCambiosC_Click(object sender, EventArgs e)
         {
             // Validar que haya seleccionado una opción
             if (cmbEditarEstadoCliente.SelectedItem == null)
@@ -375,58 +410,6 @@ namespace BunBunHub.Formularios
             }
         }
 
-        private void dgvUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Verificar que el índice de fila sea válido
-            if (e.RowIndex >= 0 && e.RowIndex < dgvUsuarios.Rows.Count)
-            {
-                // Obtener la fila seleccionada
-                DataGridViewRow filaSeleccionada = dgvUsuarios.Rows[e.RowIndex];
-
-                // Verificar que no haya celdas nulas antes de asignar valores
-                if (filaSeleccionada.Cells["Usuario"].Value != null &&
-                    filaSeleccionada.Cells["Contraseña"].Value != null &&
-                    filaSeleccionada.Cells["Rol"].Value != null &&
-                    filaSeleccionada.Cells["Estado"].Value != null)
-                {
-                    // Asignar valores a los TextBoxes y ComboBoxes
-                    txtEditarUsuario.Text = filaSeleccionada.Cells["Usuario"].Value.ToString();
-                    txtEditarContraseña.Text = filaSeleccionada.Cells["Contraseña"].Value.ToString();
-
-                    // Verificar si el valor existe en el ComboBox antes de seleccionarlo
-                    string rol = filaSeleccionada.Cells["Rol"].Value.ToString();
-                    if (cmbEditarRol.Items.Contains(rol))
-                    {
-                        cmbEditarRol.SelectedItem = rol;
-                    }
-                    else
-                    {
-                        cmbEditarRol.SelectedIndex = -1; // Sin selección si el valor no es válido
-                    }
-
-                    string estado = filaSeleccionada.Cells["Estado"].Value.ToString();
-                    if (cmbEditarEstado.Items.Contains(estado))
-                    {
-                        cmbEditarEstado.SelectedItem = estado;
-                    }
-                    else
-                    {
-                        cmbEditarEstado.SelectedIndex = -1; // Sin selección si el valor no es válido
-                    }
-
-                    // Marcar la fila como seleccionada explícitamente
-                    dgvUsuarios.Rows[e.RowIndex].Selected = true;
-                }
-                else
-                {
-                    MessageBox.Show("La fila seleccionada contiene datos nulos o inválidos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Seleccione una fila válida.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private void btnEditarUusarios_Click(object sender, EventArgs e)
         {
@@ -434,20 +417,6 @@ namespace BunBunHub.Formularios
                 // Verificar si hay una fila seleccionada en el DataGridView
                 if (dgvUsuario.SelectedRows.Count > 0)
                 {
-                    // Obtener el índice del usuario seleccionado
-                    int usuarioSeleccionado = dgvUsuario.SelectedRows[0].Index;
-
-                    // Obtener el usuario desde la lista
-                    Usuarios usuario = ListaUsuarios[usuarioSeleccionado];
-
-                    // Cargar los datos en los controles
-                    txtEditarUsuario.Text = usuario.Usuario;
-                    txtEditarContraseña.Text = usuario.Contraseña;
-                    txtConfirmarContraseña.Text = usuario.Contraseña;
-
-                    cmbEditarRol.SelectedItem = usuario.Rol;
-                    cmbEditarEstado.SelectedItem = usuario.Estado;
-
                     // Activar el GroupBox para edición
                     grpCredenciales.Enabled = true;
                 }
