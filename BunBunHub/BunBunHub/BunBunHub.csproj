@@ -62,6 +62,12 @@
     <Compile Include="Formularios\ActualizarRegistro.Designer.cs">
       <DependentUpon>ActualizarRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\GenerarInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GenerarInformes.Designer.cs">
+      <DependentUpon>GenerarInformes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\GestionPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ActualizarRegistro.resx">
       <DependentUpon>ActualizarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GenerarInformes.resx">
+      <DependentUpon>GenerarInformes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionPedidos.resx">
       <DependentUpon>GestionPedidos.cs</DependentUpon>
@@ -274,6 +283,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondoActualizarPedidos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoGenerarInformes.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

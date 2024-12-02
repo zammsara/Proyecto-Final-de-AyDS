@@ -50,5 +50,12 @@ namespace BunBunHub.Formularios
             GestionPedidosForm.Show();
             this.Hide();
         }
+
+        private void btnFinanzas_Click(object sender, EventArgs e)
+        {
+            GenerarInformes generarInformes = new GenerarInformes();
+            generarInformes.Show();
+            this.Hide();
+        }
     }
 }

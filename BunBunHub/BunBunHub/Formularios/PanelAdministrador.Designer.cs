@@ -59,6 +59,7 @@
             this.btnFinanzas.Size = new System.Drawing.Size(204, 245);
             this.btnFinanzas.TabIndex = 112;
             this.btnFinanzas.UseVisualStyleBackColor = false;
+            this.btnFinanzas.Click += new System.EventHandler(this.btnFinanzas_Click);
             // 
             // btnPedidos
             // 

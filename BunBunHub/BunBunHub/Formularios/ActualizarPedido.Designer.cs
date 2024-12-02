@@ -39,6 +39,8 @@
             this.btnCancelarCambiosPedido = new System.Windows.Forms.Button();
             this.btnGuardarCambiosPedido = new System.Windows.Forms.Button();
             this.grpDetallesPedidoEditar = new System.Windows.Forms.GroupBox();
+            this.lblColaboradorValidacion = new System.Windows.Forms.Label();
+            this.txtUsuarioClienteEditar = new System.Windows.Forms.TextBox();
             this.lblValidarColaborador = new System.Windows.Forms.Label();
             this.cmbEstadoEditar = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,9 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDPedidoEditar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUsuarioClienteEditar = new System.Windows.Forms.TextBox();
             this.btnEditarPedido = new System.Windows.Forms.Button();
-            this.lblColaboradorValidacion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpHistorialPedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -246,6 +246,28 @@
             this.grpDetallesPedidoEditar.TabIndex = 135;
             this.grpDetallesPedidoEditar.TabStop = false;
             this.grpDetallesPedidoEditar.Text = "Editar detalles del Pedido";
+            // 
+            // lblColaboradorValidacion
+            // 
+            this.lblColaboradorValidacion.AutoSize = true;
+            this.lblColaboradorValidacion.BackColor = System.Drawing.Color.Transparent;
+            this.lblColaboradorValidacion.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColaboradorValidacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblColaboradorValidacion.Location = new System.Drawing.Point(22, 119);
+            this.lblColaboradorValidacion.Name = "lblColaboradorValidacion";
+            this.lblColaboradorValidacion.Size = new System.Drawing.Size(0, 15);
+            this.lblColaboradorValidacion.TabIndex = 150;
+            // 
+            // txtUsuarioClienteEditar
+            // 
+            this.txtUsuarioClienteEditar.Enabled = false;
+            this.txtUsuarioClienteEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioClienteEditar.Location = new System.Drawing.Point(148, 59);
+            this.txtUsuarioClienteEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuarioClienteEditar.Name = "txtUsuarioClienteEditar";
+            this.txtUsuarioClienteEditar.ReadOnly = true;
+            this.txtUsuarioClienteEditar.Size = new System.Drawing.Size(140, 26);
+            this.txtUsuarioClienteEditar.TabIndex = 149;
             // 
             // lblValidarColaborador
             // 
@@ -449,17 +471,6 @@
             this.label1.TabIndex = 128;
             this.label1.Text = "ID:";
             // 
-            // txtUsuarioClienteEditar
-            // 
-            this.txtUsuarioClienteEditar.Enabled = false;
-            this.txtUsuarioClienteEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuarioClienteEditar.Location = new System.Drawing.Point(148, 59);
-            this.txtUsuarioClienteEditar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUsuarioClienteEditar.Name = "txtUsuarioClienteEditar";
-            this.txtUsuarioClienteEditar.ReadOnly = true;
-            this.txtUsuarioClienteEditar.Size = new System.Drawing.Size(140, 26);
-            this.txtUsuarioClienteEditar.TabIndex = 149;
-            // 
             // btnEditarPedido
             // 
             this.btnEditarPedido.AutoSize = true;
@@ -477,17 +488,6 @@
             this.btnEditarPedido.Text = "Editar Pedido";
             this.btnEditarPedido.UseVisualStyleBackColor = false;
             this.btnEditarPedido.Click += new System.EventHandler(this.btnEditarPedido_Click);
-            // 
-            // lblColaboradorValidacion
-            // 
-            this.lblColaboradorValidacion.AutoSize = true;
-            this.lblColaboradorValidacion.BackColor = System.Drawing.Color.Transparent;
-            this.lblColaboradorValidacion.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColaboradorValidacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblColaboradorValidacion.Location = new System.Drawing.Point(22, 119);
-            this.lblColaboradorValidacion.Name = "lblColaboradorValidacion";
-            this.lblColaboradorValidacion.Size = new System.Drawing.Size(0, 15);
-            this.lblColaboradorValidacion.TabIndex = 150;
             // 
             // ActualizarPedido
             // 

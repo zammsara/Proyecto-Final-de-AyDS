@@ -124,6 +124,9 @@
   <data name="btnCerrarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnCerrarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnActualizarPedido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnActualizarPedido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnInforme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnInforme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,9 +138,6 @@
   </data>
   <data name="FondoTeal_Encabezado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FondoTeal_Encabezado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BtnPaginaWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BtnPaginaWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exportar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exportar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +181,9 @@
   <data name="Actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FondoRegistrarUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoRegistrarUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BtnGestionUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnGestionUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,11 +196,11 @@
   <data name="HomeAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondoActualizarPedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoActualizarPedidos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CerrarSistemaAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CerrarSistemaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnPerfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnInstagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnInstagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,13 +217,13 @@
   <data name="CerrarSistemaCeleste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CerrarSistemaCeleste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnActualizarPedido" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnActualizarPedido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnPaginaWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnPaginaWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoRegistrarUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoRegistrarUsuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPerfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoActualizarPedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoActualizarPedidos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondoGenerarInformes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoGenerarInformes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
