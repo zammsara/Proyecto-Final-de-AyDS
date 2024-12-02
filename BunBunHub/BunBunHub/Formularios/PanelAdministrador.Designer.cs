@@ -33,7 +33,6 @@
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.btnPerfil = new System.Windows.Forms.Button();
             this.btnPublicidad = new System.Windows.Forms.Button();
             this.lblAdministrador = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
@@ -74,6 +73,7 @@
             this.btnPedidos.Size = new System.Drawing.Size(204, 245);
             this.btnPedidos.TabIndex = 110;
             this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // btnUsuarios
             // 
@@ -98,7 +98,7 @@
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnInformes.Location = new System.Drawing.Point(20, 290);
+            this.btnInformes.Location = new System.Drawing.Point(20, 219);
             this.btnInformes.Margin = new System.Windows.Forms.Padding(4);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(168, 41);
@@ -121,21 +121,6 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
-            // btnPerfil
-            // 
-            this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.BackgroundImage = global::BunBunHub.Properties.Resources.btnPerfil;
-            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPerfil.Location = new System.Drawing.Point(20, 192);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(168, 41);
-            this.btnPerfil.TabIndex = 107;
-            this.btnPerfil.UseVisualStyleBackColor = false;
-            // 
             // btnPublicidad
             // 
             this.btnPublicidad.BackColor = System.Drawing.Color.Transparent;
@@ -144,7 +129,7 @@
             this.btnPublicidad.FlatAppearance.BorderSize = 0;
             this.btnPublicidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublicidad.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPublicidad.Location = new System.Drawing.Point(20, 241);
+            this.btnPublicidad.Location = new System.Drawing.Point(20, 170);
             this.btnPublicidad.Margin = new System.Windows.Forms.Padding(4);
             this.btnPublicidad.Name = "btnPublicidad";
             this.btnPublicidad.Size = new System.Drawing.Size(168, 41);
@@ -157,7 +142,7 @@
             this.lblAdministrador.BackColor = System.Drawing.Color.Transparent;
             this.lblAdministrador.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministrador.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblAdministrador.Location = new System.Drawing.Point(78, 130);
+            this.lblAdministrador.Location = new System.Drawing.Point(78, 128);
             this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(118, 23);
@@ -170,7 +155,7 @@
             this.lblNombreUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreUsuario.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(79, 111);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(79, 109);
             this.lblNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
             this.lblNombreUsuario.Size = new System.Drawing.Size(54, 17);
@@ -270,7 +255,6 @@
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnInformes);
             this.Controls.Add(this.btnCerrarSesion);
-            this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnPublicidad);
             this.Controls.Add(this.lblAdministrador);
             this.Controls.Add(this.lblNombreUsuario);
@@ -297,7 +281,6 @@
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnPublicidad;
         private System.Windows.Forms.Label lblAdministrador;
         private System.Windows.Forms.Label lblNombreUsuario;

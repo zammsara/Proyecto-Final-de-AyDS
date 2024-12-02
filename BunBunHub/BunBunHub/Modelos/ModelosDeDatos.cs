@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BunBunHub.Modelos
 {
-    internal class ModelosDeDatos
+    public class ModelosDeDatos
     {
         public class Usuarios
         {
@@ -44,6 +44,38 @@ namespace BunBunHub.Modelos
                 Edad = edad;
                 Correo = correo;
                 Telefono = telefono;
+                Estado = estado;
+            }
+        }
+
+        public static class UsuarioSesion
+        {
+            public static string NombreUsuario { get; set; }
+            public static string RolUsuario { get; set; }
+        }
+
+        public class Pedido
+        {
+            public string ID_Pedido { get; set; } // Número de orden
+            public string Usuario { get; set; } // Cliente
+            public string Colaborador { get; set; } // Colaborador asignado al pedido
+            public DateTime Fecha_Compra { get; set; }
+            public decimal Monto_Total { get; set; }
+            public decimal Monto_Material { get; set; }
+            public string Punto_Entrega { get; set; }
+            public string Descripción { get; set; }
+            public string Estado { get; set; } // [Recibido] [En Proceso] [Listo para Entrega] [Completado] [Cancelado]
+
+            public Pedido (string iDPedido, string usuarioCliente, string usuarioColaborador, DateTime fechaCompra, decimal costoCompra, decimal costoMaterial, string puntoEntrega, string descripcion, string estado)
+            {
+                ID_Pedido = iDPedido;
+                Usuario = usuarioCliente;
+                Colaborador = usuarioColaborador;
+                Fecha_Compra = fechaCompra;
+                Monto_Total = costoCompra;
+                Monto_Material = costoMaterial;
+                Punto_Entrega = puntoEntrega;
+                Descripción = descripcion;
                 Estado = estado;
             }
         }

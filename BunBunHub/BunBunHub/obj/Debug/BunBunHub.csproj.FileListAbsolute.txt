@@ -14,3 +14,6 @@ C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Princip
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarRegistro.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelCliente.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.PanelColaborador.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionPedidos.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarPedido.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarPedido.resources

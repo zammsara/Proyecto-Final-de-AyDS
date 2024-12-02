@@ -30,7 +30,7 @@
         {
             this.btnCerrarSistema = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnActualizarRegistro = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.lblPaneldeControl = new System.Windows.Forms.Label();
             this.lblBunBunHub = new System.Windows.Forms.Label();
@@ -68,19 +68,20 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // button1
+            // btnActualizarRegistro
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::BunBunHub.Properties.Resources.BtnActualizarRegistros;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(565, 134);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(364, 435);
-            this.button1.TabIndex = 112;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnActualizarRegistro.BackColor = System.Drawing.Color.Transparent;
+            this.btnActualizarRegistro.BackgroundImage = global::BunBunHub.Properties.Resources.BtnActualizarRegistros;
+            this.btnActualizarRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnActualizarRegistro.FlatAppearance.BorderSize = 0;
+            this.btnActualizarRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarRegistro.Location = new System.Drawing.Point(565, 134);
+            this.btnActualizarRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarRegistro.Name = "btnActualizarRegistro";
+            this.btnActualizarRegistro.Size = new System.Drawing.Size(364, 435);
+            this.btnActualizarRegistro.TabIndex = 112;
+            this.btnActualizarRegistro.UseVisualStyleBackColor = false;
+            this.btnActualizarRegistro.Click += new System.EventHandler(this.btnActualizarRegistro_Click);
             // 
             // btnUsuarios
             // 
@@ -109,6 +110,7 @@
             this.lblPaneldeControl.Size = new System.Drawing.Size(248, 35);
             this.lblPaneldeControl.TabIndex = 110;
             this.lblPaneldeControl.Text = "Gestión de Usuarios";
+            this.lblPaneldeControl.Click += new System.EventHandler(this.lblPaneldeControl_Click);
             // 
             // lblBunBunHub
             // 
@@ -122,6 +124,7 @@
             this.lblBunBunHub.Size = new System.Drawing.Size(137, 29);
             this.lblBunBunHub.TabIndex = 109;
             this.lblBunBunHub.Text = "BunBunHub";
+            this.lblBunBunHub.Click += new System.EventHandler(this.lblBunBunHub_Click);
             // 
             // picLogo
             // 
@@ -135,6 +138,7 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 108;
             this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // GestionUsuarios
             // 
@@ -144,7 +148,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnActualizarRegistro);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.lblPaneldeControl);
             this.Controls.Add(this.lblBunBunHub);
@@ -166,7 +170,7 @@
 
         private System.Windows.Forms.Button btnCerrarSistema;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnActualizarRegistro;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Label lblPaneldeControl;
         private System.Windows.Forms.Label lblBunBunHub;

@@ -1,4 +1,6 @@
-﻿using BunBunHub.Formularios;
+﻿using BunBunHub.Dao;
+using BunBunHub.Formularios;
+using BunBunHub.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BunBunHub.Modelos.ModelosDeDatos;
 
 namespace BunBunHub
 {
@@ -26,61 +29,56 @@ namespace BunBunHub
             Application.Exit();
         }
 
+        // Evento del botón Iniciar sesión
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+
+            // Verificar que los campos no estén vacíos
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtContrasena.Text))
+            {
+                MessageBox.Show("Por favor, complete ambos campos: nombre de usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string usuarioIngresado = txtUsuario.Text;
             string contrasenaIngresada = txtContrasena.Text;
 
-            bool credencialesValidas = false;
-            string rol = "";
-            string estado = "";
-
-            // Comprobar si el archivo de usuarios existe
-            if (!File.Exists(RegistrarUsuario.rutaUsuarios))
+            // Verificar si el archivo existe antes de intentar cargarlo
+            if (!File.Exists("usuario.dat")) // Cambia aquí si necesitas otra ruta
             {
                 MessageBox.Show("El archivo de usuarios no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            using (FileStream archivo = new FileStream(RegistrarUsuario.rutaUsuarios, FileMode.Open, FileAccess.Read))
-            using (BinaryReader lector = new BinaryReader(archivo, Encoding.UTF8))
-            {
-                while (archivo.Position < archivo.Length)
-                {
-                    string usuario = lector.ReadString();
-                    string contrasena = lector.ReadString();
-                    string rolUsuario = lector.ReadString();
-                    string estadoUsuario = lector.ReadString();
+            // Cargar la lista de usuarios desde el archivo
+            GestionDeArchivos gestionArchivos = new GestionDeArchivos();
+            List<Usuarios> listaUsuarios = gestionArchivos.CargarUsuarios("usuario.dat"); // Aquí usamos la carga sin filtrar por rol
 
-                    // Verificar si las credenciales coinciden
-                    if (usuario == usuarioIngresado && contrasena == contrasenaIngresada && estadoUsuario == "Activo")
-                    {
-                        credencialesValidas = true;
-                        rol = rolUsuario;  // Almacenar el rol
-                        estado = estadoUsuario;  // Almacenar el estado
-                        break;
-                    }
-                }
-            }
+            // Buscar al usuario con las credenciales ingresadas
+            Usuarios usuarioEncontrado = listaUsuarios.FirstOrDefault(u => u.Usuario == usuarioIngresado && u.Contraseña == contrasenaIngresada && u.Estado == "Activo");
 
-            if (credencialesValidas)
+            if (usuarioEncontrado != null)
             {
-                // Si las credenciales son válidas y el estado es "Activo", proceder según el rol
-                switch (rol)
+                // Almacenar los datos del usuario en la clase estática
+                UsuarioSesion.NombreUsuario = usuarioEncontrado.Usuario;
+                UsuarioSesion.RolUsuario = usuarioEncontrado.Rol;
+
+                // Proceder según el rol del usuario encontrado
+                switch (usuarioEncontrado.Rol)
                 {
-                    case "Administrador": // Administrador
+                    case "Administrador":
                         PanelAdministrador administradorPanel = new PanelAdministrador();
                         administradorPanel.Show();
                         this.Hide();
                         break;
 
-                    case "Colaborador": // Colaborador
+                    case "Colaborador":
                         PanelColaborador colaboradorPanel = new PanelColaborador();
                         colaboradorPanel.Show();
                         this.Hide();
                         break;
 
-                    case "Cliente": // Cliente
+                    case "Cliente":
                         PanelCliente clientePanel = new PanelCliente();
                         clientePanel.Show();
                         this.Hide();
@@ -93,9 +91,13 @@ namespace BunBunHub
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Credenciales incorrectas. Verifique e intente de nuevo.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsuario.Clear();
+                txtContrasena.Text = "●●●●●●●●●●";
+                txtUsuario.Focus();
             }
         }
+
 
         private void btnPaginaWeb_Click(object sender, EventArgs e)
         {
