@@ -249,6 +249,7 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbEstado.ForeColor = System.Drawing.Color.Black;
             this.cmbEstado.FormattingEnabled = true;
@@ -559,6 +560,7 @@
             // 
             // cmbEditarEstadoCliente
             // 
+            this.cmbEditarEstadoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEditarEstadoCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbEditarEstadoCliente.ForeColor = System.Drawing.Color.Black;
             this.cmbEditarEstadoCliente.FormattingEnabled = true;

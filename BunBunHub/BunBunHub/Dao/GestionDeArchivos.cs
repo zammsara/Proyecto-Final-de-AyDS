@@ -11,9 +11,9 @@ namespace BunBunHub.Dao
 {
     internal class GestionDeArchivos
     {
-        public static void GuardarUsuarios(List<Usuarios> listaUsuarios, string rutaUsuarios) 
+        public static void GuardarUsuarios(List<Usuarios> listaUsuarios, string rutaUsuarios)
         {
-            using (FileStream archivoUsuario = new FileStream (rutaUsuarios, FileMode.Create, FileAccess.Write))
+            using (FileStream archivoUsuario = new FileStream(rutaUsuarios, FileMode.Create, FileAccess.Write))
             {
                 using (BinaryWriter escritor = new BinaryWriter(archivoUsuario))
                 {
@@ -61,7 +61,7 @@ namespace BunBunHub.Dao
 
         public List<Usuarios> CargarUsuarios(string rutaUsuarios)
         {
-            List <Usuarios> usuarios = new List<Usuarios>();
+            List<Usuarios> usuarios = new List<Usuarios>();
             if (!File.Exists(rutaUsuarios)) // Verificar si el archivo existe
             {
                 return usuarios; // Si no existe el archivo, retornamos la lista vacía
@@ -118,38 +118,24 @@ namespace BunBunHub.Dao
                     {
                         while (archivoClientes.Position != archivoClientes.Length)
                         {
-                            // Leer el campo Usuario
+                            // Leer el campos
                             int tamaño = lector.ReadInt32();
                             char[] UsuarioArray = lector.ReadChars(tamaño);
                             string usuario = new string(UsuarioArray);
-
-                            // Leer el campo Contraseña
                             tamaño = lector.ReadInt32();
                             char[] ContraseñaArray = lector.ReadChars(tamaño);
                             string contraseña = new string(ContraseñaArray);
-
-                            // Leer el campo Nombre
                             tamaño = lector.ReadInt32();
                             char[] NombreArray = lector.ReadChars(tamaño);
                             string nombre = new string(NombreArray);
-
-                            // Leer el campo Apellido
                             tamaño = lector.ReadInt32();
                             char[] ApellidoArray = lector.ReadChars(tamaño);
                             string apellido = new string(ApellidoArray);
-
-                            // Leer el campo Edad (entero)
                             int edad = lector.ReadInt32();
-
-                            // Leer el campo Correo
                             tamaño = lector.ReadInt32();
                             char[] CorreoArray = lector.ReadChars(tamaño);
                             string correo = new string(CorreoArray);
-
-                            // Leer el campo Teléfono (entero)
                             int telefono = lector.ReadInt32();
-
-                            // Leer el campo Estado
                             tamaño = lector.ReadInt32();
                             char[] EstadoArray = lector.ReadChars(tamaño);
                             string estado = new string(EstadoArray);
@@ -177,6 +163,7 @@ namespace BunBunHub.Dao
                 {
                     foreach (Pedido pedido in listaPedidos)
                     {
+                        // Escribir los campos de la clase Pedido
                         escritor.Write(pedido.ID_Pedido.Length);
                         escritor.Write(pedido.ID_Pedido.ToCharArray());
                         escritor.Write(pedido.Usuario.Length);
@@ -213,41 +200,25 @@ namespace BunBunHub.Dao
                     {
                         while (archivoPedidos.Position != archivoPedidos.Length)
                         {
-                            // Leer el campo ID
+                            // Leer el campos
                             int tamaño = lector.ReadInt32();
                             char[] IDArray = lector.ReadChars(tamaño);
                             string idPedido = new string(IDArray);
-
-                            // Leer el campo UsuarioCliente
                             tamaño = lector.ReadInt32();
                             char[] UsuarioClienteArray = lector.ReadChars(tamaño);
                             string usuarioCliente = new string(UsuarioClienteArray);
-
-                            // Leer el campo UsuarioColaborador
                             tamaño = lector.ReadInt32();
                             char[] UsuarioColaboradorArray = lector.ReadChars(tamaño);
                             string usuarioColaborador = new string(UsuarioColaboradorArray);
-
-                            // Leer el campo FechaCompra
                             DateTime fechaCompra = DateTime.Parse(lector.ReadString());
-
-                            // Leer el campo CostoCompra
                             decimal costoCompra = lector.ReadDecimal();
-
-                            // Leer el campo CostoMaterial
                             decimal costoMaterial = lector.ReadDecimal();
-
-                            // Leer el campo PuntoEntrega
                             tamaño = lector.ReadInt32();
                             char[] PuntoEntregaArray = lector.ReadChars(tamaño);
                             string puntoEntrega = new string(PuntoEntregaArray);
-
-                            // Leer el campo Descripcion
                             tamaño = lector.ReadInt32();
                             char[] DescripcionArray = lector.ReadChars(tamaño);
                             string descripcion = new string(DescripcionArray);
-
-                            // Leer el campo Estado
                             tamaño = lector.ReadInt32();
                             char[] EstadoArray = lector.ReadChars(tamaño);
                             string estado = new string(EstadoArray);
@@ -266,5 +237,78 @@ namespace BunBunHub.Dao
             return pedidos;
         }
 
+        public static void GuardarInforme(List<Informe> listaInforme, string rutaInforme)
+        {
+            using (FileStream archivoInformes = new FileStream(rutaInforme, FileMode.Create, FileAccess.Write))
+            {
+                using (BinaryWriter escritor = new BinaryWriter(archivoInformes))
+                {
+                    foreach (Informe informe in listaInforme)
+                    {
+                        // Escribir los campos de la clase Informe
+                        escritor.Write(informe.Fecha_Inicio.ToString()); // Convertir a string para escribir
+                        escritor.Write(informe.Fecha_Final.ToString()); // Convertir a string para escribir
+                        escritor.Write(informe.Total_Pedidos);
+                        escritor.Write(informe.Completados);
+                        escritor.Write(informe.Total_Completados);
+                        escritor.Write(informe.Cancelados);
+                        escritor.Write(informe.Total_Cancelados);
+                        escritor.Write(informe.Procesando);
+                        escritor.Write(informe.Total_Procesando);
+                        escritor.Write(informe.Ingresos);
+                        escritor.Write(informe.Egresos);
+                        escritor.Write(informe.Ganancias);
+                        escritor.Write(informe.Rentabilidad.Length);
+                        escritor.Write(informe.Rentabilidad.ToCharArray());
+                    }
+                }
+            }
+        }
+
+        public List<Informe> CargarInforme(string rutaInforme)
+        {
+            List<Informe> informes = new List<Informe>();
+            if (!File.Exists(rutaInforme)) // Verificar si el archivo existe
+            {
+                return informes; // Si no existe el archivo, retornamos la lista vacía
+            }
+            using (FileStream archivoInformes = new FileStream(rutaInforme, FileMode.Open, FileAccess.Read))
+            {
+                using (BinaryReader lector = new BinaryReader(archivoInformes))
+                {
+                    try
+                    {
+                        while (archivoInformes.Position != archivoInformes.Length)
+                        {
+                            // Leer el campos
+                            DateTime fechaInicio = DateTime.Parse(lector.ReadString());
+                            DateTime fechaFinal = DateTime.Parse(lector.ReadString());
+                            int totalPedidos = lector.ReadInt32();
+                            int completados = lector.ReadInt32();
+                            decimal totalCompletados = lector.ReadDecimal();
+                            int cancelados = lector.ReadInt32();
+                            decimal totalCancelados = lector.ReadDecimal();
+                            int procesando = lector.ReadInt32();
+                            decimal totalProcesando = lector.ReadDecimal();
+                            decimal ingresos = lector.ReadDecimal();
+                            decimal egresos = lector.ReadDecimal();
+                            decimal ganancias = lector.ReadDecimal();
+                            int tamaño = lector.ReadInt32();
+                            char[] rentabilidadArray = lector.ReadChars(tamaño);
+                            string rentabilidad = new string(rentabilidadArray);
+
+                            // Crear el objeto Informe y añadirlo a la lista
+                            Informe informe = new Informe(fechaInicio, fechaFinal, totalPedidos, completados, totalCompletados, cancelados, totalCancelados, procesando, totalProcesando, ingresos, egresos, ganancias, rentabilidad);
+                            informes.Add(informe);
+                        }
+                    }
+                    catch (EndOfStreamException)
+                    {
+                        // Se ha alcanzado el final del archivo
+                    }
+                }
+            }
+            return informes;
+        }
     }
 }

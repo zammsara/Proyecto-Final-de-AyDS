@@ -57,5 +57,12 @@ namespace BunBunHub.Formularios
             generarInformes.Show();
             this.Hide();
         }
+
+        private void btnPublicidad_Click(object sender, EventArgs e)
+        {
+            GestionarPublicidad gestionarPublicidad = new GestionarPublicidad();
+            gestionarPublicidad.Show();
+            this.Hide();
+        }
     }
 }

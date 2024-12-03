@@ -32,11 +32,10 @@ namespace BunBunHub
         // Evento del botón Iniciar sesión
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-
             // Verificar que los campos no estén vacíos
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtContrasena.Text))
             {
-                MessageBox.Show("Por favor, complete ambos campos: nombre de usuario y contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, complete todos los campos.", "Fallo en Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

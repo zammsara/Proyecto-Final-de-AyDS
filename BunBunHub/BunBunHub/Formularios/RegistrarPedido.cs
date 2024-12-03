@@ -42,11 +42,55 @@ namespace BunBunHub.Formularios
             txtIDPedido.Text = nuevoID;
         }
 
+        private void btnBuscarUsuarioCliente_Click(object sender, EventArgs e)
+        {
+            ListaClientes listaClientesForm = new ListaClientes();
+            listaClientesForm.ShowDialog();  // Mostrar el formulario y esperar su cierre
+
+            // Después de que el formulario se cierre, obtener el usuario seleccionado
+            if (listaClientesForm.DialogResult == DialogResult.OK)
+            {
+                // Obtener el usuario seleccionado directamente de la propiedad pública
+                txtUsuarioCliente.Text = listaClientesForm.UsuarioSeleccionado;
+
+                // Buscar el cliente en la lista de clientes usando el usuario seleccionado
+                var cliente = listaClientes.FirstOrDefault(c => c.Usuario == listaClientesForm.UsuarioSeleccionado);
+
+                if (cliente != null)
+                {
+                    txtNombreCliente.Text = cliente.Nombre;
+                    txtApellidoCliente.Text = cliente.Apellido;
+                    txtCorreoCliente.Text = cliente.Correo;
+                    txtTelefonoCliente.Text = cliente.Telefono.ToString();
+
+                    // El cliente existe, llenar los TextBox con sus datos
+                    MessageBox.Show("El cliente ha sido asignado al pedido con éxito.", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // El cliente no existe, mostrar mensaje de error
+                    MessageBox.Show("Cliente no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtUsuarioCliente.Clear();
+                    txtUsuarioCliente.Focus(); // Poner el foco en el TextBox para que ingrese otro cliente
+
+                    // Limpiar los campos dentro del GroupBox grpDetallesCliente
+                    foreach (Control control in grpDetallesCliente.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            ((TextBox)control).Clear();
+                        }
+                    }
+                }
+            }
+        }
+
+
         // Funcionalidades
         private void tlsbtnGuardar_Click(object sender, EventArgs e)
         {
             // Verificar si alguno de los campos esenciales está vacío
-            if (string.IsNullOrEmpty(txtNombreCliente.Text) ||
+            if (string.IsNullOrEmpty(txtApellidoCliente.Text) ||
                 string.IsNullOrEmpty(txtCorreoCliente.Text) ||
                 string.IsNullOrEmpty(txtTelefonoCliente.Text) ||
                 string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
@@ -126,11 +170,12 @@ namespace BunBunHub.Formularios
         {
             // No incrementar el ID, solo actualizar el campo con el último ID válido
             string nuevoID = "P" + ultimoID.ToString("D4");
-            txtIDPedido.Text = nuevoID;  // No incrementar el ID, solo actualizar con el último ID disponible
+            txtIDPedido.Text = nuevoID;
 
             // Limpiar los demás campos
             txtUsuarioCliente.Clear();
             txtNombreCliente.Clear();
+            txtApellidoCliente.Clear();
             txtCorreoCliente.Clear();
             txtTelefonoCliente.Clear();
             txtColaborador.Text = "No asignado";  // Valor predeterminado
@@ -151,48 +196,6 @@ namespace BunBunHub.Formularios
             }
         }
 
-        private void btnBuscarUsuarioCliente_Click(object sender, EventArgs e)
-        {
-            string usuarioCliente = txtUsuarioCliente.Text.Trim();
-
-            if (string.IsNullOrEmpty(usuarioCliente))
-            {
-                MessageBox.Show("Por favor ingrese un usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsuarioCliente.Focus();
-                return;
-            }
-
-            // Buscar el cliente en la lista de clientes
-            var cliente = listaClientes.FirstOrDefault(c => c.Usuario.ToString() == usuarioCliente);
-
-            if (cliente != null)
-            {
-                // El cliente existe
-                MessageBox.Show("El cliente ha sido asignado al pedido con éxito.", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Mostrar los detalles del cliente en los TextBox correspondientes
-                txtNombreCliente.Text = cliente.Nombre;
-                txtCorreoCliente.Text = cliente.Correo;
-                txtTelefonoCliente.Text = cliente.Telefono.ToString();
-            }
-            else
-            {
-                // El cliente no existe
-                MessageBox.Show("Cliente no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUsuarioCliente.Clear();
-                txtUsuarioCliente.Focus(); // Poner el foco en el TextBox para que ingrese otro cliente
-
-                // Limpiar los campos dentro del GroupBox grpDetallesPedido
-                foreach (Control control in grpDetallesCliente.Controls)
-                {
-                    if (control is TextBox)
-                    {
-                        ((TextBox)control).Clear();
-                    }
-                }
-            }
-        }
-
         // Lógica de Navegación entre forms
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
@@ -203,11 +206,8 @@ namespace BunBunHub.Formularios
         {
             // Verificar si al menos uno de los controles tiene datos
             bool hayDatos = false;
-            if (!string.IsNullOrEmpty(txtNombreCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
-                !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
-                !string.IsNullOrEmpty(txtColaborador.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
-                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
-                !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) || !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) || !string.IsNullOrEmpty(txtDescripcion.Text))
             {
                 hayDatos = true;
             }
@@ -238,7 +238,7 @@ namespace BunBunHub.Formularios
         {
             // Verificar si al menos uno de los controles tiene datos
             bool hayDatos = false;
-            if (!string.IsNullOrEmpty(txtNombreCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
                 !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
                 !string.IsNullOrEmpty(txtColaborador.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
                 !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
@@ -273,11 +273,8 @@ namespace BunBunHub.Formularios
         {
             // Verificar si al menos uno de los controles tiene datos
             bool hayDatos = false;
-            if (!string.IsNullOrEmpty(txtNombreCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
-                !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
-                !string.IsNullOrEmpty(txtColaborador.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
-                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
-                !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) || !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
             {
                 hayDatos = true;
             }
@@ -313,7 +310,6 @@ namespace BunBunHub.Formularios
                 txtColaborador.Text = "No asignado";
             }
         }
-
         private void montos_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Verificar si la tecla presionada es un número o una tecla de control (como Backspace)

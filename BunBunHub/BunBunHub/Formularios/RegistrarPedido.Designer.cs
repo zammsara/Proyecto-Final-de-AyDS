@@ -57,8 +57,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtCorreoCliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtApellidoCliente = new System.Windows.Forms.TextBox();
+            this.lblApellido = new System.Windows.Forms.Label();
             this.txtColaborador = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscarUsuarioCliente = new System.Windows.Forms.Button();
@@ -66,6 +66,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDPedido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tlsRegistrarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpDetallesPedido.SuspendLayout();
@@ -260,13 +262,14 @@
             this.lblValidarColaborador.BackColor = System.Drawing.Color.Transparent;
             this.lblValidarColaborador.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValidarColaborador.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblValidarColaborador.Location = new System.Drawing.Point(113, 327);
+            this.lblValidarColaborador.Location = new System.Drawing.Point(113, 340);
             this.lblValidarColaborador.Name = "lblValidarColaborador";
             this.lblValidarColaborador.Size = new System.Drawing.Size(0, 15);
             this.lblValidarColaborador.TabIndex = 148;
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Items.AddRange(new object[] {
@@ -275,18 +278,17 @@
             "Listo para entrega",
             "Completado",
             "Cancelado"});
-            this.cmbEstado.Location = new System.Drawing.Point(569, 306);
+            this.cmbEstado.Location = new System.Drawing.Point(569, 312);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(211, 27);
             this.cmbEstado.TabIndex = 147;
-            this.cmbEstado.Text = "Recibido";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(501, 310);
+            this.label12.Location = new System.Drawing.Point(501, 316);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 19);
@@ -317,6 +319,7 @@
             // 
             // cmbPuntoEntrega
             // 
+            this.cmbPuntoEntrega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuntoEntrega.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPuntoEntrega.FormattingEnabled = true;
             this.cmbPuntoEntrega.Items.AddRange(new object[] {
@@ -392,7 +395,7 @@
             this.dtpFechaCompra.Name = "dtpFechaCompra";
             this.dtpFechaCompra.Size = new System.Drawing.Size(132, 26);
             this.dtpFechaCompra.TabIndex = 137;
-            this.dtpFechaCompra.Value = new System.DateTime(2024, 12, 1, 0, 0, 0, 0);
+            this.dtpFechaCompra.Value = new System.DateTime(2024, 12, 3, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -407,15 +410,17 @@
             // 
             // grpDetallesCliente
             // 
+            this.grpDetallesCliente.Controls.Add(this.txtNombreCliente);
+            this.grpDetallesCliente.Controls.Add(this.label13);
             this.grpDetallesCliente.Controls.Add(this.txtTelefonoCliente);
             this.grpDetallesCliente.Controls.Add(this.label6);
             this.grpDetallesCliente.Controls.Add(this.txtCorreoCliente);
             this.grpDetallesCliente.Controls.Add(this.label5);
-            this.grpDetallesCliente.Controls.Add(this.txtNombreCliente);
-            this.grpDetallesCliente.Controls.Add(this.label4);
+            this.grpDetallesCliente.Controls.Add(this.txtApellidoCliente);
+            this.grpDetallesCliente.Controls.Add(this.lblApellido);
             this.grpDetallesCliente.Location = new System.Drawing.Point(15, 127);
             this.grpDetallesCliente.Name = "grpDetallesCliente";
-            this.grpDetallesCliente.Size = new System.Drawing.Size(385, 156);
+            this.grpDetallesCliente.Size = new System.Drawing.Size(385, 165);
             this.grpDetallesCliente.TabIndex = 135;
             this.grpDetallesCliente.TabStop = false;
             this.grpDetallesCliente.Text = "Detalles del cliente";
@@ -424,7 +429,7 @@
             // 
             this.txtTelefonoCliente.Enabled = false;
             this.txtTelefonoCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoCliente.Location = new System.Drawing.Point(86, 105);
+            this.txtTelefonoCliente.Location = new System.Drawing.Point(80, 126);
             this.txtTelefonoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefonoCliente.Name = "txtTelefonoCliente";
             this.txtTelefonoCliente.ReadOnly = true;
@@ -435,7 +440,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 108);
+            this.label6.Location = new System.Drawing.Point(9, 129);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 19);
@@ -446,7 +451,7 @@
             // 
             this.txtCorreoCliente.Enabled = false;
             this.txtCorreoCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreoCliente.Location = new System.Drawing.Point(86, 71);
+            this.txtCorreoCliente.Location = new System.Drawing.Point(80, 92);
             this.txtCorreoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreoCliente.Name = "txtCorreoCliente";
             this.txtCorreoCliente.ReadOnly = true;
@@ -457,39 +462,39 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 74);
+            this.label5.Location = new System.Drawing.Point(9, 95);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 19);
             this.label5.TabIndex = 138;
             this.label5.Text = "Correo:";
             // 
-            // txtNombreCliente
+            // txtApellidoCliente
             // 
-            this.txtNombreCliente.Enabled = false;
-            this.txtNombreCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCliente.Location = new System.Drawing.Point(86, 37);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.ReadOnly = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(145, 26);
-            this.txtNombreCliente.TabIndex = 137;
+            this.txtApellidoCliente.Enabled = false;
+            this.txtApellidoCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidoCliente.Location = new System.Drawing.Point(80, 58);
+            this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidoCliente.Name = "txtApellidoCliente";
+            this.txtApellidoCliente.ReadOnly = true;
+            this.txtApellidoCliente.Size = new System.Drawing.Size(145, 26);
+            this.txtApellidoCliente.TabIndex = 137;
             // 
-            // label4
+            // lblApellido
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 40);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 19);
-            this.label4.TabIndex = 136;
-            this.label4.Text = "Nombre:";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(9, 61);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(64, 19);
+            this.lblApellido.TabIndex = 136;
+            this.lblApellido.Text = "Apellido:";
             // 
             // txtColaborador
             // 
             this.txtColaborador.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColaborador.Location = new System.Drawing.Point(110, 300);
+            this.txtColaborador.Location = new System.Drawing.Point(122, 313);
             this.txtColaborador.Margin = new System.Windows.Forms.Padding(4);
             this.txtColaborador.Name = "txtColaborador";
             this.txtColaborador.Size = new System.Drawing.Size(140, 26);
@@ -503,7 +508,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 303);
+            this.label2.Location = new System.Drawing.Point(24, 316);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 19);
@@ -530,6 +535,7 @@
             // 
             // txtUsuarioCliente
             // 
+            this.txtUsuarioCliente.Enabled = false;
             this.txtUsuarioCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuarioCliente.Location = new System.Drawing.Point(144, 84);
             this.txtUsuarioCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -570,6 +576,28 @@
             this.label1.Size = new System.Drawing.Size(26, 19);
             this.label1.TabIndex = 128;
             this.label1.Text = "ID:";
+            // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Enabled = false;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCliente.Location = new System.Drawing.Point(80, 25);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.ReadOnly = true;
+            this.txtNombreCliente.Size = new System.Drawing.Size(145, 26);
+            this.txtNombreCliente.TabIndex = 143;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(9, 28);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 19);
+            this.label13.TabIndex = 142;
+            this.label13.Text = "Nombre:";
             // 
             // RegistrarPedido
             // 
@@ -630,8 +658,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCorreoCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNombreCliente;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtApellidoCliente;
+        private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtDescripcion;
@@ -643,5 +671,7 @@
         private System.Windows.Forms.TextBox txtCostoCompra;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblValidarColaborador;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.Label label13;
     }
 }

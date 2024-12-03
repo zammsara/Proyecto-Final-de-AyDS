@@ -331,6 +331,7 @@
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbEstado.ForeColor = System.Drawing.Color.Black;
             this.cmbEstado.FormattingEnabled = true;
@@ -344,6 +345,7 @@
             // 
             // cmbRol
             // 
+            this.cmbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRol.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cmbRol.ForeColor = System.Drawing.Color.Black;
             this.cmbRol.FormattingEnabled = true;

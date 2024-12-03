@@ -136,6 +136,7 @@
             this.btnPublicidad.Size = new System.Drawing.Size(168, 41);
             this.btnPublicidad.TabIndex = 106;
             this.btnPublicidad.UseVisualStyleBackColor = false;
+            this.btnPublicidad.Click += new System.EventHandler(this.btnPublicidad_Click);
             // 
             // lblAdministrador
             // 

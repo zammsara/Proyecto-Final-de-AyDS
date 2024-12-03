@@ -18,3 +18,5 @@ C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formula
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.RegistrarPedido.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ActualizarPedido.resources
 C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GenerarInformes.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.GestionarPublicidad.resources
+C:\Users\Arelys Castillo\Desktop\BunBunHub\BunBunHub\obj\Debug\BunBunHub.Formularios.ListaClientes.resources

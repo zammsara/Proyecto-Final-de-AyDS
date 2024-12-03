@@ -133,8 +133,8 @@
   <data name="btnIniciarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnIniciarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoPanelAdministrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoPanelAdministrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BtnBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnBuscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FondoTeal_Encabezado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FondoTeal_Encabezado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +157,9 @@
   <data name="BtnActualizarRegistros" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnActualizarRegistros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FondoPanelAdministrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoPanelAdministrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FondoGestionUsuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FondoGestionUsuarios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +171,12 @@
   </data>
   <data name="fondoRegistrarPedido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoRegistrarPedido.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoGenerarInformes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoGenerarInformes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Predeterminada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Predeterminada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FondoInicioSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FondoInicioSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +232,10 @@
   <data name="btnPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPerfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondoGenerarInformes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoGenerarInformes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FondoPanelCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoPanelCliente.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CerrarBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CerrarBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

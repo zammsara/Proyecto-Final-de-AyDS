@@ -79,5 +79,46 @@ namespace BunBunHub.Modelos
                 Estado = estado;
             }
         }
+
+        public class Informe
+        {
+            public DateTime Fecha_Inicio { get; set; }
+            public DateTime Fecha_Final { get; set; }
+            public int Total_Pedidos { get; set; }
+            public int Completados { get; set; }
+            public decimal Total_Completados { get; set; }
+            public int Cancelados { get; set; }
+            public decimal Total_Cancelados { get; set; }
+            public int Procesando { get; set; }
+            public decimal Total_Procesando { get; set; }
+            public decimal Ingresos { get; set; }
+            public decimal Egresos { get; set; }
+            public decimal Ganancias { get; set; }
+            public string Rentabilidad { get; set; }
+
+            public Informe (DateTime fechaInicio, DateTime fechaFinal, int totalPedidos, int completados, decimal totalCompletados, int cancelados, decimal totalCancelados, int procesando, decimal totalProcesando, decimal ingresos, decimal egresos, decimal ganancias, string rentabilidad)
+            {
+                Fecha_Inicio = fechaInicio;
+                Fecha_Final = fechaFinal;
+                Total_Pedidos = totalPedidos;
+                Completados = completados;
+                Total_Completados = totalCompletados;
+                Cancelados = cancelados;
+                Total_Cancelados = totalCancelados;
+                Procesando = procesando;
+                Total_Procesando = totalProcesando;
+                Ingresos = ingresos;
+                Egresos = egresos;
+                Ganancias = ganancias;
+                Rentabilidad = rentabilidad;
+            }
+        }
+
+        public class ClienteResumen
+        {
+            public string Usuario { get; set; }
+            public string Nombre { get; set; }
+            public string Apellido { get; set; }
+        }
     }
 }

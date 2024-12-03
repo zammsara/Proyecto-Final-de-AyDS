@@ -60,6 +60,13 @@
             this.txtIDPedidoEditar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEditarPedido = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblOrdenar = new System.Windows.Forms.Label();
+            this.cmbFiltro = new System.Windows.Forms.ComboBox();
+            this.lblFiltrar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpHistorialPedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -156,11 +163,11 @@
             this.grpHistorialPedidos.Controls.Add(this.dgvPedidos);
             this.grpHistorialPedidos.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpHistorialPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpHistorialPedidos.Location = new System.Drawing.Point(69, 103);
+            this.grpHistorialPedidos.Location = new System.Drawing.Point(69, 135);
             this.grpHistorialPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpHistorialPedidos.Name = "grpHistorialPedidos";
             this.grpHistorialPedidos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpHistorialPedidos.Size = new System.Drawing.Size(940, 244);
+            this.grpHistorialPedidos.Size = new System.Drawing.Size(940, 221);
             this.grpHistorialPedidos.TabIndex = 132;
             this.grpHistorialPedidos.TabStop = false;
             this.grpHistorialPedidos.Text = "Historial de Usuarios";
@@ -170,14 +177,15 @@
             this.dgvPedidos.AllowUserToAddRows = false;
             this.dgvPedidos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPedidos.EnableHeadersVisualStyles = false;
-            this.dgvPedidos.Location = new System.Drawing.Point(13, 26);
+            this.dgvPedidos.Location = new System.Drawing.Point(3, 20);
             this.dgvPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.ReadOnly = true;
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
-            this.dgvPedidos.Size = new System.Drawing.Size(909, 195);
+            this.dgvPedidos.Size = new System.Drawing.Size(934, 199);
             this.dgvPedidos.TabIndex = 15;
             // 
             // btnCancelarCambiosPedido
@@ -207,7 +215,7 @@
             this.btnGuardarCambiosPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardarCambiosPedido.ForeColor = System.Drawing.Color.White;
             this.btnGuardarCambiosPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardarCambiosPedido.Location = new System.Drawing.Point(847, 414);
+            this.btnGuardarCambiosPedido.Location = new System.Drawing.Point(847, 423);
             this.btnGuardarCambiosPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambiosPedido.Name = "btnGuardarCambiosPedido";
             this.btnGuardarCambiosPedido.Size = new System.Drawing.Size(162, 37);
@@ -240,7 +248,7 @@
             this.grpDetallesPedidoEditar.Controls.Add(this.txtIDPedidoEditar);
             this.grpDetallesPedidoEditar.Controls.Add(this.label1);
             this.grpDetallesPedidoEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.grpDetallesPedidoEditar.Location = new System.Drawing.Point(69, 352);
+            this.grpDetallesPedidoEditar.Location = new System.Drawing.Point(69, 370);
             this.grpDetallesPedidoEditar.Name = "grpDetallesPedidoEditar";
             this.grpDetallesPedidoEditar.Size = new System.Drawing.Size(736, 239);
             this.grpDetallesPedidoEditar.TabIndex = 135;
@@ -282,6 +290,7 @@
             // 
             // cmbEstadoEditar
             // 
+            this.cmbEstadoEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstadoEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstadoEditar.FormattingEnabled = true;
             this.cmbEstadoEditar.Items.AddRange(new object[] {
@@ -330,6 +339,7 @@
             // 
             // cmbPuntoEntregaEditar
             // 
+            this.cmbPuntoEntregaEditar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuntoEntregaEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPuntoEntregaEditar.FormattingEnabled = true;
             this.cmbPuntoEntregaEditar.Items.AddRange(new object[] {
@@ -480,7 +490,7 @@
             this.btnEditarPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditarPedido.ForeColor = System.Drawing.Color.White;
             this.btnEditarPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEditarPedido.Location = new System.Drawing.Point(847, 370);
+            this.btnEditarPedido.Location = new System.Drawing.Point(847, 378);
             this.btnEditarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarPedido.Name = "btnEditarPedido";
             this.btnEditarPedido.Size = new System.Drawing.Size(162, 37);
@@ -489,6 +499,100 @@
             this.btnEditarPedido.UseVisualStyleBackColor = false;
             this.btnEditarPedido.Click += new System.EventHandler(this.btnEditarPedido_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(972, 101);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 27);
+            this.button1.TabIndex = 159;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(786, 102);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 26);
+            this.textBox1.TabIndex = 158;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label4.Location = new System.Drawing.Point(694, 106);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 19);
+            this.label4.TabIndex = 157;
+            this.label4.Text = "Buscar orden:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Predeterminado",
+            "Mayor a menor monto",
+            "Menor a mayor monto",
+            "Fecha de compra"});
+            this.comboBox1.Location = new System.Drawing.Point(396, 105);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(192, 24);
+            this.comboBox1.TabIndex = 156;
+            // 
+            // lblOrdenar
+            // 
+            this.lblOrdenar.AutoSize = true;
+            this.lblOrdenar.BackColor = System.Drawing.Color.Transparent;
+            this.lblOrdenar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.lblOrdenar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblOrdenar.Location = new System.Drawing.Point(331, 109);
+            this.lblOrdenar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOrdenar.Name = "lblOrdenar";
+            this.lblOrdenar.Size = new System.Drawing.Size(64, 19);
+            this.lblOrdenar.TabIndex = 155;
+            this.lblOrdenar.Text = "Ordenar:";
+            // 
+            // cmbFiltro
+            // 
+            this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiltro.FormattingEnabled = true;
+            this.cmbFiltro.Items.AddRange(new object[] {
+            "Todos",
+            "Recibido",
+            "En proceso",
+            "Listo para entrega",
+            "Completado",
+            "Cancelado"});
+            this.cmbFiltro.Location = new System.Drawing.Point(116, 105);
+            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbFiltro.Name = "cmbFiltro";
+            this.cmbFiltro.Size = new System.Drawing.Size(192, 24);
+            this.cmbFiltro.TabIndex = 154;
+            // 
+            // lblFiltrar
+            // 
+            this.lblFiltrar.AutoSize = true;
+            this.lblFiltrar.BackColor = System.Drawing.Color.Transparent;
+            this.lblFiltrar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.lblFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblFiltrar.Location = new System.Drawing.Point(67, 109);
+            this.lblFiltrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFiltrar.Name = "lblFiltrar";
+            this.lblFiltrar.Size = new System.Drawing.Size(50, 19);
+            this.lblFiltrar.TabIndex = 153;
+            this.lblFiltrar.Text = "Filtrar:";
+            // 
             // ActualizarPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -496,6 +600,13 @@
             this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoActualizarPedidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblOrdenar);
+            this.Controls.Add(this.cmbFiltro);
+            this.Controls.Add(this.lblFiltrar);
             this.Controls.Add(this.btnEditarPedido);
             this.Controls.Add(this.grpDetallesPedidoEditar);
             this.Controls.Add(this.btnCancelarCambiosPedido);
@@ -556,5 +667,12 @@
         private System.Windows.Forms.TextBox txtUsuarioClienteEditar;
         private System.Windows.Forms.Button btnEditarPedido;
         private System.Windows.Forms.Label lblColaboradorValidacion;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblOrdenar;
+        private System.Windows.Forms.ComboBox cmbFiltro;
+        private System.Windows.Forms.Label lblFiltrar;
     }
 }
