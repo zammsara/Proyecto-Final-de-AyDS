@@ -1,4 +1,4 @@
-﻿using BunBunHub.Modelos;
+﻿using BunBunHub.Dao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +14,19 @@ namespace BunBunHub.Formularios
 {
     public partial class GestionUsuarios : Form
     {
-        private List<Usuarios> listaUsuarios; // Lista de usuarios
-        private List<DetallesCliente> listaClientes; // Lista de clientes
+        private List<Usuarios> listaUsuarios = new List<Usuarios>();
+        private List<DetallesCliente> listaClientes = new List<DetallesCliente>();
+        public static string rutaUsuarios = "usuario.dat";
+        public static string rutaClientes = "cliente.dat";
         public GestionUsuarios()
         {
             InitializeComponent();
+            GestionDeArchivos archivo = new GestionDeArchivos();
+
+            // Cargar los registros de los roles
+            listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
+            listaClientes = archivo.CargarClientes(rutaClientes);
+
         }
         //Eventos Básicos
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -35,32 +43,34 @@ namespace BunBunHub.Formularios
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            // Verificar el rol del usuario actual almacenado en la clase Sesion
-            string rolUsuario = Sesion.UsuarioSesion.RolUsuario;
-
-            // Comprobar el rol y mostrar el formulario adecuado
-            if (rolUsuario == "Administrador")
-            {
-                // Si el rol es "Administrador", abrir el panel de administrador
-                PanelAdministrador panelAdministrador = new PanelAdministrador();
-                panelAdministrador.Show();
-            }
-            else if (rolUsuario == "Colaborador")
-            {
-                // Si el rol es "Colaborador", abrir el panel de colaborador
-                PanelColaborador panelColaborador = new PanelColaborador();
-                panelColaborador.Show();
-            }
-
-            // Cerrar el formulario actual de GestionUsuarios
-            this.Close();
+            PanelAdministrador panelAdministrador = new PanelAdministrador();
+            panelAdministrador.Show();
+            this.Hide();
         }
 
         private void btnActualizarRegistro_Click(object sender, EventArgs e)
         {
-            VisualizarUsuarios actualizarRegistro = new VisualizarUsuarios(listaUsuarios, listaClientes);
+            ActualizarRegistro actualizarRegistro = new ActualizarRegistro();
+            actualizarRegistro.listaUsuarios = listaUsuarios;
+            actualizarRegistro.listaClientes = listaClientes;
+            actualizarRegistro.CargarDatos();
             actualizarRegistro.Show();
             this.Hide();
+        }
+
+        private void lblPaneldeControl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBunBunHub_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

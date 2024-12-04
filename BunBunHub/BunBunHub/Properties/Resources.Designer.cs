@@ -63,9 +63,49 @@ namespace BunBunHub.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Actualizar {
+            get {
+                object obj = ResourceManager.GetObject("Actualizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Agregar {
+            get {
+                object obj = ResourceManager.GetObject("Agregar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnActualizarPedido {
+            get {
+                object obj = ResourceManager.GetObject("btnActualizarPedido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BtnActualizarRegistros {
             get {
                 object obj = ResourceManager.GetObject("BtnActualizarRegistros", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnBuscar {
+            get {
+                object obj = ResourceManager.GetObject("BtnBuscar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +213,29 @@ namespace BunBunHub.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnRegistrarPedido {
+            get {
+                object obj = ResourceManager.GetObject("btnRegistrarPedido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BtnRegistrarUsuarios {
             get {
                 object obj = ResourceManager.GetObject("BtnRegistrarUsuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CerrarBlanco {
+            get {
+                object obj = ResourceManager.GetObject("CerrarBlanco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +256,46 @@ namespace BunBunHub.Properties {
         internal static System.Drawing.Bitmap CerrarSistemaCeleste {
             get {
                 object obj = ResourceManager.GetObject("CerrarSistemaCeleste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eliminar {
+            get {
+                object obj = ResourceManager.GetObject("Eliminar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exportar {
+            get {
+                object obj = ResourceManager.GetObject("Exportar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoActualizarPedidos {
+            get {
+                object obj = ResourceManager.GetObject("fondoActualizarPedidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoGenerarInformes {
+            get {
+                object obj = ResourceManager.GetObject("fondoGenerarInformes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +336,26 @@ namespace BunBunHub.Properties {
         internal static System.Drawing.Bitmap FondoPanelAdministrador {
             get {
                 object obj = ResourceManager.GetObject("FondoPanelAdministrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoPanelCliente {
+            get {
+                object obj = ResourceManager.GetObject("FondoPanelCliente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondoRegistrarPedido {
+            get {
+                object obj = ResourceManager.GetObject("fondoRegistrarPedido", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +416,16 @@ namespace BunBunHub.Properties {
         internal static System.Drawing.Bitmap LogoTeal {
             get {
                 object obj = ResourceManager.GetObject("LogoTeal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Predeterminada {
+            get {
+                object obj = ResourceManager.GetObject("Predeterminada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

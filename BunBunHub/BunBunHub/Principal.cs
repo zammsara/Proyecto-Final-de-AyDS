@@ -1,5 +1,6 @@
 ﻿using BunBunHub.Dao;
 using BunBunHub.Formularios;
+using BunBunHub.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static BunBunHub.Modelos.ModelosDeDatos;
-using static BunBunHub.Modelos.Sesion;
 
 namespace BunBunHub
 {
@@ -29,8 +29,16 @@ namespace BunBunHub
             Application.Exit();
         }
 
+        // Evento del botón Iniciar sesión
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+            // Verificar que los campos no estén vacíos
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtContrasena.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Fallo en Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string usuarioIngresado = txtUsuario.Text;
             string contrasenaIngresada = txtContrasena.Text;
 
@@ -42,13 +50,11 @@ namespace BunBunHub
             }
 
             // Cargar la lista de usuarios desde el archivo
-            List<Usuarios> listaUsuarios = ManejoArchivos<Usuarios>.CargarDatos("usuario.dat");
+            GestionDeArchivos gestionArchivos = new GestionDeArchivos();
+            List<Usuarios> listaUsuarios = gestionArchivos.CargarUsuarios("usuario.dat"); // Aquí usamos la carga sin filtrar por rol
 
             // Buscar al usuario con las credenciales ingresadas
-            Usuarios usuarioEncontrado = listaUsuarios.FirstOrDefault(u =>
-                u.Usuario == usuarioIngresado &&
-                u.Contraseña == contrasenaIngresada &&
-                u.Estado == "Activo");
+            Usuarios usuarioEncontrado = listaUsuarios.FirstOrDefault(u => u.Usuario == usuarioIngresado && u.Contraseña == contrasenaIngresada && u.Estado == "Activo");
 
             if (usuarioEncontrado != null)
             {
@@ -84,10 +90,13 @@ namespace BunBunHub
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos, o el usuario no está activo.",
-                                "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Credenciales incorrectas. Verifique e intente de nuevo.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsuario.Clear();
+                txtContrasena.Text = "●●●●●●●●●●";
+                txtUsuario.Focus();
             }
         }
+
 
         private void btnPaginaWeb_Click(object sender, EventArgs e)
         {

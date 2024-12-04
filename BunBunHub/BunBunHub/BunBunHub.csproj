@@ -49,7 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao\ManejoArchivos.cs" />
+    <Compile Include="Dao\GestionDeArchivos.cs" />
+    <Compile Include="Formularios\ActualizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarPedido.Designer.cs">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ActualizarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarRegistro.Designer.cs">
+      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GenerarInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GenerarInformes.Designer.cs">
+      <DependentUpon>GenerarInformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionarPublicidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionarPublicidad.Designer.cs">
+      <DependentUpon>GestionarPublicidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\GestionPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +85,12 @@
     </Compile>
     <Compile Include="Formularios\GestionUsuarios.Designer.cs">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaClientes.Designer.cs">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\PanelAdministrador.cs">
       <SubType>Form</SubType>
@@ -92,20 +122,7 @@
     <Compile Include="Formularios\RegistrarUsuario.Designer.cs">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\VisualizarPedidos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\VisualizarPedidos.Designer.cs">
-      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\VisualizarUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\VisualizarUsuarios.Designer.cs">
-      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modelos\ModelosDeDatos.cs" />
-    <Compile Include="Modelos\Sesion.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +131,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ActualizarPedido.resx">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ActualizarRegistro.resx">
+      <DependentUpon>ActualizarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GenerarInformes.resx">
+      <DependentUpon>GenerarInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionarPublicidad.resx">
+      <DependentUpon>GestionarPublicidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionPedidos.resx">
       <DependentUpon>GestionPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionUsuarios.resx">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaClientes.resx">
+      <DependentUpon>ListaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PanelAdministrador.resx">
       <DependentUpon>PanelAdministrador.cs</DependentUpon>
@@ -134,12 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\VisualizarPedidos.resx">
-      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\VisualizarUsuarios.resx">
-      <DependentUpon>VisualizarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -251,6 +277,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FondoTeal_Encabezado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRegistrarPedido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnActualizarPedido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoRegistrarPedido.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoActualizarPedidos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoGenerarInformes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Predeterminada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPanelCliente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarBlanco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

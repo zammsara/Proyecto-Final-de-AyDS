@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static BunBunHub.Modelos.Sesion;
+using static BunBunHub.Modelos.ModelosDeDatos;
 
 namespace BunBunHub.Formularios
 {
@@ -16,7 +16,6 @@ namespace BunBunHub.Formularios
         public PanelCliente()
         {
             InitializeComponent();
-
             // Acceder al nombre y rol desde la clase estática
             string nombreUsuario = UsuarioSesion.NombreUsuario;
             string rolUsuario = UsuarioSesion.RolUsuario;
@@ -25,12 +24,20 @@ namespace BunBunHub.Formularios
             lblNombreUsuario.Text = nombreUsuario;
         }
 
+        // Propiedad para actualizar la imagen en panel Cliente
+        public void ActualizarImagen(System.Drawing.Image imagen)
+        {
+            picPublicidad2.Image = imagen;
+            picPublicidad2.SizeMode = PictureBoxSizeMode.StretchImage; // Ajustar imagen al PictureBox
+        }
+
+
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        private void btnCerrarSesion_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             Principal iniciarSesion = new Principal();

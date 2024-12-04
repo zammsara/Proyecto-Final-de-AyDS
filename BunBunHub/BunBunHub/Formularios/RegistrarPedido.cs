@@ -1,5 +1,5 @@
 ﻿using BunBunHub.Dao;
-using BunBunHub.Modelos;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,221 +15,394 @@ namespace BunBunHub.Formularios
 {
     public partial class RegistrarPedido : Form
     {
+        private List<Pedido> listaPedidos = new List<Pedido>();
+        private List<DetallesCliente> listaClientes = new List<DetallesCliente>();
+        private List<Usuarios> listaUsuarios = new List<Usuarios>();
+        public static string rutaClientes = "cliente.dat";
         public static string rutaPedidos = "pedidos.dat";
-        private string rolUsuario; // Variable para almacenar el rol del usuario actual
+        public static string rutaUsuarios = "usuario.dat";
+        private static int ultimoID = 1;
 
-        private List<Usuarios> listaUsuarios;
-        private List<Pedidos> listaPedidos; //Lista de pedidos
-        public RegistrarPedido(List<Usuarios> usuarios)
+        public RegistrarPedido()
         {
             InitializeComponent();
-            listaUsuarios = usuarios; // Cargar lista de usuarios al inicializar
-            listaPedidos = ManejoArchivos<Pedidos>.CargarDatos(RegistrarPedido.rutaPedidos); // Cargar datos desde el archivo
-        }
+            GestionDeArchivos archivo = new GestionDeArchivos();
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+            listaPedidos=archivo.CargarPedidos(rutaPedidos);
+            listaClientes = archivo.CargarClientes(rutaClientes);
+            listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
 
-        private void ValidarCampos()
-        {
-            //Verificar que todos los controles tengan información
-            if (string.IsNullOrEmpty(txtID.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtID.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtUsuarioCliente.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsuarioCliente.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtDescripcion.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtDescripcion.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtUsuarioColaborador.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsuarioColaborador.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtCostoCompra.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCostoCompra.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtCostoMaterial.Text))
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCostoMaterial.Focus();
-                return;
-            }
-
-
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            // Cargar la lista de usuarios
-            listaUsuarios = ManejoArchivos<Usuarios>.CargarDatos("usuarios.dat");
-            
-            
-            // Verificar que todos los controles tengan información
-            ValidarCampos();
-
-            // Verificar que los ComboBox tengan un valor seleccionado
-            if (cmbPuntoEntrega.SelectedIndex == -1)
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (cmbEstado.SelectedIndex == -1)
-            {
-                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Obtener el ID del pedido desde el TextBox
-            int idPedido = int.Parse(txtID.Text);
-
-            // Validar que el ID no sea duplicado
-            listaPedidos = ManejoArchivos<Pedidos>.CargarDatos(RegistrarPedido.rutaPedidos);
-            if (listaPedidos.Any(p => p.IDPedido == idPedido))
-            {
-                MessageBox.Show("El ID del pedido ya existe. Intente nuevamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Crear un nuevo pedido
-            Pedidos nuevoPedido = new Pedidos
-            {
-                IDPedido = idPedido,
-                FechaCompra = dtpFechaCompra.Value.ToString("yyyy-MM-dd"),
-                UsuarioCliente = txtUsuarioCliente.Text,
-                Estado = cmbEstado.SelectedItem.ToString(),
-                PuntoEntrega = cmbPuntoEntrega.SelectedItem.ToString(),
-                Descripcion = txtDescripcion.Text,
-                UsuarioColaborador = txtUsuarioColaborador.Text,
-                CostoMaterial = txtCostoMaterial.Text,
-                CostoCompra = txtCostoCompra.Text
-
-            };
-
-            
-
-            // Agregar nuevo pedido a la lista
-            listaPedidos.Add(nuevoPedido);
-
-            // Guadar la lista completa en el archivo
-            ManejoArchivos<Pedidos>.GuardarDatos(RegistrarPedido.rutaPedidos, listaPedidos);
-
-            MessageBox.Show("Pedido registrado correctamente!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Generar un nuevo ID después de agregar el pedido
-            int nuevoID = GenerarNuevoID();
-            txtID.Text = nuevoID.ToString(); // Asignar el nuevo ID al TextBox
-
-            LimpiarCampos();
-            txtUsuarioCliente.Focus();
-        }
-
-        // Método para generar un nuevo IDPedido
-        private int GenerarNuevoID()
-        {
-            if (listaPedidos == null || listaPedidos.Count == 0)
-            {
-                return 1; // Si no hay pedidos, el primer ID será 1
-            }
-
-            // Encuentra el ID más alto existente
-            int idMasAlto = listaPedidos.Max(pedido => pedido.IDPedido);
-
-            // Retorna el siguiente ID disponible
-            return idMasAlto + 1;
-        }
-
-        private void LimpiarCampos()
-        {
-            txtUsuarioCliente.Clear();
-            txtDescripcion.Clear();
-            txtUsuarioColaborador.Clear();
-            txtCostoMaterial.Clear();
-            txtCostoCompra.Clear();
-
-            // Limpiar los combobox
-            cmbEstado.SelectedIndex = -1;
-            cmbPuntoEntrega.SelectedIndex = -1;
+            // Cargar el último ID desde el archivo
+            ultimoID = CargarUltimoID();
         }
 
         private void RegistrarPedido_Load(object sender, EventArgs e)
         {
-            int nuevoID = GenerarNuevoID();
-            txtID.Text = nuevoID.ToString(); // Mostrar el ID en el TextBox
+            string nuevoID = "P" + ultimoID.ToString("D4");
+            txtIDPedido.Text = nuevoID;
         }
 
-        private void ValidarUsuario()
+        private void btnBuscarUsuarioCliente_Click(object sender, EventArgs e)
         {
-            
-        }
+            ListaClientes listaClientesForm = new ListaClientes();
+            listaClientesForm.ShowDialog();  // Mostrar el formulario y esperar su cierre
 
-        private void txtUsuarioCliente_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtUsuarioColaborador_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtCostoCompra_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Permitir números, puntos, comas y la tecla de retroceso
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',' && e.KeyChar != (char)Keys.Back)
+            // Después de que el formulario se cierre, obtener el usuario seleccionado
+            if (listaClientesForm.DialogResult == DialogResult.OK)
             {
-                e.Handled = true; // Bloquear el carácter
+                // Obtener el usuario seleccionado directamente de la propiedad pública
+                txtUsuarioCliente.Text = listaClientesForm.UsuarioSeleccionado;
+
+                // Buscar el cliente en la lista de clientes usando el usuario seleccionado
+                var cliente = listaClientes.FirstOrDefault(c => c.Usuario == listaClientesForm.UsuarioSeleccionado);
+
+                if (cliente != null)
+                {
+                    txtNombreCliente.Text = cliente.Nombre;
+                    txtApellidoCliente.Text = cliente.Apellido;
+                    txtCorreoCliente.Text = cliente.Correo;
+                    txtTelefonoCliente.Text = cliente.Telefono.ToString();
+
+                    // El cliente existe, llenar los TextBox con sus datos
+                    MessageBox.Show("El cliente ha sido asignado al pedido con éxito.", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // El cliente no existe, mostrar mensaje de error
+                    MessageBox.Show("Cliente no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtUsuarioCliente.Clear();
+                    txtUsuarioCliente.Focus(); // Poner el foco en el TextBox para que ingrese otro cliente
+
+                    // Limpiar los campos dentro del GroupBox grpDetallesCliente
+                    foreach (Control control in grpDetallesCliente.Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            ((TextBox)control).Clear();
+                        }
+                    }
+                }
             }
         }
 
-        private void txtCostoMaterial_KeyPress(object sender, KeyPressEventArgs e)
+
+        // Funcionalidades
+        private void tlsbtnGuardar_Click(object sender, EventArgs e)
         {
-            // Permitir números, puntos, comas y la tecla de retroceso
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',' && e.KeyChar != (char)Keys.Back)
+            // Verificar si alguno de los campos esenciales está vacío
+            if (string.IsNullOrEmpty(txtApellidoCliente.Text) ||
+                string.IsNullOrEmpty(txtCorreoCliente.Text) ||
+                string.IsNullOrEmpty(txtTelefonoCliente.Text) ||
+                string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
+                string.IsNullOrEmpty(txtColaborador.Text) ||
+                string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                string.IsNullOrEmpty(txtCostoMaterial.Text) ||
+                string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
+                string.IsNullOrEmpty(txtDescripcion.Text) ||
+                string.IsNullOrEmpty(cmbEstado.Text))
             {
-                e.Handled = true; // Bloquear el carácter
+                // Si cualquier campo esencial está vacío, muestra un mensaje de error
+                MessageBox.Show("Por favor, complete todos los campos antes de guardar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            // Verificar si el colaborador está validado correctamente
+            if (txtColaborador.Text.Trim() != "No asignado" && lblValidarColaborador.Text != "El colaborador ha sido asignado")
+            {
+                MessageBox.Show("No se puede guardar el pedido. El colaborador no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validar el contenido de cmbPuntoEntrega
+            if (cmbPuntoEntrega.Text != "Metrocentro" && cmbPuntoEntrega.Text != "Plaza Naturas")
+            {
+                // Si no es "Metrocentro" o "Plaza Naturas", mostrar un mensaje de error y colocar el foco en cmbPuntoEntrega
+                MessageBox.Show("El punto de entrega debe ser 'Metrocentro' o 'Plaza Naturas'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cmbPuntoEntrega.Focus();
+                return;
+            }
+
+            // Validar el contenido de cmbEstado
+            if (cmbEstado.Text != "Recibido" && cmbEstado.Text != "En proceso" && cmbEstado.Text != "Listo para entrega" && cmbEstado.Text != "Completado" && cmbEstado.Text != "Cancelado")
+            {
+                // Si no es uno de los estados válidos, mostrar un mensaje de error y colocar el foco en cmbEstado
+                MessageBox.Show("El estado ingresado no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cmbEstado.Focus();
+                return;
+            }
+
+            // Validar que la fecha de compra no sea en el futuro
+            if (dtpFechaCompra.Value > DateTime.Now)
+            {
+                MessageBox.Show("La fecha de compra no es válida.", "Error de fecha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Si todas las validaciones pasaron, entonces crear y agregar el nuevo pedido
+            string ID = txtIDPedido.Text;
+            string usuario = txtUsuarioCliente.Text;
+            string colaborador = txtColaborador.Text;
+            DateTime fechaCompra = dtpFechaCompra.Value;
+            decimal montoTotal = decimal.Parse(txtCostoCompra.Text);  // Conversión a decimal
+            decimal montoMaterial = decimal.Parse(txtCostoMaterial.Text);
+            string puntoEntrega = cmbPuntoEntrega.Text;
+            string descripcion = txtDescripcion.Text;
+            string estado = cmbEstado.Text;
+
+            // Crear y agregar el nuevo pedido
+            Pedido nuevoPedido = new Pedido(ID, usuario, colaborador, fechaCompra, montoTotal, montoMaterial, puntoEntrega, descripcion, estado);
+            listaPedidos.Add(nuevoPedido);
+            GestionDeArchivos.GuardarPedidos(listaPedidos, rutaPedidos);
+
+            // Incrementar el ID para el siguiente pedido
+            ultimoID++;
+
+            // Guardar el último ID en el archivo
+            GuardarUltimoID(ultimoID);
+
+            // Mostrar mensaje de éxito
+            MessageBox.Show("Pedido guardado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            LimpiarCampos();
+            txtUsuarioCliente.Focus();
+        }
+
+        private void LimpiarCampos()
+        {
+            // No incrementar el ID, solo actualizar el campo con el último ID válido
+            string nuevoID = "P" + ultimoID.ToString("D4");
+            txtIDPedido.Text = nuevoID;
+
+            // Limpiar los demás campos
+            txtUsuarioCliente.Clear();
+            txtNombreCliente.Clear();
+            txtApellidoCliente.Clear();
+            txtCorreoCliente.Clear();
+            txtTelefonoCliente.Clear();
+            txtColaborador.Text = "No asignado";  // Valor predeterminado
+            txtCostoCompra.Clear();
+            txtCostoMaterial.Clear();
+            cmbPuntoEntrega.SelectedIndex = -1;  // Dejar vacío el ComboBox
+            txtDescripcion.Clear();
+            cmbEstado.Text = "Recibido";
+            lblValidarColaborador.Text = "";  // Limpiar el mensaje de validación
+        }
+
+        private void tlsbtnLimpiar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Se limpiarán todos los controles ¿Está seguro de que desea limpiar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                LimpiarCampos();
+            }
+        }
+
+        // Lógica de Navegación entre forms
+        private void btnCerrarSistema_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            GestionPedidos GestionPedidosForm = new GestionPedidos();
-            GestionPedidosForm.Show();
-            this.Hide();
+            // Verificar si al menos uno de los controles tiene datos
+            bool hayDatos = false;
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) || !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) || !string.IsNullOrEmpty(txtDescripcion.Text))
+            {
+                hayDatos = true;
+            }
+
+            // Si hay datos, preguntar al usuario si desea volver sin guardar
+            if (hayDatos)
+            {
+                DialogResult resultado = MessageBox.Show("Hay datos no guardados. ¿Desea volver sin guardar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Si el usuario elige "Sí", regresar a la pestaña anterior
+                    GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                // Si no hay datos, volver al panel sin preguntar
+                GestionPedidos gestionPedidos = new GestionPedidos();
+                gestionPedidos.Show();
+                this.Hide();
+            }
         }
 
-        private void btnVisualizarPedidos_Click(object sender, EventArgs e)
+        private void btnPanelControl_Click(object sender, EventArgs e)
         {
-            VisualizarPedidos VisualizarPedidosForm = new VisualizarPedidos(listaPedidos);
-            VisualizarPedidosForm.Show();
-            this.Hide();
+            // Verificar si al menos uno de los controles tiene datos
+            bool hayDatos = false;
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
+                !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
+                !string.IsNullOrEmpty(txtColaborador.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
+                !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
+            {
+                hayDatos = true;
+            }
+
+            // Si hay datos, preguntar al usuario si desea volver sin guardar
+            if (hayDatos)
+            {
+                DialogResult resultado = MessageBox.Show("Hay datos no guardados. ¿Desea volver sin guardar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Si el usuario elige "Sí", regresar al panel de administrador
+                    PanelAdministrador panelAdministrador = new PanelAdministrador();
+                    panelAdministrador.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                // Si no hay datos, volver al panel sin preguntar
+                PanelAdministrador panelAdministrador = new PanelAdministrador();
+                panelAdministrador.Show();
+                this.Hide();
+            }
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void tlsbtnVisualizarPedidos_Click(object sender, EventArgs e)
         {
-            LimpiarCampos();
+            // Verificar si al menos uno de los controles tiene datos
+            bool hayDatos = false;
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) || !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
+            {
+                hayDatos = true;
+            }
+
+            // Si hay datos, preguntar al usuario si desea volver sin guardar
+            if (hayDatos)
+            {
+                DialogResult resultado = MessageBox.Show("Hay datos no guardados. ¿Desea volver sin guardar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Si el usuario elige "Sí", regresar al panel de administrador
+                    ActualizarPedido actualizarPedido = new ActualizarPedido();
+                    actualizarPedido.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                // Si no hay datos, volver al panel sin preguntar
+                ActualizarPedido actualizarPedido = new ActualizarPedido();
+                actualizarPedido.Show();
+                this.Hide();
+            }
         }
+
+        // Eventos para restringir y validar datos
+        private void txtColaborador_Leave(object sender, EventArgs e)
+        {
+            // Si el TextBox está vacío, se le asigna "No asignado"
+            if (string.IsNullOrEmpty(txtColaborador.Text.Trim()))
+            {
+                txtColaborador.Text = "No asignado";
+            }
+        }
+        private void montos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verificar si la tecla presionada es un número o una tecla de control (como Backspace)
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+            {
+                // Si no es un número ni Backspace, se cancela el evento (no se permite la tecla)
+                e.Handled = true;
+            }
+        }
+
+        private void seleccionar_enter(object sender, EventArgs e)
+        {
+            //Seleccione la respuesta completa en el control TextBox.
+            TextBox answerBox = sender as TextBox;
+
+            if (answerBox != null)
+            {
+                answerBox.SelectAll();
+            }
+        }
+
+        // Validación de Datos
+        private void txtColaborador_TextChanged(object sender, EventArgs e)
+        {
+            string colaborador = txtColaborador.Text.Trim();
+
+            // Si el campo está vacío, vaciar el mensaje en lblValidarColaborador
+            if (string.IsNullOrEmpty(colaborador))
+            {
+                lblValidarColaborador.Text = ""; // Vaciar el mensaje
+                return;
+            }
+
+            // Si el colaborador no ha sido asignado
+            if (colaborador == "No asignado")
+            {
+                lblValidarColaborador.Text = ""; // Vaciar el mensaje
+                return;
+            }
+
+            // Buscar el usuario en la lista de usuarios
+            var usuarioEncontrado = listaUsuarios.FirstOrDefault(u => u.Usuario == colaborador);
+
+            if (usuarioEncontrado != null)
+            {
+                // Si el usuario existe, verificar su rol
+                if (usuarioEncontrado.Rol == "Colaborador")
+                {
+                    lblValidarColaborador.ForeColor = System.Drawing.Color.Green;
+                    lblValidarColaborador.Text = "El colaborador ha sido asignado";
+                }
+                else
+                {
+                    lblValidarColaborador.ForeColor = System.Drawing.Color.Red;
+                    lblValidarColaborador.Text = "*El usuario no puede asignarse a la orden";
+                }
+            }
+            else
+            {
+                // Si el usuario no existe
+                lblValidarColaborador.ForeColor = System.Drawing.Color.Red;
+                lblValidarColaborador.Text = "*El usuario no existe";
+            }
+        }
+
+        // Método para guardar el último ID en un archivo
+        private void GuardarUltimoID(int ultimoID)
+        {
+            string rutaID = "ultimoID.txt";  // Ruta del archivo donde se guardará el ID
+            File.WriteAllText(rutaID, ultimoID.ToString());
+        }
+
+        // Método para cargar el último ID desde un archivo
+        private int CargarUltimoID()
+        {
+            string rutaID = "ultimoID.txt";  // Ruta del archivo donde se guardará el ID
+
+            // Verificar si el archivo existe
+            if (File.Exists(rutaID))
+            {
+                // Leer el valor del último ID desde el archivo
+                string contenido = File.ReadAllText(rutaID);
+                if (int.TryParse(contenido, out int ultimoID))
+                {
+                    return ultimoID;
+                }
+            }
+
+            // Si no existe el archivo o no se puede leer, devolver 1 como valor predeterminado
+            // Crear el archivo si no existe
+            File.WriteAllText(rutaID, "1"); // Inicializa el archivo con el valor 1
+            return 1;
+        }
+
     }
 }
