@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static BunBunHub.Modelos.ModelosDeDatos;
 
-//Mio
-
 namespace BunBunHub.Formularios
 {
     public partial class PanelAdministrador : Form
@@ -60,7 +58,8 @@ namespace BunBunHub.Formularios
 
         private void btnPublicidad_Click(object sender, EventArgs e)
         {
-            GestionarPublicidad gestionarPublicidad = new GestionarPublicidad();
+            PanelCliente panelCliente = new PanelCliente();
+            GestionarPublicidad gestionarPublicidad = new GestionarPublicidad(panelCliente);
             gestionarPublicidad.Show();
             this.Hide();
         }

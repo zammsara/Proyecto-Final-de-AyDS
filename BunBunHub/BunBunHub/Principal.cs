@@ -22,6 +22,7 @@ namespace BunBunHub
         public Principal()
         {
             InitializeComponent();
+            ImagenPublicidad.CargarImagenDesdeArchivo();
         }
         // Eventos Basico
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -146,6 +147,12 @@ namespace BunBunHub
             {
                 answerBox.SelectAll();
             }
+        }
+
+        private void minuculas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Convertir la tecla presionada a minúscula
+            e.KeyChar = Char.ToLower(e.KeyChar);
         }
     }
 }

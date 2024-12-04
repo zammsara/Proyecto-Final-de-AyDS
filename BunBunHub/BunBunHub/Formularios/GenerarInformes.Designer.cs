@@ -86,7 +86,7 @@
             // btnPanelControl
             // 
             this.btnPanelControl.BackColor = System.Drawing.Color.Transparent;
-            this.btnPanelControl.BackgroundImage = global::BunBunHub.Properties.Resources.HomeBeige;
+            this.btnPanelControl.BackgroundImage = global::BunBunHub.Properties.Resources.HomeAzul;
             this.btnPanelControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPanelControl.FlatAppearance.BorderSize = 0;
             this.btnPanelControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -130,12 +130,12 @@
             this.lblPaneldeControl.BackColor = System.Drawing.Color.Transparent;
             this.lblPaneldeControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lblPaneldeControl.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblPaneldeControl.Location = new System.Drawing.Point(512, 42);
+            this.lblPaneldeControl.Location = new System.Drawing.Point(397, 13);
             this.lblPaneldeControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaneldeControl.Name = "lblPaneldeControl";
-            this.lblPaneldeControl.Size = new System.Drawing.Size(121, 35);
+            this.lblPaneldeControl.Size = new System.Drawing.Size(311, 35);
             this.lblPaneldeControl.TabIndex = 137;
-            this.lblPaneldeControl.Text = "Informes";
+            this.lblPaneldeControl.Text = "Informes de Rentabilidad";
             // 
             // btnCerrarSistema
             // 
@@ -155,7 +155,7 @@
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Transparent;
-            this.btnVolver.BackgroundImage = global::BunBunHub.Properties.Resources.VolverBeige;
+            this.btnVolver.BackgroundImage = global::BunBunHub.Properties.Resources.VolverAzul;
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,11 +175,11 @@
             this.grpDatosReporte.Controls.Add(this.label4);
             this.grpDatosReporte.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpDatosReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpDatosReporte.Location = new System.Drawing.Point(299, 129);
+            this.grpDatosReporte.Location = new System.Drawing.Point(299, 95);
             this.grpDatosReporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpDatosReporte.Name = "grpDatosReporte";
             this.grpDatosReporte.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpDatosReporte.Size = new System.Drawing.Size(710, 173);
+            this.grpDatosReporte.Size = new System.Drawing.Size(710, 187);
             this.grpDatosReporte.TabIndex = 146;
             this.grpDatosReporte.TabStop = false;
             this.grpDatosReporte.Text = "Detalles";
@@ -204,7 +204,7 @@
             this.grpResultados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpResultados.Name = "grpResultados";
             this.grpResultados.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpResultados.Size = new System.Drawing.Size(318, 137);
+            this.grpResultados.Size = new System.Drawing.Size(318, 149);
             this.grpResultados.TabIndex = 144;
             this.grpResultados.TabStop = false;
             this.grpResultados.Text = "Resultados";
@@ -354,7 +354,7 @@
             this.grpPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpPedidos.Name = "grpPedidos";
             this.grpPedidos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpPedidos.Size = new System.Drawing.Size(325, 137);
+            this.grpPedidos.Size = new System.Drawing.Size(325, 149);
             this.grpPedidos.TabIndex = 140;
             this.grpPedidos.TabStop = false;
             this.grpPedidos.Text = "Pedidos";
@@ -542,11 +542,11 @@
             this.grpRangoFecha.Controls.Add(this.dtpFinal);
             this.grpRangoFecha.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpRangoFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpRangoFecha.Location = new System.Drawing.Point(69, 129);
+            this.grpRangoFecha.Location = new System.Drawing.Point(69, 95);
             this.grpRangoFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpRangoFecha.Name = "grpRangoFecha";
             this.grpRangoFecha.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpRangoFecha.Size = new System.Drawing.Size(224, 173);
+            this.grpRangoFecha.Size = new System.Drawing.Size(224, 187);
             this.grpRangoFecha.TabIndex = 143;
             this.grpRangoFecha.TabStop = false;
             this.grpRangoFecha.Text = "Rango";
@@ -554,7 +554,7 @@
             // lblRangoFinal
             // 
             this.lblRangoFinal.AutoSize = true;
-            this.lblRangoFinal.Location = new System.Drawing.Point(9, 99);
+            this.lblRangoFinal.Location = new System.Drawing.Point(9, 111);
             this.lblRangoFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRangoFinal.Name = "lblRangoFinal";
             this.lblRangoFinal.Size = new System.Drawing.Size(77, 19);
@@ -564,7 +564,7 @@
             // lblRangoInicio
             // 
             this.lblRangoInicio.AutoSize = true;
-            this.lblRangoInicio.Location = new System.Drawing.Point(9, 30);
+            this.lblRangoInicio.Location = new System.Drawing.Point(9, 42);
             this.lblRangoInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRangoInicio.Name = "lblRangoInicio";
             this.lblRangoInicio.Size = new System.Drawing.Size(103, 19);
@@ -574,7 +574,7 @@
             // dtpInicio
             // 
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpInicio.Location = new System.Drawing.Point(13, 53);
+            this.dtpInicio.Location = new System.Drawing.Point(13, 65);
             this.dtpInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(144, 25);
@@ -584,7 +584,7 @@
             // dtpFinal
             // 
             this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFinal.Location = new System.Drawing.Point(13, 122);
+            this.dtpFinal.Location = new System.Drawing.Point(13, 134);
             this.dtpFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(144, 25);
@@ -600,7 +600,7 @@
             this.btnExportar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnExportar.ForeColor = System.Drawing.Color.White;
             this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExportar.Location = new System.Drawing.Point(901, 323);
+            this.btnExportar.Location = new System.Drawing.Point(901, 288);
             this.btnExportar.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(108, 37);
@@ -617,7 +617,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(185, 308);
+            this.btnGuardar.Location = new System.Drawing.Point(185, 288);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(108, 37);
@@ -632,11 +632,11 @@
             this.grpRegistroInformes.Controls.Add(this.dgvInformes);
             this.grpRegistroInformes.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpRegistroInformes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpRegistroInformes.Location = new System.Drawing.Point(69, 365);
+            this.grpRegistroInformes.Location = new System.Drawing.Point(69, 331);
             this.grpRegistroInformes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpRegistroInformes.Name = "grpRegistroInformes";
             this.grpRegistroInformes.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpRegistroInformes.Size = new System.Drawing.Size(940, 225);
+            this.grpRegistroInformes.Size = new System.Drawing.Size(940, 259);
             this.grpRegistroInformes.TabIndex = 142;
             this.grpRegistroInformes.TabStop = false;
             this.grpRegistroInformes.Text = "Registro de Informes";
@@ -653,7 +653,7 @@
             this.dgvInformes.ReadOnly = true;
             this.dgvInformes.RowHeadersWidth = 51;
             this.dgvInformes.RowTemplate.Height = 24;
-            this.dgvInformes.Size = new System.Drawing.Size(909, 184);
+            this.dgvInformes.Size = new System.Drawing.Size(909, 215);
             this.dgvInformes.TabIndex = 15;
             // 
             // btnCalcular
@@ -665,7 +665,7 @@
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
             this.btnCalcular.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCalcular.Location = new System.Drawing.Point(69, 308);
+            this.btnCalcular.Location = new System.Drawing.Point(69, 288);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(108, 37);
@@ -678,7 +678,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoGenerarInformes;
+            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoActualizarPedidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
             this.Controls.Add(this.grpDatosReporte);

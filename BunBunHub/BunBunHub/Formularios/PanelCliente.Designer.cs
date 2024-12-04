@@ -40,16 +40,16 @@
             this.btnPerfil = new System.Windows.Forms.ToolStripButton();
             this.btnOrdenes = new System.Windows.Forms.ToolStripButton();
             this.btnCerrarSesion = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picEstado = new System.Windows.Forms.PictureBox();
             this.picPublicidad2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtIdPedido = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnVisualizarPedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.tlsRegistrarUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEstado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPublicidad2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,14 +224,15 @@
             this.btnCerrarSesion.ToolTipText = "Salir del sistema";
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click_1);
             // 
-            // pictureBox1
+            // picEstado
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(704, 286);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 195);
-            this.pictureBox1.TabIndex = 141;
-            this.pictureBox1.TabStop = false;
+            this.picEstado.BackColor = System.Drawing.Color.Transparent;
+            this.picEstado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picEstado.Location = new System.Drawing.Point(716, 296);
+            this.picEstado.Name = "picEstado";
+            this.picEstado.Size = new System.Drawing.Size(188, 169);
+            this.picEstado.TabIndex = 141;
+            this.picEstado.TabStop = false;
             // 
             // picPublicidad2
             // 
@@ -255,17 +256,20 @@
             this.label7.TabIndex = 143;
             this.label7.Text = "Ingrese el ID del Pedido";
             // 
-            // txtUsuario
+            // txtIdPedido
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsuario.Location = new System.Drawing.Point(625, 237);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(268, 30);
-            this.txtUsuario.TabIndex = 144;
-            this.txtUsuario.Text = "P0000";
+            this.txtIdPedido.BackColor = System.Drawing.Color.White;
+            this.txtIdPedido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPedido.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtIdPedido.Location = new System.Drawing.Point(625, 237);
+            this.txtIdPedido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdPedido.Name = "txtIdPedido";
+            this.txtIdPedido.Size = new System.Drawing.Size(268, 30);
+            this.txtIdPedido.TabIndex = 144;
+            this.txtIdPedido.Text = "P0000";
+            this.txtIdPedido.Click += new System.EventHandler(this.seleccionar_enter);
+            this.txtIdPedido.TextChanged += new System.EventHandler(this.txtIdPedido_TextChanged);
+            this.txtIdPedido.Leave += new System.EventHandler(this.txtIdPedido_Leave);
             // 
             // btnBuscar
             // 
@@ -283,6 +287,7 @@
             this.btnBuscar.TabIndex = 145;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnVisualizarPedido
             // 
@@ -293,7 +298,7 @@
             this.btnVisualizarPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnVisualizarPedido.ForeColor = System.Drawing.Color.White;
             this.btnVisualizarPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnVisualizarPedido.Location = new System.Drawing.Point(707, 494);
+            this.btnVisualizarPedido.Location = new System.Drawing.Point(703, 494);
             this.btnVisualizarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizarPedido.Name = "btnVisualizarPedido";
             this.btnVisualizarPedido.Size = new System.Drawing.Size(218, 30);
@@ -301,6 +306,7 @@
             this.btnVisualizarPedido.Text = "Visualizar Pedido";
             this.btnVisualizarPedido.UseVisualStyleBackColor = false;
             this.btnVisualizarPedido.Visible = false;
+            this.btnVisualizarPedido.Click += new System.EventHandler(this.btnVisualizarPedido_Click);
             // 
             // PanelCliente
             // 
@@ -311,10 +317,10 @@
             this.ClientSize = new System.Drawing.Size(1080, 637);
             this.Controls.Add(this.btnVisualizarPedido);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtIdPedido);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.picPublicidad2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picEstado);
             this.Controls.Add(this.tlsRegistrarUsuario);
             this.Controls.Add(this.lblBunBunHub);
             this.Controls.Add(this.picLogo);
@@ -333,7 +339,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.tlsRegistrarUsuario.ResumeLayout(false);
             this.tlsRegistrarUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEstado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPublicidad2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -354,10 +360,10 @@
         private System.Windows.Forms.ToolStripButton btnPerfil;
         private System.Windows.Forms.ToolStripButton btnOrdenes;
         private System.Windows.Forms.ToolStripButton btnCerrarSesion;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picEstado;
         private System.Windows.Forms.PictureBox picPublicidad2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtIdPedido;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnVisualizarPedido;
     }

@@ -117,7 +117,7 @@ namespace BunBunHub.Formularios
             if (cmbPuntoEntrega.Text != "Metrocentro" && cmbPuntoEntrega.Text != "Plaza Naturas")
             {
                 // Si no es "Metrocentro" o "Plaza Naturas", mostrar un mensaje de error y colocar el foco en cmbPuntoEntrega
-                MessageBox.Show("El punto de entrega debe ser 'Metrocentro' o 'Plaza Naturas'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Punto de entrega no Seleccionado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cmbPuntoEntrega.Focus();
                 return;
             }

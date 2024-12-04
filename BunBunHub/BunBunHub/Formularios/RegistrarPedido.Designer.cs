@@ -53,6 +53,8 @@
             this.dtpFechaCompra = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.grpDetallesCliente = new System.Windows.Forms.GroupBox();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtTelefonoCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCorreoCliente = new System.Windows.Forms.TextBox();
@@ -66,8 +68,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDPedido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.tlsRegistrarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpDetallesPedido.SuspendLayout();
@@ -425,6 +425,28 @@
             this.grpDetallesCliente.TabStop = false;
             this.grpDetallesCliente.Text = "Detalles del cliente";
             // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Enabled = false;
+            this.txtNombreCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCliente.Location = new System.Drawing.Point(80, 25);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.ReadOnly = true;
+            this.txtNombreCliente.Size = new System.Drawing.Size(145, 26);
+            this.txtNombreCliente.TabIndex = 143;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(9, 28);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 19);
+            this.label13.TabIndex = 142;
+            this.label13.Text = "Nombre:";
+            // 
             // txtTelefonoCliente
             // 
             this.txtTelefonoCliente.Enabled = false;
@@ -576,28 +598,6 @@
             this.label1.Size = new System.Drawing.Size(26, 19);
             this.label1.TabIndex = 128;
             this.label1.Text = "ID:";
-            // 
-            // txtNombreCliente
-            // 
-            this.txtNombreCliente.Enabled = false;
-            this.txtNombreCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCliente.Location = new System.Drawing.Point(80, 25);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.ReadOnly = true;
-            this.txtNombreCliente.Size = new System.Drawing.Size(145, 26);
-            this.txtNombreCliente.TabIndex = 143;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(9, 28);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 19);
-            this.label13.TabIndex = 142;
-            this.label13.Text = "Nombre:";
             // 
             // RegistrarPedido
             // 

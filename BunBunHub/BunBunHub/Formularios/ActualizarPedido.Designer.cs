@@ -60,10 +60,10 @@
             this.txtIDPedidoEditar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEditarPedido = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbOrdenar = new System.Windows.Forms.ComboBox();
             this.lblOrdenar = new System.Windows.Forms.Label();
             this.cmbFiltro = new System.Windows.Forms.ComboBox();
             this.lblFiltrar = new System.Windows.Forms.Label();
@@ -108,8 +108,8 @@
             this.lblRegistrarPedido.AutoSize = true;
             this.lblRegistrarPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblRegistrarPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lblRegistrarPedido.ForeColor = System.Drawing.Color.White;
-            this.lblRegistrarPedido.Location = new System.Drawing.Point(390, 9);
+            this.lblRegistrarPedido.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblRegistrarPedido.Location = new System.Drawing.Point(402, 8);
             this.lblRegistrarPedido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrarPedido.Name = "lblRegistrarPedido";
             this.lblRegistrarPedido.Size = new System.Drawing.Size(246, 35);
@@ -119,7 +119,7 @@
             // btnCerrarSistema
             // 
             this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarBlanco;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -170,7 +170,7 @@
             this.grpHistorialPedidos.Size = new System.Drawing.Size(940, 221);
             this.grpHistorialPedidos.TabIndex = 132;
             this.grpHistorialPedidos.TabStop = false;
-            this.grpHistorialPedidos.Text = "Historial de Usuarios";
+            this.grpHistorialPedidos.Text = "Historial de Pedidos";
             // 
             // dgvPedidos
             // 
@@ -413,7 +413,7 @@
             this.dtpFechaCompraEditar.Name = "dtpFechaCompraEditar";
             this.dtpFechaCompraEditar.Size = new System.Drawing.Size(144, 26);
             this.dtpFechaCompraEditar.TabIndex = 137;
-            this.dtpFechaCompraEditar.Value = new System.DateTime(2024, 12, 1, 0, 0, 0, 0);
+            this.dtpFechaCompraEditar.Value = new System.DateTime(2024, 12, 3, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -499,28 +499,30 @@
             this.btnEditarPedido.UseVisualStyleBackColor = false;
             this.btnEditarPedido.Click += new System.EventHandler(this.btnEditarPedido_Click);
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(972, 101);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 27);
-            this.button1.TabIndex = 159;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Location = new System.Drawing.Point(972, 101);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(34, 27);
+            this.btnBuscar.TabIndex = 159;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
-            // textBox1
+            // txtBusqueda
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(786, 102);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 26);
-            this.textBox1.TabIndex = 158;
+            this.txtBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(786, 102);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(181, 26);
+            this.txtBusqueda.TabIndex = 158;
+            this.txtBusqueda.Click += new System.EventHandler(this.seleccionar_enter);
             // 
             // label4
             // 
@@ -535,20 +537,23 @@
             this.label4.TabIndex = 157;
             this.label4.Text = "Buscar orden:";
             // 
-            // comboBox1
+            // cmbOrdenar
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOrdenar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.cmbOrdenar.FormattingEnabled = true;
+            this.cmbOrdenar.Items.AddRange(new object[] {
             "Predeterminado",
             "Mayor a menor monto",
             "Menor a mayor monto",
-            "Fecha de compra"});
-            this.comboBox1.Location = new System.Drawing.Point(396, 105);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 24);
-            this.comboBox1.TabIndex = 156;
+            "Más recientes",
+            "Más antiguos"});
+            this.cmbOrdenar.Location = new System.Drawing.Point(396, 105);
+            this.cmbOrdenar.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbOrdenar.Name = "cmbOrdenar";
+            this.cmbOrdenar.Size = new System.Drawing.Size(192, 27);
+            this.cmbOrdenar.TabIndex = 156;
+            this.cmbOrdenar.SelectedIndexChanged += new System.EventHandler(this.cmbOrdenar_SelectedIndexChanged_1);
             // 
             // lblOrdenar
             // 
@@ -566,6 +571,7 @@
             // cmbFiltro
             // 
             this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiltro.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
             this.cmbFiltro.FormattingEnabled = true;
             this.cmbFiltro.Items.AddRange(new object[] {
             "Todos",
@@ -577,8 +583,9 @@
             this.cmbFiltro.Location = new System.Drawing.Point(116, 105);
             this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(192, 24);
+            this.cmbFiltro.Size = new System.Drawing.Size(192, 27);
             this.cmbFiltro.TabIndex = 154;
+            this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.cmbFiltro_SelectedIndexChanged_1);
             // 
             // lblFiltrar
             // 
@@ -600,10 +607,10 @@
             this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoActualizarPedidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbOrdenar);
             this.Controls.Add(this.lblOrdenar);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.lblFiltrar);
@@ -667,10 +674,10 @@
         private System.Windows.Forms.TextBox txtUsuarioClienteEditar;
         private System.Windows.Forms.Button btnEditarPedido;
         private System.Windows.Forms.Label lblColaboradorValidacion;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbOrdenar;
         private System.Windows.Forms.Label lblOrdenar;
         private System.Windows.Forms.ComboBox cmbFiltro;
         private System.Windows.Forms.Label lblFiltrar;

@@ -14,7 +14,7 @@ namespace BunBunHub.Formularios
 {
     public partial class ActualizarPedido : Form
     {
-        public List<Pedido> listaPedidos {  get; set; }
+        public List<Pedido> listaPedidos { get; set; }
         private Pedido pedidoSeleccionado;  // Variable para almacenar el pedido seleccionado
         private bool enEdicion = false;     // Para saber si estamos editando un pedido
 
@@ -30,6 +30,9 @@ namespace BunBunHub.Formularios
 
             GestionDeArchivos archivo = new GestionDeArchivos();
             listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
+
+            cmbFiltro.Text = "Todos";
+            cmbOrdenar.Text = "Predeterminado";
         }
 
         //Visualizar registros en los DataGridView
@@ -349,5 +352,121 @@ namespace BunBunHub.Formularios
                 e.Handled = true;
             }
         }
+
+        private void seleccionar_enter(object sender, EventArgs e)
+        {
+            //Seleccione la respuesta completa en el control TextBox.
+            TextBox answerBox = sender as TextBox;
+
+            if (answerBox != null)
+            {
+                answerBox.SelectAll();
+            }
+        }
+
+        private void cmbFiltro_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            // Obtener el valor seleccionado del ComboBox
+            string estadoSeleccionado = cmbFiltro.SelectedItem.ToString();
+
+            // Filtrar la lista de pedidos según el estado seleccionado
+            List<Pedido> pedidosFiltrados;
+
+            if (estadoSeleccionado == "Todos")
+            {
+                // Mostrar todos los pedidos si "Todos" está seleccionado
+                pedidosFiltrados = listaPedidos;
+            }
+            else
+            {
+                // Filtrar por el estado seleccionado
+                pedidosFiltrados = listaPedidos.Where(u => u.Estado == estadoSeleccionado).ToList();
+            }
+
+            //Actualizar el DataGridView con los pedidos filtrados
+            dgvPedidos.DataSource = pedidosFiltrados;
+        }
+
+        private void cmbOrdenar_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (listaPedidos == null || listaPedidos.Count == 0)
+            {
+                return;
+            }
+
+            string opcionSeleccionada = cmbOrdenar.SelectedItem.ToString();
+
+            // Ordenar la lista según la opción seleccionada
+            switch (opcionSeleccionada)
+            {
+                case "Predeterminado":
+                    // Volver al orden original de la lista
+                    var gestionDeArchivos = new GestionDeArchivos();
+                    listaPedidos = gestionDeArchivos.CargarPedidos(RegistrarPedido.rutaPedidos);
+                    break;
+
+                case "Mayor a menor monto":
+                    listaPedidos = listaPedidos.OrderByDescending(p => p.Monto_Total).ToList();
+                    break;
+
+                case "Menor a mayor monto":
+                    listaPedidos = listaPedidos.OrderBy(p => p.Monto_Total).ToList();
+                    break;
+
+                case "Más recientes":
+                    listaPedidos = listaPedidos.OrderByDescending(p => p.Fecha_Compra).ToList();
+                    break;
+
+                case "Más antiguos":
+                    listaPedidos = listaPedidos.OrderBy(p => p.Fecha_Compra).ToList();
+                    break;
+
+                default:
+                    MessageBox.Show("Selección no válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+            }
+
+            // Actualizar el DataGridView
+            ActualizarDataGridView();
+        }
+
+        private void btnBuscar_Click_1(object sender, EventArgs e)
+        {
+            // Validar si el cuadro de texto está vacío
+            if (string.IsNullOrEmpty(txtBusqueda.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un ID de pedido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBusqueda.Focus();
+                return;
+            }
+
+            // Obtener el ID ingresado en el cuadro de texto
+            string idBusqueda = txtBusqueda.Text.Trim();
+
+            // Buscar el pedido en la lista
+            Pedido pedidoEncontrado = listaPedidos.FirstOrDefault(p => p.ID_Pedido == idBusqueda);
+
+            if (pedidoEncontrado != null)
+            {
+                // Si se encuentra el pedido, seleccionarlo en el DataGridView
+                foreach (DataGridViewRow row in dgvPedidos.Rows)
+                {
+                    if (row.DataBoundItem is Pedido pedido && pedido.ID_Pedido == idBusqueda)
+                    {
+                        row.Selected = true; // Seleccionar la fila encontrada
+                        dgvPedidos.FirstDisplayedScrollingRowIndex = row.Index; // Asegurar que sea visible
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                // Si no se encuentra el pedido, mostrar mensaje de error
+                MessageBox.Show($"No se encontró ningún pedido con el ID '{idBusqueda}'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBusqueda.Clear();
+                txtBusqueda.Focus();
+            }
+        }
     }
+
 }

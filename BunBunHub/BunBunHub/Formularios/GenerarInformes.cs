@@ -70,6 +70,20 @@ namespace BunBunHub.Formularios
             DateTime fechaInicio = dtpInicio.Value;
             DateTime fechaFin = dtpFinal.Value;
 
+            // Validación de fechas
+            if (fechaFin < fechaInicio)
+            {
+                // Mostrar mensaje de error
+                MessageBox.Show("La fecha de finalización no puede ser anterior a la fecha de inicio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Establecer ambos DateTimePickers a la fecha actual
+                dtpInicio.Value = DateTime.Now;
+                dtpFinal.Value = DateTime.Now;
+                dtpInicio.Focus();
+
+                return;
+            }
+
             List<Pedido> pedidosEnRango = new List<Pedido>();
 
             foreach (var pedido in listaPedidos)

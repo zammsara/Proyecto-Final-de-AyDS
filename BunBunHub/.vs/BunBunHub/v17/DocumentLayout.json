@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\bunbunhub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\bunbunhub\\bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\panelcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\bunbunhub\\bunbunhub\\formularios\\actualizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\formularios\\actualizarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\bunbunhub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,29 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PanelCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs [Dise\u00F1o]",
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Principal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:50:07.135Z",
+              "WhenOpened": "2024-12-04T03:58:27.491Z",
               "IsPinned": true,
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PanelCliente.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\PanelCliente.cs",
-              "RelativeToolTip": "BunBunHub\\Formularios\\PanelCliente.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswBsAAABBAAAAAAAAAA==",
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
+              "RelativeToolTip": "BunBunHub\\Principal.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAMwJoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:28:02.183Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T03:58:47.481Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -74,30 +65,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActualizarPedido.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\ActualizarPedido.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Formularios\\ActualizarPedido.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Formularios\\ActualizarPedido.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Formularios\\ActualizarPedido.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:35:07.824Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Principal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:34:12.529Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -37,7 +37,6 @@
             this.picPublicidad = new System.Windows.Forms.PictureBox();
             this.btnSeleccionarImagen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPublicidad)).BeginInit();
             this.SuspendLayout();
@@ -127,9 +126,9 @@
             // picPublicidad
             // 
             this.picPublicidad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picPublicidad.Location = new System.Drawing.Point(154, 143);
+            this.picPublicidad.Location = new System.Drawing.Point(91, 140);
             this.picPublicidad.Name = "picPublicidad";
-            this.picPublicidad.Size = new System.Drawing.Size(352, 384);
+            this.picPublicidad.Size = new System.Drawing.Size(424, 421);
             this.picPublicidad.TabIndex = 138;
             this.picPublicidad.TabStop = false;
             // 
@@ -142,7 +141,7 @@
             this.btnSeleccionarImagen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnSeleccionarImagen.ForeColor = System.Drawing.Color.White;
             this.btnSeleccionarImagen.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSeleccionarImagen.Location = new System.Drawing.Point(154, 534);
+            this.btnSeleccionarImagen.Location = new System.Drawing.Point(669, 365);
             this.btnSeleccionarImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeleccionarImagen.Name = "btnSeleccionarImagen";
             this.btnSeleccionarImagen.Size = new System.Drawing.Size(162, 37);
@@ -157,31 +156,13 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(641, 315);
+            this.label1.Location = new System.Drawing.Point(632, 309);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 40);
             this.label1.TabIndex = 140;
             this.label1.Text = "La imagen seleccionada será\r\nmostrada en el panel de Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btnMostrar
-            // 
-            this.btnMostrar.AutoSize = true;
-            this.btnMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btnMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnMostrar.ForeColor = System.Drawing.Color.White;
-            this.btnMostrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMostrar.Location = new System.Drawing.Point(344, 534);
-            this.btnMostrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(162, 37);
-            this.btnMostrar.TabIndex = 141;
-            this.btnMostrar.Text = "Mostrar a Cliente";
-            this.btnMostrar.UseVisualStyleBackColor = false;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // GestionarPublicidad
             // 
@@ -190,7 +171,6 @@
             this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoGenerarInformes;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
-            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSeleccionarImagen);
             this.Controls.Add(this.picPublicidad);
@@ -222,6 +202,5 @@
         private System.Windows.Forms.PictureBox picPublicidad;
         private System.Windows.Forms.Button btnSeleccionarImagen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMostrar;
     }
 }
