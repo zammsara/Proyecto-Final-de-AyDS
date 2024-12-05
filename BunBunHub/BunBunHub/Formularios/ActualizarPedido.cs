@@ -14,6 +14,8 @@ namespace BunBunHub.Formularios
 {
     public partial class ActualizarPedido : Form
     {
+        public string Rol { get; set; }
+        private string rolUsuario;
         public List<Pedido> listaPedidos { get; set; }
         private Pedido pedidoSeleccionado;  // Variable para almacenar el pedido seleccionado
         private bool enEdicion = false;     // Para saber si estamos editando un pedido
@@ -24,6 +26,7 @@ namespace BunBunHub.Formularios
         public ActualizarPedido()
         {
             InitializeComponent();
+            rolUsuario = UsuarioSesion.RolUsuario;
             listaPedidos = new List<Pedido>();
             grpDetallesPedidoEditar.Enabled = false;
             btnGuardarCambiosPedido.Enabled = false; // Deshabilitar el botón Guardar al inicio
@@ -274,16 +277,82 @@ namespace BunBunHub.Formularios
         // Lógica de navegación entre forms
         private void btnPanelControl_Click(object sender, EventArgs e)
         {
-            PanelAdministrador panelAdministrador = new PanelAdministrador();
-            panelAdministrador.Show();
-            this.Hide();
+            // Verificar si el botón btnGuardarCambiosPedido está habilitado
+            if (btnGuardarCambiosPedido.Enabled)
+            {
+                // Preguntar al usuario si desea regresar sin guardar
+                DialogResult result = MessageBox.Show("Actualmente estás editando un pedido. ¿Deseas volver sin guardar?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                // Si el usuario selecciona "Sí", proceder con el regreso
+                if (result == DialogResult.Yes)
+                {
+                    // Verificar el rol y abrir el panel correspondiente
+                    if (Rol == "Colaborador")
+                    {
+                        PanelColaborador panelColaborador = new PanelColaborador();
+                        panelColaborador.Show();
+                        this.Hide();  // Ocultar el formulario actual
+                    }
+                    else
+                    {
+                        // Si el rol es "Administrador", regresar al panel de administrador
+                        PanelAdministrador panelAdministrador = new PanelAdministrador();
+                        panelAdministrador.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            else
+            {
+                // Si el botón no está habilitado, proceder sin preguntar
+                if (Rol == "Colaborador")
+                {
+                    PanelColaborador panelColaborador = new PanelColaborador();
+                    panelColaborador.Show();
+                    this.Hide();  // Ocultar el formulario actual
+                }
+                else
+                {
+                    // Si el rol es "Administrador", regresar al panel de administrador
+                    PanelAdministrador panelAdministrador = new PanelAdministrador();
+                    panelAdministrador.Show();
+                    this.Hide();
+                }
+            }
         }
+
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            GestionPedidos gestionPedidos = new GestionPedidos();
-            gestionPedidos.Show();
-            this.Hide();
+            if (btnGuardarCambiosPedido.Enabled)
+            {
+                // Preguntar al usuario si desea regresar sin guardar
+                DialogResult result = MessageBox.Show("Actualmente estás editando un pedido. ¿Deseas volver sin guardar?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                // Si el usuario selecciona "Sí", proceder con el regreso
+                if (result == DialogResult.Yes)
+                {
+                    GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Rol = rolUsuario;
+                    gestionPedidos.Show();
+                    this.Hide();
+                } 
+                else
+                {
+                    // Si el botón no está habilitado, proceder sin preguntar
+                    GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Rol = rolUsuario;
+                    gestionPedidos.Show();
+                    this.Hide();
+                }
+            } else
+            {
+                // Si el botón no está habilitado, proceder sin preguntar
+                GestionPedidos gestionPedidos = new GestionPedidos();
+                gestionPedidos.Rol = rolUsuario;
+                gestionPedidos.Show();
+                this.Hide();
+            }
         }
 
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -455,6 +524,7 @@ namespace BunBunHub.Formularios
                     {
                         row.Selected = true; // Seleccionar la fila encontrada
                         dgvPedidos.FirstDisplayedScrollingRowIndex = row.Index; // Asegurar que sea visible
+                        txtBusqueda.Focus();
                         return;
                     }
                 }

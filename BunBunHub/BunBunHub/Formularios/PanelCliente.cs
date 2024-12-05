@@ -35,6 +35,7 @@ namespace BunBunHub.Formularios
             picPublicidad2.SizeMode = PictureBoxSizeMode.StretchImage;
 
             btnVisualizarPedido.Visible = false;
+            picCancelado.Visible = false;
         }
 
         // Propiedad para actualizar la imagen en panel Cliente
@@ -48,6 +49,8 @@ namespace BunBunHub.Formularios
         {
             if (string.IsNullOrWhiteSpace(txtIdPedido.Text) || txtIdPedido.Text == "P0000")
             {
+                picCancelado.Visible = false;
+                picEstado.Visible = true;
                 picEstado.Image = Image.FromFile(@"Resources\picBuscar.png");
                 btnVisualizarPedido.Visible = false;
             }
@@ -56,14 +59,6 @@ namespace BunBunHub.Formularios
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnCerrarSesion_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            Principal iniciarSesion = new Principal();
-            iniciarSesion.Show();
-            this.Hide();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -125,14 +120,17 @@ namespace BunBunHub.Formularios
                         break;
 
                         case "Cancelado":
-                            picEstado.Image = Image.FromFile(@"Resources\picCancelado.png");
-                            picEstado.SizeMode = PictureBoxSizeMode.StretchImage;
+                            picCancelado.Visible = true;
+                            picEstado.Visible = false;
+                            picCancelado.Image = Image.FromFile(@"Resources\picCancelado.png");
+                            picCancelado.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
 
                         default:
                             MessageBox.Show("Estado no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             txtIdPedido.Clear();
                             txtIdPedido.Focus();
+                            picCancelado.Visible = false;
                             btnVisualizarPedido.Visible = false;
                             picEstado.Image = null;
                         break;
@@ -142,6 +140,7 @@ namespace BunBunHub.Formularios
                 {
                     // Si no es el mismo usuario, mostramos el mensaje de error
                     MessageBox.Show("La orden no existe. Verifique e intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    picCancelado.Visible = false;
                     txtIdPedido.Clear();
                     txtIdPedido.Focus();
 
@@ -153,6 +152,7 @@ namespace BunBunHub.Formularios
             else
             {
                 MessageBox.Show("La orden no existe. Verifique e intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                picCancelado.Visible = false;
                 txtIdPedido.Clear();
                 txtIdPedido.Focus();
 
@@ -160,6 +160,7 @@ namespace BunBunHub.Formularios
                 btnVisualizarPedido.Visible = false;
                 picEstado.Image = Image.FromFile(@"Resources\picBuscar.png");
             }
+            txtIdPedido.Focus();
         }
 
 
@@ -189,6 +190,14 @@ namespace BunBunHub.Formularios
             visualizarPedido.IdPedido = txtIdPedido.Text; 
             visualizarPedido.Usuario = nombreUsuario;  
             visualizarPedido.ShowDialog();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Principal iniciarSesion = new Principal();
+            iniciarSesion.Show();
+            this.Hide();
         }
     }
 }

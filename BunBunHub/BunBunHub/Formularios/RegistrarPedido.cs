@@ -15,6 +15,8 @@ namespace BunBunHub.Formularios
 {
     public partial class RegistrarPedido : Form
     {
+        public string Rol { get; set; }
+        private string rolUsuario;
         private List<Pedido> listaPedidos = new List<Pedido>();
         private List<DetallesCliente> listaClientes = new List<DetallesCliente>();
         private List<Usuarios> listaUsuarios = new List<Usuarios>();
@@ -26,9 +28,10 @@ namespace BunBunHub.Formularios
         public RegistrarPedido()
         {
             InitializeComponent();
+            rolUsuario = UsuarioSesion.RolUsuario;
             GestionDeArchivos archivo = new GestionDeArchivos();
 
-            listaPedidos=archivo.CargarPedidos(rutaPedidos);
+            listaPedidos = archivo.CargarPedidos(rutaPedidos);
             listaClientes = archivo.CargarClientes(rutaClientes);
             listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
 
@@ -40,6 +43,58 @@ namespace BunBunHub.Formularios
         {
             string nuevoID = "P" + ultimoID.ToString("D4");
             txtIDPedido.Text = nuevoID;
+        }
+
+        private void btnPanelControl_Click(object sender, EventArgs e)
+        {
+            // Verificar si al menos uno de los controles tiene datos
+            bool hayDatos = false;
+            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) || !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
+                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) || !string.IsNullOrEmpty(txtDescripcion.Text))
+            {
+                hayDatos = true;
+            }
+
+            // Si hay datos, preguntar al usuario si desea volver sin guardar
+            if (hayDatos)
+            {
+                DialogResult resultado = MessageBox.Show("Hay datos no guardados. ¿Desea volver sin guardar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Verificar el rol y abrir el panel correspondiente
+                    if (Rol == "Colaborador")
+                    {
+                        PanelColaborador panelColaborador = new PanelColaborador();
+                        panelColaborador.Show();
+                        this.Hide();  // Ocultar el formulario actual
+                    }
+                    else
+                    {
+                        // Si el usuario elige "Sí", regresar al panel de administrador
+                        PanelAdministrador panelAdministrador = new PanelAdministrador();
+                        panelAdministrador.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            else
+            {
+                // Verificar el rol y abrir el panel correspondiente
+                if (Rol == "Colaborador")
+                {
+                    PanelColaborador panelColaborador = new PanelColaborador();
+                    panelColaborador.Show();
+                    this.Hide();  // Ocultar el formulario actual
+                }
+                else
+                {
+                    // Si el usuario elige "Sí", regresar al panel de administrador
+                    PanelAdministrador panelAdministrador = new PanelAdministrador();
+                    panelAdministrador.Show();
+                    this.Hide();
+                }
+            }
         }
 
         private void btnBuscarUsuarioCliente_Click(object sender, EventArgs e)
@@ -221,6 +276,7 @@ namespace BunBunHub.Formularios
                 {
                     // Si el usuario elige "Sí", regresar a la pestaña anterior
                     GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Rol = rolUsuario;
                     gestionPedidos.Show();
                     this.Hide();
                 }
@@ -229,42 +285,8 @@ namespace BunBunHub.Formularios
             {
                 // Si no hay datos, volver al panel sin preguntar
                 GestionPedidos gestionPedidos = new GestionPedidos();
+                gestionPedidos.Rol = rolUsuario;
                 gestionPedidos.Show();
-                this.Hide();
-            }
-        }
-
-        private void btnPanelControl_Click(object sender, EventArgs e)
-        {
-            // Verificar si al menos uno de los controles tiene datos
-            bool hayDatos = false;
-            if (!string.IsNullOrEmpty(txtApellidoCliente.Text) || !string.IsNullOrEmpty(txtCorreoCliente.Text) ||
-                !string.IsNullOrEmpty(txtTelefonoCliente.Text) || !string.IsNullOrEmpty(txtUsuarioCliente.Text) ||
-                !string.IsNullOrEmpty(txtColaborador.Text) || !string.IsNullOrEmpty(txtCostoCompra.Text) ||
-                !string.IsNullOrEmpty(txtCostoMaterial.Text) || !string.IsNullOrEmpty(cmbPuntoEntrega.Text) ||
-                !string.IsNullOrEmpty(txtDescripcion.Text) || !string.IsNullOrEmpty(cmbEstado.Text))
-            {
-                hayDatos = true;
-            }
-
-            // Si hay datos, preguntar al usuario si desea volver sin guardar
-            if (hayDatos)
-            {
-                DialogResult resultado = MessageBox.Show("Hay datos no guardados. ¿Desea volver sin guardar?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (resultado == DialogResult.Yes)
-                {
-                    // Si el usuario elige "Sí", regresar al panel de administrador
-                    PanelAdministrador panelAdministrador = new PanelAdministrador();
-                    panelAdministrador.Show();
-                    this.Hide();
-                }
-            }
-            else
-            {
-                // Si no hay datos, volver al panel sin preguntar
-                PanelAdministrador panelAdministrador = new PanelAdministrador();
-                panelAdministrador.Show();
                 this.Hide();
             }
         }

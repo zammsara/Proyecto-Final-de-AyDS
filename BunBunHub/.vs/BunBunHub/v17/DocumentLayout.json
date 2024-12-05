@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|c:\\users\\arelys castillo\\desktop\\bunbunhub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{907DDCA0-7D8E-4068-9479-68D43C8F086F}|BunBunHub\\BunBunHub.csproj|solutionrelative:bunbunhub\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "BunBunHub\\Principal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:58:27.491Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Principal.cs",
-              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
-              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
-              "RelativeToolTip": "BunBunHub\\Principal.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAMwJoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:58:47.481Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -65,6 +35,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs",
+              "RelativeDocumentMoniker": "BunBunHub\\Principal.cs",
+              "ToolTip": "C:\\Users\\Arelys Castillo\\Desktop\\BunBunHub\\BunBunHub\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BunBunHub\\Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T19:25:52.019Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -28,13 +28,6 @@ namespace BunBunHub.Formularios
         {
             Application.Exit();
         }
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            Principal iniciarSesion = new Principal();
-            iniciarSesion.Show();
-            this.Hide();
-        }
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             GestionUsuarios GestionUsuariosForm = new GestionUsuarios();
@@ -56,12 +49,19 @@ namespace BunBunHub.Formularios
             this.Hide();
         }
 
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Principal iniciarSesion = new Principal();
+            iniciarSesion.Show();
+            this.Hide();
+        }
+
         private void btnPublicidad_Click(object sender, EventArgs e)
         {
             PanelCliente panelCliente = new PanelCliente();
             GestionarPublicidad gestionarPublicidad = new GestionarPublicidad(panelCliente);
-            gestionarPublicidad.Show();
-            this.Hide();
+            gestionarPublicidad.ShowDialog();
         }
     }
 }

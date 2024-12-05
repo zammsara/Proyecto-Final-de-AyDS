@@ -92,6 +92,9 @@
             this.btnCerrarSistema = new System.Windows.Forms.Button();
             this.lblBunBunHub = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.lblEncabezado = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControlRegistros.SuspendLayout();
             this.tabPageUsuariosSistema.SuspendLayout();
@@ -116,17 +119,17 @@
             this.tabControlRegistros.Controls.Add(this.tabPageUsuariosSistema);
             this.tabControlRegistros.Controls.Add(this.tabPageClientes);
             this.tabControlRegistros.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlRegistros.Location = new System.Drawing.Point(21, 71);
+            this.tabControlRegistros.Location = new System.Drawing.Point(21, 65);
             this.tabControlRegistros.Multiline = true;
             this.tabControlRegistros.Name = "tabControlRegistros";
             this.tabControlRegistros.SelectedIndex = 0;
             this.tabControlRegistros.ShowToolTips = true;
-            this.tabControlRegistros.Size = new System.Drawing.Size(1040, 554);
+            this.tabControlRegistros.Size = new System.Drawing.Size(1040, 560);
             this.tabControlRegistros.TabIndex = 0;
             // 
             // tabPageUsuariosSistema
             // 
-            this.tabPageUsuariosSistema.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPageUsuariosSistema.BackColor = System.Drawing.Color.White;
             this.tabPageUsuariosSistema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPageUsuariosSistema.Controls.Add(this.btnCancelar);
             this.tabPageUsuariosSistema.Controls.Add(this.btnGuardarCambios);
@@ -480,15 +483,18 @@
             // 
             // tabPageClientes
             // 
-            this.tabPageClientes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPageClientes.BackColor = System.Drawing.Color.White;
             this.tabPageClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPageClientes.Controls.Add(this.btnBuscar);
+            this.tabPageClientes.Controls.Add(this.txtBusqueda);
+            this.tabPageClientes.Controls.Add(this.label1);
             this.tabPageClientes.Controls.Add(this.grpActualizarCliente);
             this.tabPageClientes.Controls.Add(this.tlsVolver);
             this.tabPageClientes.Controls.Add(this.grpHistorialClientes);
             this.tabPageClientes.Location = new System.Drawing.Point(4, 29);
             this.tabPageClientes.Name = "tabPageClientes";
             this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClientes.Size = new System.Drawing.Size(1032, 521);
+            this.tabPageClientes.Size = new System.Drawing.Size(1032, 527);
             this.tabPageClientes.TabIndex = 1;
             this.tabPageClientes.Text = "Clientes";
             // 
@@ -503,9 +509,9 @@
             this.grpActualizarCliente.Controls.Add(this.grpDatosCliente);
             this.grpActualizarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpActualizarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpActualizarCliente.Location = new System.Drawing.Point(6, 297);
+            this.grpActualizarCliente.Location = new System.Drawing.Point(6, 308);
             this.grpActualizarCliente.Name = "grpActualizarCliente";
-            this.grpActualizarCliente.Size = new System.Drawing.Size(1016, 214);
+            this.grpActualizarCliente.Size = new System.Drawing.Size(1016, 203);
             this.grpActualizarCliente.TabIndex = 3;
             this.grpActualizarCliente.TabStop = false;
             this.grpActualizarCliente.Text = "Actualizar datos de Cliente";
@@ -554,7 +560,7 @@
             this.btnGuardarCambiosCliente.Name = "btnGuardarCambiosCliente";
             this.btnGuardarCambiosCliente.Size = new System.Drawing.Size(162, 37);
             this.btnGuardarCambiosCliente.TabIndex = 135;
-            this.btnGuardarCambiosCliente.Text = "Guardar Cambios";
+            this.btnGuardarCambiosCliente.Text = "Guardar";
             this.btnGuardarCambiosCliente.UseVisualStyleBackColor = false;
             this.btnGuardarCambiosCliente.Click += new System.EventHandler(this.btnGuardarCambiosCliente_Click);
             // 
@@ -597,7 +603,7 @@
             this.grpContacto.Enabled = false;
             this.grpContacto.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpContacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpContacto.Location = new System.Drawing.Point(413, 25);
+            this.grpContacto.Location = new System.Drawing.Point(404, 25);
             this.grpContacto.Margin = new System.Windows.Forms.Padding(4);
             this.grpContacto.Name = "grpContacto";
             this.grpContacto.Padding = new System.Windows.Forms.Padding(4);
@@ -688,7 +694,7 @@
             this.grpDatosCliente.Enabled = false;
             this.grpDatosCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpDatosCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpDatosCliente.Location = new System.Drawing.Point(22, 25);
+            this.grpDatosCliente.Location = new System.Drawing.Point(13, 25);
             this.grpDatosCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosCliente.Name = "grpDatosCliente";
             this.grpDatosCliente.Padding = new System.Windows.Forms.Padding(4);
@@ -847,9 +853,9 @@
             this.grpHistorialClientes.Controls.Add(this.dgvClientes);
             this.grpHistorialClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpHistorialClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpHistorialClientes.Location = new System.Drawing.Point(6, 50);
+            this.grpHistorialClientes.Location = new System.Drawing.Point(6, 78);
             this.grpHistorialClientes.Name = "grpHistorialClientes";
-            this.grpHistorialClientes.Size = new System.Drawing.Size(1016, 241);
+            this.grpHistorialClientes.Size = new System.Drawing.Size(1016, 224);
             this.grpHistorialClientes.TabIndex = 1;
             this.grpHistorialClientes.TabStop = false;
             this.grpHistorialClientes.Text = "Historial de Clientes";
@@ -868,7 +874,7 @@
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(987, 198);
+            this.dgvClientes.Size = new System.Drawing.Size(987, 183);
             this.dgvClientes.TabIndex = 1;
             // 
             // MenuDGVClientes
@@ -898,7 +904,7 @@
             // btnCerrarSistema
             // 
             this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarBlanco;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -936,18 +942,55 @@
             this.picLogo.TabIndex = 127;
             this.picLogo.TabStop = false;
             // 
+            // lblEncabezado
+            // 
+            this.lblEncabezado.AutoSize = true;
+            this.lblEncabezado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEncabezado.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lblEncabezado.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblEncabezado.Location = new System.Drawing.Point(432, 33);
+            this.lblEncabezado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEncabezado.Name = "lblEncabezado";
+            this.lblEncabezado.Size = new System.Drawing.Size(257, 35);
+            this.lblEncabezado.TabIndex = 129;
+            this.lblEncabezado.Text = "Historial de Usuarios";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Location = new System.Drawing.Point(971, 44);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(34, 27);
+            this.btnBuscar.TabIndex = 165;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(785, 45);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(181, 26);
+            this.txtBusqueda.TabIndex = 164;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(391, 33);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label1.Location = new System.Drawing.Point(679, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 35);
-            this.label1.TabIndex = 129;
-            this.label1.Text = "Actualización de Registros";
+            this.label1.Size = new System.Drawing.Size(99, 19);
+            this.label1.TabIndex = 163;
+            this.label1.Text = "Buscar cliente:";
             // 
             // ActualizarRegistro
             // 
@@ -956,7 +999,7 @@
             this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoLisoTeal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblEncabezado);
             this.Controls.Add(this.lblBunBunHub);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnCerrarSistema);
@@ -978,6 +1021,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.MenuDGV.ResumeLayout(false);
             this.tabPageClientes.ResumeLayout(false);
+            this.tabPageClientes.PerformLayout();
             this.grpActualizarCliente.ResumeLayout(false);
             this.grpActualizarCliente.PerformLayout();
             this.grpContacto.ResumeLayout(false);
@@ -1006,7 +1050,7 @@
         private System.Windows.Forms.ToolStrip tlsUsuarios;
         private System.Windows.Forms.ToolStripButton tlsbtnVolver;
         private System.Windows.Forms.ToolStripButton tlsbtnHome;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEncabezado;
         private System.Windows.Forms.GroupBox grpCredenciales;
         private System.Windows.Forms.Label lblConfirmación;
         private System.Windows.Forms.Label lblValidacion;
@@ -1061,5 +1105,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCancelarActualizacion;
         private System.Windows.Forms.Label lblValidarCorreo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Label label1;
     }
 }

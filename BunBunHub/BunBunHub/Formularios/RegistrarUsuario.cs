@@ -209,15 +209,10 @@ namespace BunBunHub.Formularios
             bool hayDatos = false;
 
             // Verificar los controles más importantes
-            if (!string.IsNullOrWhiteSpace(txtUsuarioNombre.Text) ||
-                !string.IsNullOrWhiteSpace(txtContraseña.Text) ||
-                !string.IsNullOrWhiteSpace(txtConfirmarContraseña.Text) ||
-                !string.IsNullOrWhiteSpace(txtNombre.Text) ||
-                !string.IsNullOrWhiteSpace(txtApellido.Text) ||
-                !string.IsNullOrWhiteSpace(txtCorreo.Text) ||
-                !string.IsNullOrWhiteSpace(txtTelefono.Text) ||
-                cmbRol.SelectedIndex != -1 ||
-                cmbEstado.SelectedIndex != -1)
+            if (!string.IsNullOrWhiteSpace(txtUsuarioNombre.Text) || !string.IsNullOrWhiteSpace(txtContraseña.Text) ||
+                !string.IsNullOrWhiteSpace(txtConfirmarContraseña.Text) || !string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                !string.IsNullOrWhiteSpace(txtApellido.Text) || !string.IsNullOrWhiteSpace(txtCorreo.Text) || !string.IsNullOrWhiteSpace(txtTelefono.Text) ||
+                cmbRol.SelectedIndex != -1 || cmbEstado.SelectedIndex != -1)
             {
                 hayDatos = true;
             }

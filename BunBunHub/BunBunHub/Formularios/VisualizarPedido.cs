@@ -1,7 +1,4 @@
-﻿/*Los datos del pedido que se deben mostrar son: nombre, edad, apellido, correo, telefono, id de pedido, fecha de compra, 
- punto de entrega, descripción, estado y monto total*/
-
-using BunBunHub.Dao;
+﻿using BunBunHub.Dao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,29 +77,50 @@ namespace BunBunHub.Formularios
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            // Habilitar los campos editables
-            txtNombre.Enabled = true;
-            txtApellido.Enabled = true;
-            txtEdad.Enabled = true;
-            txtCorreo.Enabled = true;
-            txtTelefono.Enabled = true;
-            cmbPuntoEntrega.Enabled = true;
+            // Buscar el pedido por IdPedido
+            Pedido pedido = listaPedidos.FirstOrDefault(p => p.ID_Pedido == IdPedido);
 
-            // Cambiar la propiedad ReadOnly para permitir la edición
-            txtNombre.ReadOnly = false;
-            txtApellido.ReadOnly = false;
-            txtEdad.ReadOnly = false;
-            txtCorreo.ReadOnly = false;
-            txtTelefono.ReadOnly = false;
-            cmbPuntoEntrega.DropDownStyle = ComboBoxStyle.DropDown;
+            if (pedido != null)
+            {
+                // Verificar el estado del pedido antes de permitir la actualización
+                if (pedido.Estado == "Completado" || pedido.Estado == "Cancelado")
+                {
+                    // Mostrar el mensaje de error y salir del método
+                    MessageBox.Show($"El pedido fue {pedido.Estado}. No se puede editar la información.",
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return; // Terminar la ejecución del método sin permitir la actualización
+                }
 
-            // Desactivar el botón "Actualizar"
-            btnActualizar.Enabled = false;
+                // Habilitar los campos editables solo si el pedido no está Completado o Cancelado
+                txtNombre.Enabled = true;
+                txtApellido.Enabled = true;
+                txtEdad.Enabled = true;
+                txtCorreo.Enabled = true;
+                txtTelefono.Enabled = true;
+                cmbPuntoEntrega.Enabled = true;
 
-            // Activar los botones "Guardar" y "Cancelar"
-            btnGuardar.Enabled = true;
-            btnCancelar.Enabled = true;
+                // Cambiar la propiedad ReadOnly para permitir la edición
+                txtNombre.ReadOnly = false;
+                txtApellido.ReadOnly = false;
+                txtEdad.ReadOnly = false;
+                txtCorreo.ReadOnly = false;
+                txtTelefono.ReadOnly = false;
+                cmbPuntoEntrega.DropDownStyle = ComboBoxStyle.DropDown;
+
+                // Desactivar el botón "Actualizar"
+                btnActualizar.Enabled = false;
+
+                // Activar los botones "Guardar" y "Cancelar"
+                btnGuardar.Enabled = true;
+                btnCancelar.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el pedido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close(); // Cerrar el formulario si no se encuentra el pedido
+            }
         }
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -223,7 +241,16 @@ namespace BunBunHub.Formularios
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            // Restaurar los datos originales del pedido
+            // Mostrar un cuadro de mensaje para confirmar si el usuario quiere cancelar la actualización
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro que quieres cancelar la actualización del pedido?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.No)
+            {
+                return; // Si el usuario selecciona "No", no se cancela y el formulario permanece abierto
+            }
+
+            // Restaurar los datos originales del pedido si el usuario confirma la cancelación
             if (pedidoOriginal != null)
             {
                 // Restaurar los datos del cliente
@@ -257,6 +284,7 @@ namespace BunBunHub.Formularios
             btnCancelar.Enabled = false;
         }
 
+
         private void DesactivarCampos()
         {
             // Desactivar los campos de entrada
@@ -281,9 +309,22 @@ namespace BunBunHub.Formularios
         // Lógica de Navegación
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
+            // Verificar si el botón "Guardar" está habilitado (lo que indica que se están realizando cambios)
+            if (btnGuardar.Enabled)
+            {
+                // Mostrar un cuadro de mensaje para confirmar si el usuario quiere salir sin guardar
+                DialogResult resultado = MessageBox.Show("Estás actualizando el pedido. ¿Quieres salir sin guardar?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.No)
+                {
+                    return; // Si el usuario selecciona "No", no se cierra el formulario
+                }
+            }
+
+            // Si no hay cambios pendientes o el usuario eligió salir, cerrar el formulario
             PanelCliente panelCliente = new PanelCliente();
             panelCliente.Show();
-            this.Close();
+            this.Close(); // Cerrar el formulario actual
         }
 
         private void soloLetras_KeyPress(object sender, KeyPressEventArgs e)

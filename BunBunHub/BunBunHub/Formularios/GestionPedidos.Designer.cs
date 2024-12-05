@@ -89,7 +89,7 @@
             this.lblPaneldeControl.BackColor = System.Drawing.Color.Transparent;
             this.lblPaneldeControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lblPaneldeControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.lblPaneldeControl.Location = new System.Drawing.Point(420, 9);
+            this.lblPaneldeControl.Location = new System.Drawing.Point(422, 12);
             this.lblPaneldeControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaneldeControl.Name = "lblPaneldeControl";
             this.lblPaneldeControl.Size = new System.Drawing.Size(239, 35);

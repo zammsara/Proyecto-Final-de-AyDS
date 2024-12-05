@@ -29,7 +29,9 @@ namespace BunBunHub.Formularios
 
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            PanelAdministrador panelAdministrador = new PanelAdministrador();
+            panelAdministrador.Show();
+            this.Close();
         }
 
         private void btnPanelControl_Click(object sender, EventArgs e)

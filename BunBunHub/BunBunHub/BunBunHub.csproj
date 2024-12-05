@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\GestionDeArchivos.cs" />
+    <Compile Include="Formularios\ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ActualizarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Formularios\GestionarPublicidad.Designer.cs">
       <DependentUpon>GestionarPublicidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionClientes.Designer.cs">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\GestionPedidos.cs">
       <SubType>Form</SubType>
@@ -110,6 +122,12 @@
     <Compile Include="Formularios\PanelColaborador.Designer.cs">
       <DependentUpon>PanelColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\RegistrarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +156,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ActualizarPedido.resx">
       <DependentUpon>ActualizarPedido.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionarPublicidad.resx">
       <DependentUpon>GestionarPublicidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionClientes.resx">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\GestionPedidos.resx">
       <DependentUpon>GestionPedidos.cs</DependentUpon>
@@ -167,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PanelColaborador.resx">
       <DependentUpon>PanelColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarPedido.resx">
       <DependentUpon>RegistrarPedido.cs</DependentUpon>
@@ -329,6 +356,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondoVisualizarPedido.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniPaneles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrarSesionTeal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPanelCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrarSesionCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHistorialPedidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPerfilCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnInformacionCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnRegistrarCliente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

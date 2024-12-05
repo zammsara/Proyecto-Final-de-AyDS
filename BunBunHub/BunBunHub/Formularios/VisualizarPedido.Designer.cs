@@ -60,9 +60,12 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.DatosPedido.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
             this.grpContacto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // DatosPedido
@@ -82,7 +85,7 @@
             this.DatosPedido.Controls.Add(this.lblID);
             this.DatosPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.DatosPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.DatosPedido.Location = new System.Drawing.Point(381, 91);
+            this.DatosPedido.Location = new System.Drawing.Point(381, 110);
             this.DatosPedido.Name = "DatosPedido";
             this.DatosPedido.Size = new System.Drawing.Size(306, 318);
             this.DatosPedido.TabIndex = 160;
@@ -241,7 +244,7 @@
             this.grpDatosCliente.Controls.Add(this.lblNombre);
             this.grpDatosCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpDatosCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpDatosCliente.Location = new System.Drawing.Point(63, 91);
+            this.grpDatosCliente.Location = new System.Drawing.Point(63, 110);
             this.grpDatosCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosCliente.Name = "grpDatosCliente";
             this.grpDatosCliente.Padding = new System.Windows.Forms.Padding(4);
@@ -427,7 +430,7 @@
             this.lblEncabezado.BackColor = System.Drawing.Color.Transparent;
             this.lblEncabezado.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEncabezado.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblEncabezado.Location = new System.Drawing.Point(217, 29);
+            this.lblEncabezado.Location = new System.Drawing.Point(226, 29);
             this.lblEncabezado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEncabezado.Name = "lblEncabezado";
             this.lblEncabezado.Size = new System.Drawing.Size(283, 32);
@@ -441,10 +444,10 @@
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSistema.Location = new System.Drawing.Point(691, 29);
+            this.btnCerrarSistema.Location = new System.Drawing.Point(685, 29);
             this.btnCerrarSistema.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSistema.Name = "btnCerrarSistema";
-            this.btnCerrarSistema.Size = new System.Drawing.Size(32, 30);
+            this.btnCerrarSistema.Size = new System.Drawing.Size(38, 42);
             this.btnCerrarSistema.TabIndex = 158;
             this.btnCerrarSistema.UseVisualStyleBackColor = false;
             this.btnCerrarSistema.Click += new System.EventHandler(this.btnCerrarSistema_Click);
@@ -452,14 +455,14 @@
             // btnCancelar
             // 
             this.btnCancelar.AutoSize = true;
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.RosyBrown;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelar.Enabled = false;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(63, 417);
+            this.btnCancelar.Location = new System.Drawing.Point(63, 436);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(98, 32);
@@ -478,7 +481,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(589, 416);
+            this.btnGuardar.Location = new System.Drawing.Point(589, 435);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(98, 32);
@@ -496,7 +499,7 @@
             this.btnActualizar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnActualizar.Location = new System.Drawing.Point(483, 416);
+            this.btnActualizar.Location = new System.Drawing.Point(483, 435);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(98, 32);
@@ -505,13 +508,41 @@
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.BackColor = System.Drawing.Color.Transparent;
+            this.lblBienvenido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblBienvenido.Location = new System.Drawing.Point(195, 61);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(360, 20);
+            this.lblBienvenido.TabIndex = 161;
+            this.lblBienvenido.Text = "¡Tu pedido ya está con nosotros, espéralo con ansias!";
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoBeige;
+            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLogo.Location = new System.Drawing.Point(24, 20);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 61);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 162;
+            this.picLogo.TabStop = false;
+            // 
             // VisualizarPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoVisualizarPedido;
+            this.BackgroundImage = global::BunBunHub.Properties.Resources.miniPaneles;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(752, 489);
+            this.Controls.Add(this.picLogo);
+            this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.DatosPedido);
             this.Controls.Add(this.grpDatosCliente);
             this.Controls.Add(this.lblEncabezado);
@@ -530,6 +561,7 @@
             this.grpDatosCliente.PerformLayout();
             this.grpContacto.ResumeLayout(false);
             this.grpContacto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,5 +601,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.PictureBox picLogo;
     }
 }

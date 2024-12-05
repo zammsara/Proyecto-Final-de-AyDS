@@ -76,6 +76,45 @@ namespace BunBunHub.Formularios
             CargarDatos();
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            // Validar si el cuadro de texto está vacío
+            if (string.IsNullOrEmpty(txtBusqueda.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBusqueda.Focus();
+                return;
+            }
+
+            // Obtener el ID ingresado en el cuadro de texto
+            string UsuarioBusqueda = txtBusqueda.Text.Trim();
+
+            // Buscar el pedido en la lista
+            DetallesCliente clienteSeleccionado = listaClientes.FirstOrDefault(p => p.Usuario == UsuarioBusqueda);
+
+            if (clienteSeleccionado != null)
+            {
+                // Si se encuentra el pedido, seleccionarlo en el DataGridView
+                foreach (DataGridViewRow row in dgvClientes.Rows)
+                {
+                    if (row.DataBoundItem is DetallesCliente cliente && cliente.Usuario == UsuarioBusqueda)
+                    {
+                        row.Selected = true; // Seleccionar la fila encontrada
+                        dgvClientes.FirstDisplayedScrollingRowIndex = row.Index; // Asegurar que sea visible
+                        txtBusqueda.Focus();
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                // Si no se encuentra el pedido, mostrar mensaje de error
+                MessageBox.Show($"No se encontró ningún cliente con el usuario '{UsuarioBusqueda}'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBusqueda.Clear();
+                txtBusqueda.Focus();
+            }
+        }
+
         // Lógica de navegación entre forms
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
