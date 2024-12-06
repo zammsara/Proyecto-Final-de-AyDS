@@ -387,7 +387,7 @@ namespace BunBunHub.Formularios
                 lblValidacion.ForeColor = System.Drawing.Color.Red;
                 lblValidacion.Text = "*La contraseña es muy corta";
             }
-            else if (contraseña.Length > 10)
+            else if (contraseña.Length > 12)
             {
                 lblValidacion.ForeColor = System.Drawing.Color.Red;
                 lblValidacion.Text = "*La contraseña es muy larga";

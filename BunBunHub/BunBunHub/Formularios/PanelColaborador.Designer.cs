@@ -153,7 +153,7 @@
             this.btnInformacin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformacin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnInformacin.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnInformacin.Location = new System.Drawing.Point(23, 224);
+            this.btnInformacin.Location = new System.Drawing.Point(29, 213);
             this.btnInformacin.Margin = new System.Windows.Forms.Padding(4);
             this.btnInformacin.Name = "btnInformacin";
             this.btnInformacin.Size = new System.Drawing.Size(152, 26);
@@ -170,13 +170,14 @@
             this.btnPedidosActuales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedidosActuales.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnPedidosActuales.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnPedidosActuales.Location = new System.Drawing.Point(23, 190);
+            this.btnPedidosActuales.Location = new System.Drawing.Point(29, 179);
             this.btnPedidosActuales.Margin = new System.Windows.Forms.Padding(4);
             this.btnPedidosActuales.Name = "btnPedidosActuales";
             this.btnPedidosActuales.Size = new System.Drawing.Size(152, 26);
             this.btnPedidosActuales.TabIndex = 162;
             this.btnPedidosActuales.Text = "Pedidos";
             this.btnPedidosActuales.UseVisualStyleBackColor = false;
+            this.btnPedidosActuales.Click += new System.EventHandler(this.btnPedidosActuales_Click);
             // 
             // picLinea
             // 

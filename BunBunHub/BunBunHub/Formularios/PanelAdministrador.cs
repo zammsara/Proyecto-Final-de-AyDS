@@ -63,5 +63,11 @@ namespace BunBunHub.Formularios
             GestionarPublicidad gestionarPublicidad = new GestionarPublicidad(panelCliente);
             gestionarPublicidad.ShowDialog();
         }
+
+        private void btnPedidosActuales_Click(object sender, EventArgs e)
+        {
+            PedidosPendientes pedidosPendientes = new PedidosPendientes();
+            pedidosPendientes.ShowDialog();
+        }
     }
 }

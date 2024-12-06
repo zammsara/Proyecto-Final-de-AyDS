@@ -102,7 +102,7 @@
             this.lblBunBunHub.BackColor = System.Drawing.Color.Transparent;
             this.lblBunBunHub.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBunBunHub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.lblBunBunHub.Location = new System.Drawing.Point(63, 18);
+            this.lblBunBunHub.Location = new System.Drawing.Point(64, 18);
             this.lblBunBunHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBunBunHub.Name = "lblBunBunHub";
             this.lblBunBunHub.Size = new System.Drawing.Size(137, 29);
@@ -114,7 +114,7 @@
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoTeal;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLogo.Location = new System.Drawing.Point(0, 3);
+            this.picLogo.Location = new System.Drawing.Point(1, 3);
             this.picLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(75, 61);

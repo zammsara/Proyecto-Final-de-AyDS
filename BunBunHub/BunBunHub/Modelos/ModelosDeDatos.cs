@@ -128,6 +128,24 @@ namespace BunBunHub.Modelos
             public string Apellido { get; set; }
         }
 
+        public class PedidoResumen
+        {
+            public string ID_Pedido { get; set; }
+            public string Colaborador { get; set; }
+            public DateTime Fecha_Compra { get; set; }
+            public string Estado { get; set; }
+        }
+
+        public class HistorialCliente
+        {
+            public string ID_Pedido { get; set; }
+            public DateTime Fecha_Compra { get; set; }
+            public decimal Monto_Total { get; set; }
+            public string Punto_Entrega { get; set; }
+            public string Descripción { get; set; }
+            public string Estado { get; set; }
+        }
+
         public class Imagen
         {
             public Image Image { get; set; }

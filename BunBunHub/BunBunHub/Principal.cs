@@ -18,7 +18,6 @@ namespace BunBunHub
 {
     public partial class Principal : Form
     {
-        PanelAdministrador ventanaAdministrador;
         public Principal()
         {
             InitializeComponent();

@@ -29,13 +29,15 @@ namespace BunBunHub.Formularios
             rolUsuario = UsuarioSesion.RolUsuario;
             listaPedidos = new List<Pedido>();
             grpDetallesPedidoEditar.Enabled = false;
-            btnGuardarCambiosPedido.Enabled = false; // Deshabilitar el botón Guardar al inicio
+            btnGuardarCambiosPedido.Enabled = false;
+            btnCancelarCambiosPedido.Enabled = false;
 
             GestionDeArchivos archivo = new GestionDeArchivos();
             listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
 
             cmbFiltro.Text = "Todos";
             cmbOrdenar.Text = "Predeterminado";
+            dtpFechaCompraEditar.Value = DateTime.Now;
         }
 
         //Visualizar registros en los DataGridView
@@ -109,6 +111,7 @@ namespace BunBunHub.Formularios
 
                 // Deshabilitar el botón Editar Pedido y habilitar el botón Guardar Cambios
                 btnEditarPedido.Enabled = false;
+                btnCancelarCambiosPedido.Enabled = true;
                 btnGuardarCambiosPedido.Enabled = true;
 
                 // Marcar que estamos en edición
@@ -193,6 +196,7 @@ namespace BunBunHub.Formularios
 
                 // Deshabilitar el botón Guardar Cambios y habilitar el de Editar Pedido
                 btnGuardarCambiosPedido.Enabled = false;
+                btnCancelarCambiosPedido.Enabled = false;
                 btnEditarPedido.Enabled = true;
 
                 // Marcar que ya no estamos en modo de edición
@@ -224,6 +228,7 @@ namespace BunBunHub.Formularios
 
             // Asignar la fecha de hoy al DateTimePicker
             dtpFechaCompraEditar.Value = DateTime.Now;
+            btnCancelarCambiosPedido.Enabled = false;
         }
 
         private void btnCancelarCambiosPedido_Click(object sender, EventArgs e)

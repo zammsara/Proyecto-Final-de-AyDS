@@ -246,6 +246,7 @@
             this.btnPedidosActuales.TabIndex = 154;
             this.btnPedidosActuales.Text = "Pedidos";
             this.btnPedidosActuales.UseVisualStyleBackColor = false;
+            this.btnPedidosActuales.Click += new System.EventHandler(this.btnPedidosActuales_Click);
             // 
             // btnPublicidad
             // 

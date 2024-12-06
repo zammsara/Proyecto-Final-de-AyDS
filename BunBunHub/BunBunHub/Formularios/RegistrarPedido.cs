@@ -37,6 +37,7 @@ namespace BunBunHub.Formularios
 
             // Cargar el último ID desde el archivo
             ultimoID = CargarUltimoID();
+            dtpFechaCompra.Value = DateTime.Now;
         }
 
         private void RegistrarPedido_Load(object sender, EventArgs e)

@@ -199,5 +199,19 @@ namespace BunBunHub.Formularios
             iniciarSesion.Show();
             this.Hide();
         }
+
+        private void btnHistorialPedidos_Click(object sender, EventArgs e)
+        {
+            OrdenesClientes ordenesClientes = new OrdenesClientes();
+            ordenesClientes.Usuario = nombreUsuario;
+            ordenesClientes.ShowDialog();
+        }
+
+        private void btnPerfilCliente_Click(object sender, EventArgs e)
+        {
+            InformacionCliente informacionCliente = new InformacionCliente();
+            informacionCliente.Usuario = nombreUsuario;
+            informacionCliente.ShowDialog();
+        }
     }
 }

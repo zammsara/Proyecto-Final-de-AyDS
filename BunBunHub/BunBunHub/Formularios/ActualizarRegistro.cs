@@ -325,6 +325,10 @@ namespace BunBunHub.Formularios
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
+            if (grpCredenciales.Enabled == false)
+            {
+                return;
+            }
             // Validar si los campos están completos
             if (string.IsNullOrEmpty(txtUsuarioNombre.Text) || string.IsNullOrEmpty(txtContraseña.Text) || string.IsNullOrEmpty(txtConfirmarContraseña.Text) || cmbEstado.SelectedItem == null)
             {
@@ -383,6 +387,10 @@ namespace BunBunHub.Formularios
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            if (grpCredenciales.Enabled == false)
+            {
+                return;
+            }
             // Mostrar un cuadro de mensaje de confirmación antes de cancelar los cambios
             DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cancelar los cambios?", "Confirmar Cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -844,6 +852,45 @@ namespace BunBunHub.Formularios
             else
             {
                 lblValidarCorreo.Text = " ";
+            }
+        }
+
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+            // Validar si el cuadro de texto está vacío
+            if (string.IsNullOrEmpty(txtBuscarUsuario.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBuscarUsuario.Focus();
+                return;
+            }
+
+            // Obtener el ID ingresado en el cuadro de texto
+            string UsuarioBusqueda = txtBuscarUsuario.Text.Trim();
+
+            // Buscar el pedido en la lista
+            Usuarios usaurioSeleccionado = listaUsuarios.FirstOrDefault(p => p.Usuario == UsuarioBusqueda);
+
+            if (usaurioSeleccionado != null)
+            {
+                // Si se encuentra el pedido, seleccionarlo en el DataGridView
+                foreach (DataGridViewRow row in dgvUsuarios.Rows)
+                {
+                    if (row.DataBoundItem is Usuarios usuario && usuario.Usuario == UsuarioBusqueda)
+                    {
+                        row.Selected = true; // Seleccionar la fila encontrada
+                        dgvUsuarios.FirstDisplayedScrollingRowIndex = row.Index; // Asegurar que sea visible
+                        txtBuscarUsuario.Focus();
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                // Si no se encuentra el pedido, mostrar mensaje de error
+                MessageBox.Show($"No se encontró el usuario '{UsuarioBusqueda}'.", "Usuario no registrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtBuscarUsuario.Clear();
+                txtBuscarUsuario.Focus();
             }
         }
     }

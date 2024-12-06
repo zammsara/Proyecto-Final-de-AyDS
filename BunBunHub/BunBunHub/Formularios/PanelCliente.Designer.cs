@@ -288,6 +288,7 @@
             this.btnPerfilCliente.TabIndex = 163;
             this.toolTipFunciones.SetToolTip(this.btnPerfilCliente, "Datos del Cliente");
             this.btnPerfilCliente.UseVisualStyleBackColor = false;
+            this.btnPerfilCliente.Click += new System.EventHandler(this.btnPerfilCliente_Click);
             // 
             // btnHistorialPedidos
             // 
@@ -301,8 +302,10 @@
             this.btnHistorialPedidos.Name = "btnHistorialPedidos";
             this.btnHistorialPedidos.Size = new System.Drawing.Size(41, 38);
             this.btnHistorialPedidos.TabIndex = 164;
+            this.btnHistorialPedidos.Text = " ";
             this.toolTipFunciones.SetToolTip(this.btnHistorialPedidos, "Historial de pedidos");
             this.btnHistorialPedidos.UseVisualStyleBackColor = false;
+            this.btnHistorialPedidos.Click += new System.EventHandler(this.btnHistorialPedidos_Click);
             // 
             // picPerfil
             // 

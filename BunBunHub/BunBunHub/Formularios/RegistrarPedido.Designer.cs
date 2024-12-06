@@ -395,7 +395,7 @@
             this.dtpFechaCompra.Name = "dtpFechaCompra";
             this.dtpFechaCompra.Size = new System.Drawing.Size(132, 26);
             this.dtpFechaCompra.TabIndex = 137;
-            this.dtpFechaCompra.Value = new System.DateTime(2024, 12, 3, 0, 0, 0, 0);
+            this.dtpFechaCompra.Value = new System.DateTime(2024, 12, 5, 0, 0, 0, 0);
             // 
             // label7
             // 

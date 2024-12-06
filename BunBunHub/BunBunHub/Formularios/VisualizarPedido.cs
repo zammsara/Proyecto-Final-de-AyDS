@@ -26,6 +26,7 @@ namespace BunBunHub.Formularios
         public VisualizarPedido()
         {
             InitializeComponent();
+            dtpFechaCompra.Value = DateTime.Now;
             listaPedidos = new List<Pedido>();
             GestionDeArchivos archivo = new GestionDeArchivos();
             listaPedidos = archivo.CargarPedidos(rutaPedidos);
@@ -86,8 +87,7 @@ namespace BunBunHub.Formularios
                 if (pedido.Estado == "Completado" || pedido.Estado == "Cancelado")
                 {
                     // Mostrar el mensaje de error y salir del método
-                    MessageBox.Show($"El pedido fue {pedido.Estado}. No se puede editar la información.",
-                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"El pedido fue {pedido.Estado}. No se puede editar la información.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return; // Terminar la ejecución del método sin permitir la actualización
                 }
 
@@ -121,6 +121,51 @@ namespace BunBunHub.Formularios
             }
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            // Preguntar al usuario si está seguro de que desea cancelar el pedido
+            DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea cancelar el pedido?", "Confirmar Cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Si el usuario selecciona "Sí"
+            if (dialogResult == DialogResult.Yes)
+            {
+                // Buscar el pedido por IdPedido
+                Pedido pedido = listaPedidos.FirstOrDefault(p => p.ID_Pedido == IdPedido);
+
+                if (pedido != null)
+                {
+                    // Verificar si el pedido ya está cancelado o completado
+                    if (pedido.Estado == "Completado" || pedido.Estado == "Cancelado")
+                    {
+                        // Mostrar mensaje de error si el pedido no puede ser cancelado
+                        MessageBox.Show($"El pedido ya fue {pedido.Estado}.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                    // Cambiar el estado del pedido a "Cancelado"
+                    pedido.Estado = "Cancelado";
+
+                    // Guardar los cambios en la lista de pedidos
+                    GestionDeArchivos.GuardarPedidos(listaPedidos, rutaPedidos);
+
+                    // Mostrar mensaje de éxito
+                    MessageBox.Show("El pedido ha sido cancelado correctamente.", "Pedido Cancelado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Actualizar la interfaz para reflejar el cambio en el estado
+                    txtEstado.Text = pedido.Estado;
+                }
+                else
+                {
+                    // Si no se encuentra el pedido, mostrar mensaje de error
+                    MessageBox.Show("No se encontró el pedido con el ID proporcionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                // Si el usuario selecciona "No", no se hace nada
+                return;
+            }
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
