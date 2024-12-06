@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BunBunHub", "BunBunHub\BunBunHub.csproj", "{907DDCA0-7D8E-4068-9479-68D43C8F086F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907DDCA0-7D8E-4068-9479-68D43C8F086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907DDCA0-7D8E-4068-9479-68D43C8F086F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907DDCA0-7D8E-4068-9479-68D43C8F086F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907DDCA0-7D8E-4068-9479-68D43C8F086F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E341B83C-6BD6-412D-9FF0-610DAD600BA9}
+	EndGlobalSection
+EndGlobal
