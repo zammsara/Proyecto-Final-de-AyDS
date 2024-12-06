@@ -464,7 +464,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(719, 101);
+            this.label1.Location = new System.Drawing.Point(719, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 35);
@@ -502,7 +502,7 @@
             // btnCerrarSistema
             // 
             this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarBlanco;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

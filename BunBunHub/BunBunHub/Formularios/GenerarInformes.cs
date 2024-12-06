@@ -1,4 +1,5 @@
 ﻿using BunBunHub.Dao;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,10 @@ namespace BunBunHub.Formularios
 
             GestionDeArchivos archivo = new GestionDeArchivos();
             listaPedidos = archivo.CargarPedidos(rutaPedidos);
+
+            dtpInicio.Value = DateTime.Now;
+            dtpFinal.Value = DateTime.Now;
+            btnGuardar.Enabled = false; 
         }
 
         public void CargarDatos()
@@ -63,12 +68,36 @@ namespace BunBunHub.Formularios
             CargarDatos();
         }
 
+        private void VerificarCampos()
+        {
+            // Verificar si los campos relevantes no están vacíos
+            bool hayDatos = !string.IsNullOrWhiteSpace(txtTotalPedidos.Text) && !string.IsNullOrWhiteSpace(txtCompletados.Text);
+
+            // Activar o desactivar el botón "Guardar" en base a los datos
+            btnGuardar.Enabled = hayDatos;
+        }
+
+
         // Funcionalidades
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             // Obtener el rango de fechas
             DateTime fechaInicio = dtpInicio.Value;
             DateTime fechaFin = dtpFinal.Value;
+
+            // Validación de fechas
+            if (fechaFin < fechaInicio)
+            {
+                // Mostrar mensaje de error
+                MessageBox.Show("La fecha de finalización no puede ser anterior a la fecha de inicio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Establecer ambos DateTimePickers a la fecha actual
+                dtpInicio.Value = DateTime.Now;
+                dtpFinal.Value = DateTime.Now;
+                dtpInicio.Focus();
+
+                return;
+            }
 
             List<Pedido> pedidosEnRango = new List<Pedido>();
 
@@ -159,36 +188,49 @@ namespace BunBunHub.Formularios
             txtEgresos.Text = Egresos.ToString();
             txtGanancias.Text = Ganancias.ToString();
             txtRentabilidad.Text = Rentabilidad;
+            btnGuardar.Enabled = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            DateTime inicio = dtpInicio.Value;
-            DateTime final = dtpFinal.Value;
-            int totalPedidos = int.Parse(txtTotalPedidos.Text);
-            int completados = int.Parse(txtCompletados.Text);
-            int cancelados = int.Parse(txtCancelados.Text);
-            int procesando = int.Parse(txtProcesando.Text);
-            decimal montoCompletados = decimal.Parse(txtMontoCompletados.Text);
-            decimal montoCancelados = decimal.Parse(txtMontoCancelados.Text);
-            decimal montoProcesando = decimal.Parse(txtMontoProcesando.Text);
-            decimal ingresos = decimal.Parse(txtIngresos.Text);
-            decimal egresos = decimal.Parse(txtEgresos.Text);
-            decimal ganancias = decimal.Parse(txtGanancias.Text);
-            string rentabilidad = txtRentabilidad.Text;
+            // Preguntar al usuario si está seguro de guardar
+            DialogResult resultado = MessageBox.Show("¿Está seguro de que desea guardar los datos?", "Confirmar Guardado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            // Crear y agregar el nuevo informe
-            Informe nuevoInforme = new Informe(inicio, final, totalPedidos, completados, montoCompletados, cancelados, montoCancelados, procesando, montoProcesando, ingresos, egresos, ganancias, rentabilidad);
-            listaInforme.Add(nuevoInforme);
-            GestionDeArchivos.GuardarInforme(listaInforme, rutaInforme);
+            if (resultado == DialogResult.Yes)
+            {
+                // Continuar con el proceso de guardar el informe
 
-            // Actualizar el DataGridView con los nuevos datos
-            ActualizarDataGridView();
+                DateTime inicio = dtpInicio.Value;
+                DateTime final = dtpFinal.Value;
+                int totalPedidos = int.Parse(txtTotalPedidos.Text);
+                int completados = int.Parse(txtCompletados.Text);
+                int cancelados = int.Parse(txtCancelados.Text);
+                int procesando = int.Parse(txtProcesando.Text);
+                decimal montoCompletados = decimal.Parse(txtMontoCompletados.Text);
+                decimal montoCancelados = decimal.Parse(txtMontoCancelados.Text);
+                decimal montoProcesando = decimal.Parse(txtMontoProcesando.Text);
+                decimal ingresos = decimal.Parse(txtIngresos.Text);
+                decimal egresos = decimal.Parse(txtEgresos.Text);
+                decimal ganancias = decimal.Parse(txtGanancias.Text);
+                string rentabilidad = txtRentabilidad.Text;
 
-            MessageBox.Show("Informe guardado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            LimpiarCampos();
-            dtpInicio.Focus();
+                // Crear y agregar el nuevo informe
+                Informe nuevoInforme = new Informe(inicio, final, totalPedidos, completados, montoCompletados, cancelados, montoCancelados, procesando, montoProcesando, ingresos, egresos, ganancias, rentabilidad);
+                listaInforme.Add(nuevoInforme);
+                GestionDeArchivos.GuardarInforme(listaInforme, rutaInforme);
+
+                // Actualizar el DataGridView con los nuevos datos
+                ActualizarDataGridView();
+
+                // Confirmación de guardado exitoso
+                MessageBox.Show("Informe guardado correctamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpiar los campos
+                LimpiarCampos();
+                dtpInicio.Focus();
+            }
         }
+
 
         private void LimpiarCampos()
         {
@@ -226,6 +268,75 @@ namespace BunBunHub.Formularios
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            // Crear el DataSource con la lista de datos
+            ReportDataSource dataSource = new ReportDataSource("DsDatos", listaInforme);
+
+            // Crear una instancia del formulario FrmReporte
+            FrmReporte frmReportes = new FrmReporte();
+
+            // Limpiar cualquier fuente de datos anterior
+            frmReportes.reportViewer1.LocalReport.DataSources.Clear();
+
+            // Agregar la fuente de datos
+            frmReportes.reportViewer1.LocalReport.DataSources.Add(dataSource);
+
+            // Establecer el informe embebido
+            frmReportes.reportViewer1.LocalReport.ReportEmbeddedResource = "BunBunHub.Reportes.RptBunBunHub.rdlc";
+
+            // Actualizar el reporte
+            frmReportes.reportViewer1.RefreshReport();
+
+            // Mostrar el formulario con el reporte
+            frmReportes.ShowDialog();
+        }
+
+        private void txtTotalPedidos_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void txtCompletados_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCampos();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Verificar que hay una fila seleccionada
+            if (dgvInformes.SelectedRows.Count > 0)
+            {
+                // Confirmar eliminación
+                DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas eliminar este informe?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resultado == DialogResult.Yes)
+                {
+                    // Obtener el índice del informe seleccionado
+                    int informeSeleccionadoIndex = dgvInformes.SelectedRows[0].Index;
+
+                    // Obtener el informe que será eliminado
+                    Informe informe = listaInforme[informeSeleccionadoIndex];
+
+                    // Eliminar el usuario de la lista de usuarios
+                    listaInforme.RemoveAt(informeSeleccionadoIndex);
+
+                    GestionDeArchivos.GuardarInforme(listaInforme, GenerarInformes.rutaInforme);
+                    // Actualizar los DataGridViews para reflejar los cambios
+                    ActualizarDataGridView(); // Actualiza el DataGridView de usuarios
+
+                    // Limpiar el DataGridView de clientes y volver a cargar los datos actualizados
+                    dgvInformes.DataSource = null;  // Limpiar la fuente de datos
+                    dgvInformes.DataSource = listaInforme; // Volver a cargar la lista de clientes
+
+                    MessageBox.Show("Informe eliminado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            } 
+            else
+            {
+                MessageBox.Show("Seleccione una fila válida para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +54,11 @@ namespace BunBunHub.Modelos
         {
             public static string NombreUsuario { get; set; }
             public static string RolUsuario { get; set; }
+        }
+
+        public static class Tracking
+        {
+            public static string IdPedido { get; set; }
         }
 
         public class Pedido
@@ -120,5 +127,39 @@ namespace BunBunHub.Modelos
             public string Nombre { get; set; }
             public string Apellido { get; set; }
         }
+
+        public class PedidoResumen
+        {
+            public string ID_Pedido { get; set; }
+            public string Colaborador { get; set; }
+            public DateTime Fecha_Compra { get; set; }
+            public string Estado { get; set; }
+        }
+
+        public class HistorialCliente
+        {
+            public string ID_Pedido { get; set; }
+            public DateTime Fecha_Compra { get; set; }
+            public decimal Monto_Total { get; set; }
+            public string Punto_Entrega { get; set; }
+            public string Descripción { get; set; }
+            public string Estado { get; set; }
+        }
+
+        public class Imagen
+        {
+            public Image Image { get; set; }
+
+            public static Imagen FromFile(string path)
+            {
+                return new Imagen { Image = Image.FromFile(path) };
+            }
+
+            public static Imagen FromStream(MemoryStream stream)
+            {
+                return new Imagen { Image = Image.FromStream(stream) };
+            }
+        }
+
     }
 }

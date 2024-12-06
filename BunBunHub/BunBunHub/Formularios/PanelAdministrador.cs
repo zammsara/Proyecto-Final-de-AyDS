@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static BunBunHub.Modelos.ModelosDeDatos;
 
-//Mio
-
 namespace BunBunHub.Formularios
 {
     public partial class PanelAdministrador : Form
@@ -29,13 +27,6 @@ namespace BunBunHub.Formularios
         private void btnCerrarSistema_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        private void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            Principal iniciarSesion = new Principal();
-            iniciarSesion.Show();
-            this.Hide();
         }
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
@@ -58,11 +49,31 @@ namespace BunBunHub.Formularios
             this.Hide();
         }
 
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Está seguro de que desea salir?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Principal iniciarSesion = new Principal();
+            iniciarSesion.Show();
+            this.Hide();
+        }
+
         private void btnPublicidad_Click(object sender, EventArgs e)
         {
-            GestionarPublicidad gestionarPublicidad = new GestionarPublicidad();
-            gestionarPublicidad.Show();
-            this.Hide();
+            PanelCliente panelCliente = new PanelCliente();
+            GestionarPublicidad gestionarPublicidad = new GestionarPublicidad(panelCliente);
+            gestionarPublicidad.ShowDialog();
+        }
+
+        private void btnPedidosActuales_Click(object sender, EventArgs e)
+        {
+            PedidosPendientes pedidosPendientes = new PedidosPendientes();
+            pedidosPendientes.ShowDialog();
+        }
+
+        private void btnInformacin_Click(object sender, EventArgs e)
+        {
+            InformaciónSistema infoForm = new InformaciónSistema();
+            infoForm.ShowDialog();
         }
     }
 }

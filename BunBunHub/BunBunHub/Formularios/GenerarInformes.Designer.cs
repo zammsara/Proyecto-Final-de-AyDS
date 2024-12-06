@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPanelControl = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblBunBunHub = new System.Windows.Forms.Label();
@@ -69,11 +70,13 @@
             this.lblRangoInicio = new System.Windows.Forms.Label();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpFinal = new System.Windows.Forms.DateTimePicker();
-            this.btnExportar = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.grpRegistroInformes = new System.Windows.Forms.GroupBox();
             this.dgvInformes = new System.Windows.Forms.DataGridView();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.MenuInformes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpDatosReporte.SuspendLayout();
             this.grpResultados.SuspendLayout();
@@ -81,12 +84,13 @@
             this.grpRangoFecha.SuspendLayout();
             this.grpRegistroInformes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInformes)).BeginInit();
+            this.MenuInformes.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPanelControl
             // 
             this.btnPanelControl.BackColor = System.Drawing.Color.Transparent;
-            this.btnPanelControl.BackgroundImage = global::BunBunHub.Properties.Resources.HomeBeige;
+            this.btnPanelControl.BackgroundImage = global::BunBunHub.Properties.Resources.HomeAzul;
             this.btnPanelControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPanelControl.FlatAppearance.BorderSize = 0;
             this.btnPanelControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -130,12 +134,12 @@
             this.lblPaneldeControl.BackColor = System.Drawing.Color.Transparent;
             this.lblPaneldeControl.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lblPaneldeControl.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblPaneldeControl.Location = new System.Drawing.Point(512, 42);
+            this.lblPaneldeControl.Location = new System.Drawing.Point(397, 13);
             this.lblPaneldeControl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaneldeControl.Name = "lblPaneldeControl";
-            this.lblPaneldeControl.Size = new System.Drawing.Size(121, 35);
+            this.lblPaneldeControl.Size = new System.Drawing.Size(311, 35);
             this.lblPaneldeControl.TabIndex = 137;
-            this.lblPaneldeControl.Text = "Informes";
+            this.lblPaneldeControl.Text = "Informes de Rentabilidad";
             // 
             // btnCerrarSistema
             // 
@@ -155,7 +159,7 @@
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.Transparent;
-            this.btnVolver.BackgroundImage = global::BunBunHub.Properties.Resources.VolverBeige;
+            this.btnVolver.BackgroundImage = global::BunBunHub.Properties.Resources.VolverAzul;
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,11 +179,11 @@
             this.grpDatosReporte.Controls.Add(this.label4);
             this.grpDatosReporte.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpDatosReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpDatosReporte.Location = new System.Drawing.Point(299, 129);
+            this.grpDatosReporte.Location = new System.Drawing.Point(299, 95);
             this.grpDatosReporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpDatosReporte.Name = "grpDatosReporte";
             this.grpDatosReporte.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpDatosReporte.Size = new System.Drawing.Size(710, 173);
+            this.grpDatosReporte.Size = new System.Drawing.Size(710, 187);
             this.grpDatosReporte.TabIndex = 146;
             this.grpDatosReporte.TabStop = false;
             this.grpDatosReporte.Text = "Detalles";
@@ -204,7 +208,7 @@
             this.grpResultados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpResultados.Name = "grpResultados";
             this.grpResultados.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpResultados.Size = new System.Drawing.Size(318, 137);
+            this.grpResultados.Size = new System.Drawing.Size(318, 149);
             this.grpResultados.TabIndex = 144;
             this.grpResultados.TabStop = false;
             this.grpResultados.Text = "Resultados";
@@ -354,7 +358,7 @@
             this.grpPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpPedidos.Name = "grpPedidos";
             this.grpPedidos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpPedidos.Size = new System.Drawing.Size(325, 137);
+            this.grpPedidos.Size = new System.Drawing.Size(325, 149);
             this.grpPedidos.TabIndex = 140;
             this.grpPedidos.TabStop = false;
             this.grpPedidos.Text = "Pedidos";
@@ -424,6 +428,7 @@
             this.txtCompletados.ReadOnly = true;
             this.txtCompletados.Size = new System.Drawing.Size(65, 26);
             this.txtCompletados.TabIndex = 156;
+            this.txtCompletados.TextChanged += new System.EventHandler(this.txtCompletados_TextChanged);
             // 
             // txtTotalPedidos
             // 
@@ -435,6 +440,7 @@
             this.txtTotalPedidos.ReadOnly = true;
             this.txtTotalPedidos.Size = new System.Drawing.Size(68, 26);
             this.txtTotalPedidos.TabIndex = 155;
+            this.txtTotalPedidos.TextChanged += new System.EventHandler(this.txtTotalPedidos_TextChanged);
             // 
             // lblMoneda1
             // 
@@ -542,11 +548,11 @@
             this.grpRangoFecha.Controls.Add(this.dtpFinal);
             this.grpRangoFecha.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpRangoFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpRangoFecha.Location = new System.Drawing.Point(69, 129);
+            this.grpRangoFecha.Location = new System.Drawing.Point(69, 95);
             this.grpRangoFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpRangoFecha.Name = "grpRangoFecha";
             this.grpRangoFecha.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpRangoFecha.Size = new System.Drawing.Size(224, 173);
+            this.grpRangoFecha.Size = new System.Drawing.Size(224, 187);
             this.grpRangoFecha.TabIndex = 143;
             this.grpRangoFecha.TabStop = false;
             this.grpRangoFecha.Text = "Rango";
@@ -554,7 +560,7 @@
             // lblRangoFinal
             // 
             this.lblRangoFinal.AutoSize = true;
-            this.lblRangoFinal.Location = new System.Drawing.Point(9, 99);
+            this.lblRangoFinal.Location = new System.Drawing.Point(9, 111);
             this.lblRangoFinal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRangoFinal.Name = "lblRangoFinal";
             this.lblRangoFinal.Size = new System.Drawing.Size(77, 19);
@@ -564,7 +570,7 @@
             // lblRangoInicio
             // 
             this.lblRangoInicio.AutoSize = true;
-            this.lblRangoInicio.Location = new System.Drawing.Point(9, 30);
+            this.lblRangoInicio.Location = new System.Drawing.Point(9, 42);
             this.lblRangoInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRangoInicio.Name = "lblRangoInicio";
             this.lblRangoInicio.Size = new System.Drawing.Size(103, 19);
@@ -574,7 +580,7 @@
             // dtpInicio
             // 
             this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpInicio.Location = new System.Drawing.Point(13, 53);
+            this.dtpInicio.Location = new System.Drawing.Point(13, 65);
             this.dtpInicio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(144, 25);
@@ -584,29 +590,30 @@
             // dtpFinal
             // 
             this.dtpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFinal.Location = new System.Drawing.Point(13, 122);
+            this.dtpFinal.Location = new System.Drawing.Point(13, 134);
             this.dtpFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFinal.Name = "dtpFinal";
             this.dtpFinal.Size = new System.Drawing.Size(144, 25);
             this.dtpFinal.TabIndex = 15;
             this.dtpFinal.Value = new System.DateTime(2024, 12, 3, 0, 0, 0, 0);
             // 
-            // btnExportar
+            // btnReporte
             // 
-            this.btnExportar.AutoSize = true;
-            this.btnExportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.btnExportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnExportar.ForeColor = System.Drawing.Color.White;
-            this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExportar.Location = new System.Drawing.Point(901, 323);
-            this.btnExportar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(108, 37);
-            this.btnExportar.TabIndex = 147;
-            this.btnExportar.Text = "Exportar";
-            this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnReporte.AutoSize = true;
+            this.btnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.btnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnReporte.ForeColor = System.Drawing.Color.White;
+            this.btnReporte.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnReporte.Location = new System.Drawing.Point(901, 288);
+            this.btnReporte.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(108, 37);
+            this.btnReporte.TabIndex = 147;
+            this.btnReporte.Text = "Ver reporte";
+            this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnGuardar
             // 
@@ -617,7 +624,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(185, 308);
+            this.btnGuardar.Location = new System.Drawing.Point(185, 288);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(108, 37);
@@ -632,11 +639,11 @@
             this.grpRegistroInformes.Controls.Add(this.dgvInformes);
             this.grpRegistroInformes.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpRegistroInformes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpRegistroInformes.Location = new System.Drawing.Point(69, 365);
+            this.grpRegistroInformes.Location = new System.Drawing.Point(69, 331);
             this.grpRegistroInformes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpRegistroInformes.Name = "grpRegistroInformes";
             this.grpRegistroInformes.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpRegistroInformes.Size = new System.Drawing.Size(940, 225);
+            this.grpRegistroInformes.Size = new System.Drawing.Size(940, 259);
             this.grpRegistroInformes.TabIndex = 142;
             this.grpRegistroInformes.TabStop = false;
             this.grpRegistroInformes.Text = "Registro de Informes";
@@ -646,6 +653,7 @@
             this.dgvInformes.AllowUserToAddRows = false;
             this.dgvInformes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvInformes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInformes.ContextMenuStrip = this.MenuInformes;
             this.dgvInformes.EnableHeadersVisualStyles = false;
             this.dgvInformes.Location = new System.Drawing.Point(13, 26);
             this.dgvInformes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -653,7 +661,7 @@
             this.dgvInformes.ReadOnly = true;
             this.dgvInformes.RowHeadersWidth = 51;
             this.dgvInformes.RowTemplate.Height = 24;
-            this.dgvInformes.Size = new System.Drawing.Size(909, 184);
+            this.dgvInformes.Size = new System.Drawing.Size(909, 215);
             this.dgvInformes.TabIndex = 15;
             // 
             // btnCalcular
@@ -665,7 +673,7 @@
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
             this.btnCalcular.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCalcular.Location = new System.Drawing.Point(69, 308);
+            this.btnCalcular.Location = new System.Drawing.Point(69, 288);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(108, 37);
@@ -674,16 +682,35 @@
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // MenuInformes
+            // 
+            this.MenuInformes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MenuInformes.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuInformes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarToolStripMenuItem});
+            this.MenuInformes.Name = "MenuDGV";
+            this.MenuInformes.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.MenuInformes.ShowImageMargin = false;
+            this.MenuInformes.Size = new System.Drawing.Size(108, 28);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
             // GenerarInformes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoGenerarInformes;
+            this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoActualizarPedidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
             this.Controls.Add(this.grpDatosReporte);
             this.Controls.Add(this.grpRangoFecha);
-            this.Controls.Add(this.btnExportar);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.grpRegistroInformes);
             this.Controls.Add(this.btnCalcular);
@@ -709,6 +736,7 @@
             this.grpRangoFecha.PerformLayout();
             this.grpRegistroInformes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInformes)).EndInit();
+            this.MenuInformes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,10 +784,12 @@
         private System.Windows.Forms.Label lblRangoInicio;
         private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.Windows.Forms.DateTimePicker dtpFinal;
-        private System.Windows.Forms.Button btnExportar;
+        private System.Windows.Forms.Button btnReporte;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox grpRegistroInformes;
         private System.Windows.Forms.DataGridView dgvInformes;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.ContextMenuStrip MenuInformes;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
     }
 }

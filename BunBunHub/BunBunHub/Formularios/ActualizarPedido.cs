@@ -14,7 +14,9 @@ namespace BunBunHub.Formularios
 {
     public partial class ActualizarPedido : Form
     {
-        public List<Pedido> listaPedidos {  get; set; }
+        public string Rol { get; set; }
+        private string rolUsuario;
+        public List<Pedido> listaPedidos { get; set; }
         private Pedido pedidoSeleccionado;  // Variable para almacenar el pedido seleccionado
         private bool enEdicion = false;     // Para saber si estamos editando un pedido
 
@@ -24,12 +26,18 @@ namespace BunBunHub.Formularios
         public ActualizarPedido()
         {
             InitializeComponent();
+            rolUsuario = UsuarioSesion.RolUsuario;
             listaPedidos = new List<Pedido>();
             grpDetallesPedidoEditar.Enabled = false;
-            btnGuardarCambiosPedido.Enabled = false; // Deshabilitar el botón Guardar al inicio
+            btnGuardarCambiosPedido.Enabled = false;
+            btnCancelarCambiosPedido.Enabled = false;
 
             GestionDeArchivos archivo = new GestionDeArchivos();
             listaUsuarios = archivo.CargarUsuarios(rutaUsuarios);
+
+            cmbFiltro.Text = "Todos";
+            cmbOrdenar.Text = "Predeterminado";
+            dtpFechaCompraEditar.Value = DateTime.Now;
         }
 
         //Visualizar registros en los DataGridView
@@ -103,6 +111,7 @@ namespace BunBunHub.Formularios
 
                 // Deshabilitar el botón Editar Pedido y habilitar el botón Guardar Cambios
                 btnEditarPedido.Enabled = false;
+                btnCancelarCambiosPedido.Enabled = true;
                 btnGuardarCambiosPedido.Enabled = true;
 
                 // Marcar que estamos en edición
@@ -187,6 +196,7 @@ namespace BunBunHub.Formularios
 
                 // Deshabilitar el botón Guardar Cambios y habilitar el de Editar Pedido
                 btnGuardarCambiosPedido.Enabled = false;
+                btnCancelarCambiosPedido.Enabled = false;
                 btnEditarPedido.Enabled = true;
 
                 // Marcar que ya no estamos en modo de edición
@@ -218,6 +228,7 @@ namespace BunBunHub.Formularios
 
             // Asignar la fecha de hoy al DateTimePicker
             dtpFechaCompraEditar.Value = DateTime.Now;
+            btnCancelarCambiosPedido.Enabled = false;
         }
 
         private void btnCancelarCambiosPedido_Click(object sender, EventArgs e)
@@ -271,16 +282,82 @@ namespace BunBunHub.Formularios
         // Lógica de navegación entre forms
         private void btnPanelControl_Click(object sender, EventArgs e)
         {
-            PanelAdministrador panelAdministrador = new PanelAdministrador();
-            panelAdministrador.Show();
-            this.Hide();
+            // Verificar si el botón btnGuardarCambiosPedido está habilitado
+            if (btnGuardarCambiosPedido.Enabled)
+            {
+                // Preguntar al usuario si desea regresar sin guardar
+                DialogResult result = MessageBox.Show("Actualmente estás editando un pedido. ¿Deseas volver sin guardar?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                // Si el usuario selecciona "Sí", proceder con el regreso
+                if (result == DialogResult.Yes)
+                {
+                    // Verificar el rol y abrir el panel correspondiente
+                    if (Rol == "Colaborador")
+                    {
+                        PanelColaborador panelColaborador = new PanelColaborador();
+                        panelColaborador.Show();
+                        this.Hide();  // Ocultar el formulario actual
+                    }
+                    else
+                    {
+                        // Si el rol es "Administrador", regresar al panel de administrador
+                        PanelAdministrador panelAdministrador = new PanelAdministrador();
+                        panelAdministrador.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            else
+            {
+                // Si el botón no está habilitado, proceder sin preguntar
+                if (Rol == "Colaborador")
+                {
+                    PanelColaborador panelColaborador = new PanelColaborador();
+                    panelColaborador.Show();
+                    this.Hide();  // Ocultar el formulario actual
+                }
+                else
+                {
+                    // Si el rol es "Administrador", regresar al panel de administrador
+                    PanelAdministrador panelAdministrador = new PanelAdministrador();
+                    panelAdministrador.Show();
+                    this.Hide();
+                }
+            }
         }
+
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            GestionPedidos gestionPedidos = new GestionPedidos();
-            gestionPedidos.Show();
-            this.Hide();
+            if (btnGuardarCambiosPedido.Enabled)
+            {
+                // Preguntar al usuario si desea regresar sin guardar
+                DialogResult result = MessageBox.Show("Actualmente estás editando un pedido. ¿Deseas volver sin guardar?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                // Si el usuario selecciona "Sí", proceder con el regreso
+                if (result == DialogResult.Yes)
+                {
+                    GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Rol = rolUsuario;
+                    gestionPedidos.Show();
+                    this.Hide();
+                } 
+                else
+                {
+                    // Si el botón no está habilitado, proceder sin preguntar
+                    GestionPedidos gestionPedidos = new GestionPedidos();
+                    gestionPedidos.Rol = rolUsuario;
+                    gestionPedidos.Show();
+                    this.Hide();
+                }
+            } else
+            {
+                // Si el botón no está habilitado, proceder sin preguntar
+                GestionPedidos gestionPedidos = new GestionPedidos();
+                gestionPedidos.Rol = rolUsuario;
+                gestionPedidos.Show();
+                this.Hide();
+            }
         }
 
         private void btnCerrarSistema_Click(object sender, EventArgs e)
@@ -350,7 +427,18 @@ namespace BunBunHub.Formularios
             }
         }
 
-        private void cmbFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        private void seleccionar_enter(object sender, EventArgs e)
+        {
+            //Seleccione la respuesta completa en el control TextBox.
+            TextBox answerBox = sender as TextBox;
+
+            if (answerBox != null)
+            {
+                answerBox.SelectAll();
+            }
+        }
+
+        private void cmbFiltro_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             // Obtener el valor seleccionado del ComboBox
             string estadoSeleccionado = cmbFiltro.SelectedItem.ToString();
@@ -373,11 +461,10 @@ namespace BunBunHub.Formularios
             dgvPedidos.DataSource = pedidosFiltrados;
         }
 
-        private void cmbOrdenar_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbOrdenar_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (listaPedidos == null || listaPedidos.Count == 0)
             {
-                MessageBox.Show("No hay datos disponibles para ordenar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -392,11 +479,11 @@ namespace BunBunHub.Formularios
                     listaPedidos = gestionDeArchivos.CargarPedidos(RegistrarPedido.rutaPedidos);
                     break;
 
-                case "Mayor a menor monto total":
+                case "Mayor a menor monto":
                     listaPedidos = listaPedidos.OrderByDescending(p => p.Monto_Total).ToList();
                     break;
 
-                case "Menor a mayor monto total":
+                case "Menor a mayor monto":
                     listaPedidos = listaPedidos.OrderBy(p => p.Monto_Total).ToList();
                     break;
 
@@ -417,12 +504,13 @@ namespace BunBunHub.Formularios
             ActualizarDataGridView();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click_1(object sender, EventArgs e)
         {
             // Validar si el cuadro de texto está vacío
             if (string.IsNullOrEmpty(txtBusqueda.Text))
             {
-                MessageBox.Show("Por favor, ingrese un ID de pedido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Por favor, ingrese un ID de pedido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtBusqueda.Focus();
                 return;
             }
 
@@ -441,8 +529,7 @@ namespace BunBunHub.Formularios
                     {
                         row.Selected = true; // Seleccionar la fila encontrada
                         dgvPedidos.FirstDisplayedScrollingRowIndex = row.Index; // Asegurar que sea visible
-                        MessageBox.Show($"El pedido con ID '{idBusqueda}' encontrado y seleccionado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        txtBusqueda.Clear();
+                        txtBusqueda.Focus();
                         return;
                     }
                 }
@@ -452,8 +539,9 @@ namespace BunBunHub.Formularios
                 // Si no se encuentra el pedido, mostrar mensaje de error
                 MessageBox.Show($"No se encontró ningún pedido con el ID '{idBusqueda}'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtBusqueda.Clear();
+                txtBusqueda.Focus();
             }
         }
     }
-    
+
 }

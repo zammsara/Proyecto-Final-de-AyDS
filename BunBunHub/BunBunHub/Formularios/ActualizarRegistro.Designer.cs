@@ -50,7 +50,6 @@
             this.tlsbtnVolver = new System.Windows.Forms.ToolStripButton();
             this.tlsbtnEliminarUsuario = new System.Windows.Forms.ToolStripButton();
             this.tlsbtnActualizarUsuario = new System.Windows.Forms.ToolStripButton();
-            this.tlsbtnExportarUsuario = new System.Windows.Forms.ToolStripButton();
             this.tlsbtnHome = new System.Windows.Forms.ToolStripButton();
             this.grpHistorialUsuarios = new System.Windows.Forms.GroupBox();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
@@ -58,6 +57,9 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPageClientes = new System.Windows.Forms.TabPage();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpActualizarCliente = new System.Windows.Forms.GroupBox();
             this.txtEditarUsuario = new System.Windows.Forms.TextBox();
             this.btnCancelarActualizacion = new System.Windows.Forms.Button();
@@ -78,12 +80,6 @@
             this.lblEdad = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.tlsVolver = new System.Windows.Forms.ToolStrip();
-            this.tlsbtnNuevoRegistro = new System.Windows.Forms.ToolStripButton();
-            this.tlsbtnEliminarCliente = new System.Windows.Forms.ToolStripButton();
-            this.tlsbtnActualizarCliente = new System.Windows.Forms.ToolStripButton();
-            this.tlsbtnExportarHistorialCliente = new System.Windows.Forms.ToolStripButton();
-            this.tlsbtnPanelControl = new System.Windows.Forms.ToolStripButton();
             this.grpHistorialClientes = new System.Windows.Forms.GroupBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.MenuDGVClientes = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -92,7 +88,15 @@
             this.btnCerrarSistema = new System.Windows.Forms.Button();
             this.lblBunBunHub = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblEncabezado = new System.Windows.Forms.Label();
+            this.tlsbtnNuevoRegistro = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnEliminarCliente = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnActualizarCliente = new System.Windows.Forms.ToolStripButton();
+            this.tlsbtnPanelControl = new System.Windows.Forms.ToolStripButton();
+            this.tlsVolver = new System.Windows.Forms.ToolStrip();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.txtBuscarUsuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControlRegistros.SuspendLayout();
             this.tabPageUsuariosSistema.SuspendLayout();
             this.grpCredenciales.SuspendLayout();
@@ -104,11 +108,11 @@
             this.grpActualizarCliente.SuspendLayout();
             this.grpContacto.SuspendLayout();
             this.grpDatosCliente.SuspendLayout();
-            this.tlsVolver.SuspendLayout();
             this.grpHistorialClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.MenuDGVClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.tlsVolver.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlRegistros
@@ -116,18 +120,21 @@
             this.tabControlRegistros.Controls.Add(this.tabPageUsuariosSistema);
             this.tabControlRegistros.Controls.Add(this.tabPageClientes);
             this.tabControlRegistros.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlRegistros.Location = new System.Drawing.Point(21, 71);
+            this.tabControlRegistros.Location = new System.Drawing.Point(21, 65);
             this.tabControlRegistros.Multiline = true;
             this.tabControlRegistros.Name = "tabControlRegistros";
             this.tabControlRegistros.SelectedIndex = 0;
             this.tabControlRegistros.ShowToolTips = true;
-            this.tabControlRegistros.Size = new System.Drawing.Size(1040, 554);
+            this.tabControlRegistros.Size = new System.Drawing.Size(1040, 560);
             this.tabControlRegistros.TabIndex = 0;
             // 
             // tabPageUsuariosSistema
             // 
-            this.tabPageUsuariosSistema.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPageUsuariosSistema.BackColor = System.Drawing.Color.White;
             this.tabPageUsuariosSistema.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPageUsuariosSistema.Controls.Add(this.btnBuscarUsuario);
+            this.tabPageUsuariosSistema.Controls.Add(this.txtBuscarUsuario);
+            this.tabPageUsuariosSistema.Controls.Add(this.label3);
             this.tabPageUsuariosSistema.Controls.Add(this.btnCancelar);
             this.tabPageUsuariosSistema.Controls.Add(this.btnGuardarCambios);
             this.tabPageUsuariosSistema.Controls.Add(this.cmbFiltro);
@@ -138,7 +145,7 @@
             this.tabPageUsuariosSistema.Location = new System.Drawing.Point(4, 29);
             this.tabPageUsuariosSistema.Name = "tabPageUsuariosSistema";
             this.tabPageUsuariosSistema.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUsuariosSistema.Size = new System.Drawing.Size(1032, 521);
+            this.tabPageUsuariosSistema.Size = new System.Drawing.Size(1032, 527);
             this.tabPageUsuariosSistema.TabIndex = 0;
             this.tabPageUsuariosSistema.Text = "Usuarios";
             // 
@@ -186,7 +193,7 @@
             "Administrador",
             "Colaborador",
             "Cliente"});
-            this.cmbFiltro.Location = new System.Drawing.Point(693, 61);
+            this.cmbFiltro.Location = new System.Drawing.Point(277, 58);
             this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFiltro.Name = "cmbFiltro";
             this.cmbFiltro.Size = new System.Drawing.Size(228, 28);
@@ -197,7 +204,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(611, 65);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label6.Location = new System.Drawing.Point(195, 62);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 19);
@@ -265,7 +273,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.label2.Location = new System.Drawing.Point(16, 246);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -303,7 +311,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.label9.Location = new System.Drawing.Point(16, 170);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
@@ -315,7 +323,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.label8.Location = new System.Drawing.Point(16, 92);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
@@ -338,7 +346,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.label7.Location = new System.Drawing.Point(16, 27);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -349,72 +357,74 @@
             // tlsUsuarios
             // 
             this.tlsUsuarios.AutoSize = false;
-            this.tlsUsuarios.BackColor = System.Drawing.SystemColors.Window;
+            this.tlsUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.tlsUsuarios.GripMargin = new System.Windows.Forms.Padding(2, 2, 10, 2);
+            this.tlsUsuarios.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tlsUsuarios.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tlsUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tlsbtnVolver,
-            this.tlsbtnEliminarUsuario,
             this.tlsbtnActualizarUsuario,
-            this.tlsbtnExportarUsuario,
+            this.tlsbtnEliminarUsuario,
             this.tlsbtnHome});
             this.tlsUsuarios.Location = new System.Drawing.Point(3, 3);
             this.tlsUsuarios.Name = "tlsUsuarios";
-            this.tlsUsuarios.Size = new System.Drawing.Size(1022, 31);
+            this.tlsUsuarios.Size = new System.Drawing.Size(1022, 46);
             this.tlsUsuarios.TabIndex = 1;
             this.tlsUsuarios.Text = "toolStrip1";
             // 
             // tlsbtnVolver
             // 
-            this.tlsbtnVolver.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnVolver.Image = global::BunBunHub.Properties.Resources.Agregar;
+            this.tlsbtnVolver.AutoSize = false;
+            this.tlsbtnVolver.BackColor = System.Drawing.Color.SteelBlue;
+            this.tlsbtnVolver.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnVolver.ForeColor = System.Drawing.Color.White;
             this.tlsbtnVolver.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.tlsbtnVolver.Margin = new System.Windows.Forms.Padding(10, 2, 10, 7);
             this.tlsbtnVolver.MergeAction = System.Windows.Forms.MergeAction.Remove;
             this.tlsbtnVolver.Name = "tlsbtnVolver";
-            this.tlsbtnVolver.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnVolver.Text = "Nuevo registro";
+            this.tlsbtnVolver.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnVolver.Text = "Nuevo";
+            this.tlsbtnVolver.ToolTipText = "Registrar un nuevo usuario";
             this.tlsbtnVolver.Click += new System.EventHandler(this.tlsbtnVolver_Click);
             // 
             // tlsbtnEliminarUsuario
             // 
-            this.tlsbtnEliminarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnEliminarUsuario.AutoSize = false;
+            this.tlsbtnEliminarUsuario.BackColor = System.Drawing.Color.RosyBrown;
+            this.tlsbtnEliminarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnEliminarUsuario.ForeColor = System.Drawing.Color.White;
             this.tlsbtnEliminarUsuario.Image = global::BunBunHub.Properties.Resources.Eliminar;
             this.tlsbtnEliminarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnEliminarUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.tlsbtnEliminarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 10, 2);
             this.tlsbtnEliminarUsuario.Name = "tlsbtnEliminarUsuario";
-            this.tlsbtnEliminarUsuario.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnEliminarUsuario.Text = "Eliminar usuario";
+            this.tlsbtnEliminarUsuario.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnEliminarUsuario.Text = "Eliminar";
+            this.tlsbtnEliminarUsuario.ToolTipText = "Eliminar usuario del sistema";
             this.tlsbtnEliminarUsuario.Click += new System.EventHandler(this.tlsbtnEliminar_Click);
             // 
             // tlsbtnActualizarUsuario
             // 
-            this.tlsbtnActualizarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnActualizarUsuario.AutoSize = false;
+            this.tlsbtnActualizarUsuario.BackColor = System.Drawing.Color.SteelBlue;
+            this.tlsbtnActualizarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnActualizarUsuario.ForeColor = System.Drawing.Color.White;
             this.tlsbtnActualizarUsuario.Image = global::BunBunHub.Properties.Resources.Actualizar;
             this.tlsbtnActualizarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnActualizarUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.tlsbtnActualizarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 10, 2);
             this.tlsbtnActualizarUsuario.Name = "tlsbtnActualizarUsuario";
-            this.tlsbtnActualizarUsuario.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnActualizarUsuario.Text = "Actualizar usuario";
+            this.tlsbtnActualizarUsuario.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnActualizarUsuario.Text = "Actualizar";
+            this.tlsbtnActualizarUsuario.ToolTipText = "Actualizar credenciales de acceso";
             this.tlsbtnActualizarUsuario.Click += new System.EventHandler(this.tlsbtnActualizar_Click);
-            // 
-            // tlsbtnExportarUsuario
-            // 
-            this.tlsbtnExportarUsuario.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnExportarUsuario.Image = global::BunBunHub.Properties.Resources.Exportar;
-            this.tlsbtnExportarUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnExportarUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.tlsbtnExportarUsuario.Name = "tlsbtnExportarUsuario";
-            this.tlsbtnExportarUsuario.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnExportarUsuario.Text = "Exportar historial de usuarios";
             // 
             // tlsbtnHome
             // 
             this.tlsbtnHome.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnHome.Image = global::BunBunHub.Properties.Resources.HomeAzul;
+            this.tlsbtnHome.Image = global::BunBunHub.Properties.Resources.HomeBeige;
             this.tlsbtnHome.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnHome.Margin = new System.Windows.Forms.Padding(870, 1, 0, 2);
+            this.tlsbtnHome.Margin = new System.Windows.Forms.Padding(695, 1, 0, 2);
             this.tlsbtnHome.Name = "tlsbtnHome";
-            this.tlsbtnHome.Size = new System.Drawing.Size(29, 24);
+            this.tlsbtnHome.Size = new System.Drawing.Size(29, 43);
             this.tlsbtnHome.Text = "Volver al panel de control";
             this.tlsbtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.tlsbtnHome.Click += new System.EventHandler(this.tlsbtnHome_Click);
@@ -424,11 +434,11 @@
             this.grpHistorialUsuarios.Controls.Add(this.dgvUsuarios);
             this.grpHistorialUsuarios.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpHistorialUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpHistorialUsuarios.Location = new System.Drawing.Point(6, 50);
+            this.grpHistorialUsuarios.Location = new System.Drawing.Point(6, 88);
             this.grpHistorialUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpHistorialUsuarios.Name = "grpHistorialUsuarios";
             this.grpHistorialUsuarios.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpHistorialUsuarios.Size = new System.Drawing.Size(499, 462);
+            this.grpHistorialUsuarios.Size = new System.Drawing.Size(499, 424);
             this.grpHistorialUsuarios.TabIndex = 0;
             this.grpHistorialUsuarios.TabStop = false;
             this.grpHistorialUsuarios.Text = "Historial de Usuarios";
@@ -441,13 +451,14 @@
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.ContextMenuStrip = this.MenuDGV;
             this.dgvUsuarios.EnableHeadersVisualStyles = false;
-            this.dgvUsuarios.Location = new System.Drawing.Point(13, 26);
+            this.dgvUsuarios.Location = new System.Drawing.Point(6, 27);
             this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvUsuarios.MultiSelect = false;
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.RowHeadersWidth = 51;
             this.dgvUsuarios.RowTemplate.Height = 24;
-            this.dgvUsuarios.Size = new System.Drawing.Size(468, 420);
+            this.dgvUsuarios.Size = new System.Drawing.Size(468, 375);
             this.dgvUsuarios.TabIndex = 15;
             // 
             // MenuDGV
@@ -480,17 +491,57 @@
             // 
             // tabPageClientes
             // 
-            this.tabPageClientes.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPageClientes.BackColor = System.Drawing.Color.White;
             this.tabPageClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPageClientes.Controls.Add(this.btnBuscar);
+            this.tabPageClientes.Controls.Add(this.txtBusqueda);
+            this.tabPageClientes.Controls.Add(this.label1);
             this.tabPageClientes.Controls.Add(this.grpActualizarCliente);
             this.tabPageClientes.Controls.Add(this.tlsVolver);
             this.tabPageClientes.Controls.Add(this.grpHistorialClientes);
             this.tabPageClientes.Location = new System.Drawing.Point(4, 29);
             this.tabPageClientes.Name = "tabPageClientes";
             this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClientes.Size = new System.Drawing.Size(1032, 521);
+            this.tabPageClientes.Size = new System.Drawing.Size(1032, 527);
             this.tabPageClientes.TabIndex = 1;
             this.tabPageClientes.Text = "Clientes";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Location = new System.Drawing.Point(971, 53);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(34, 27);
+            this.btnBuscar.TabIndex = 165;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(785, 54);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(181, 26);
+            this.txtBusqueda.TabIndex = 164;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label1.Location = new System.Drawing.Point(679, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 19);
+            this.label1.TabIndex = 163;
+            this.label1.Text = "Buscar cliente:";
             // 
             // grpActualizarCliente
             // 
@@ -503,9 +554,9 @@
             this.grpActualizarCliente.Controls.Add(this.grpDatosCliente);
             this.grpActualizarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpActualizarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpActualizarCliente.Location = new System.Drawing.Point(6, 297);
+            this.grpActualizarCliente.Location = new System.Drawing.Point(6, 308);
             this.grpActualizarCliente.Name = "grpActualizarCliente";
-            this.grpActualizarCliente.Size = new System.Drawing.Size(1016, 214);
+            this.grpActualizarCliente.Size = new System.Drawing.Size(1016, 203);
             this.grpActualizarCliente.TabIndex = 3;
             this.grpActualizarCliente.TabStop = false;
             this.grpActualizarCliente.Text = "Actualizar datos de Cliente";
@@ -554,7 +605,7 @@
             this.btnGuardarCambiosCliente.Name = "btnGuardarCambiosCliente";
             this.btnGuardarCambiosCliente.Size = new System.Drawing.Size(162, 37);
             this.btnGuardarCambiosCliente.TabIndex = 135;
-            this.btnGuardarCambiosCliente.Text = "Guardar Cambios";
+            this.btnGuardarCambiosCliente.Text = "Guardar";
             this.btnGuardarCambiosCliente.UseVisualStyleBackColor = false;
             this.btnGuardarCambiosCliente.Click += new System.EventHandler(this.btnGuardarCambiosCliente_Click);
             // 
@@ -597,7 +648,7 @@
             this.grpContacto.Enabled = false;
             this.grpContacto.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpContacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpContacto.Location = new System.Drawing.Point(413, 25);
+            this.grpContacto.Location = new System.Drawing.Point(404, 25);
             this.grpContacto.Margin = new System.Windows.Forms.Padding(4);
             this.grpContacto.Name = "grpContacto";
             this.grpContacto.Padding = new System.Windows.Forms.Padding(4);
@@ -688,7 +739,7 @@
             this.grpDatosCliente.Enabled = false;
             this.grpDatosCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpDatosCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpDatosCliente.Location = new System.Drawing.Point(22, 25);
+            this.grpDatosCliente.Location = new System.Drawing.Point(13, 25);
             this.grpDatosCliente.Margin = new System.Windows.Forms.Padding(4);
             this.grpDatosCliente.Name = "grpDatosCliente";
             this.grpDatosCliente.Padding = new System.Windows.Forms.Padding(4);
@@ -769,87 +820,14 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             // 
-            // tlsVolver
-            // 
-            this.tlsVolver.AutoSize = false;
-            this.tlsVolver.BackColor = System.Drawing.SystemColors.Window;
-            this.tlsVolver.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.tlsVolver.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tlsbtnNuevoRegistro,
-            this.tlsbtnEliminarCliente,
-            this.tlsbtnActualizarCliente,
-            this.tlsbtnExportarHistorialCliente,
-            this.tlsbtnPanelControl});
-            this.tlsVolver.Location = new System.Drawing.Point(3, 3);
-            this.tlsVolver.Name = "tlsVolver";
-            this.tlsVolver.Size = new System.Drawing.Size(1022, 31);
-            this.tlsVolver.TabIndex = 2;
-            this.tlsVolver.Text = "toolStrip1";
-            // 
-            // tlsbtnNuevoRegistro
-            // 
-            this.tlsbtnNuevoRegistro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnNuevoRegistro.Image = global::BunBunHub.Properties.Resources.Agregar;
-            this.tlsbtnNuevoRegistro.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnNuevoRegistro.Margin = new System.Windows.Forms.Padding(2);
-            this.tlsbtnNuevoRegistro.MergeAction = System.Windows.Forms.MergeAction.Remove;
-            this.tlsbtnNuevoRegistro.Name = "tlsbtnNuevoRegistro";
-            this.tlsbtnNuevoRegistro.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnNuevoRegistro.Text = "Nuevo registro";
-            this.tlsbtnNuevoRegistro.Click += new System.EventHandler(this.tlsbtnNuevoRegistro_Click);
-            // 
-            // tlsbtnEliminarCliente
-            // 
-            this.tlsbtnEliminarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnEliminarCliente.Image = global::BunBunHub.Properties.Resources.Eliminar;
-            this.tlsbtnEliminarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnEliminarCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.tlsbtnEliminarCliente.Name = "tlsbtnEliminarCliente";
-            this.tlsbtnEliminarCliente.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnEliminarCliente.Text = "Eliminar cliente";
-            this.tlsbtnEliminarCliente.Click += new System.EventHandler(this.tlsbtnEliminarCliente_Click);
-            // 
-            // tlsbtnActualizarCliente
-            // 
-            this.tlsbtnActualizarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnActualizarCliente.Image = global::BunBunHub.Properties.Resources.Actualizar;
-            this.tlsbtnActualizarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnActualizarCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.tlsbtnActualizarCliente.Name = "tlsbtnActualizarCliente";
-            this.tlsbtnActualizarCliente.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnActualizarCliente.Text = "Actualizar cliente";
-            this.tlsbtnActualizarCliente.Click += new System.EventHandler(this.tlsbtnActualizarCliente_Click);
-            // 
-            // tlsbtnExportarHistorialCliente
-            // 
-            this.tlsbtnExportarHistorialCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnExportarHistorialCliente.Image = global::BunBunHub.Properties.Resources.Exportar;
-            this.tlsbtnExportarHistorialCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnExportarHistorialCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.tlsbtnExportarHistorialCliente.Name = "tlsbtnExportarHistorialCliente";
-            this.tlsbtnExportarHistorialCliente.Size = new System.Drawing.Size(29, 27);
-            this.tlsbtnExportarHistorialCliente.Text = "Exportar historial de clientes";
-            // 
-            // tlsbtnPanelControl
-            // 
-            this.tlsbtnPanelControl.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tlsbtnPanelControl.Image = global::BunBunHub.Properties.Resources.HomeAzul;
-            this.tlsbtnPanelControl.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tlsbtnPanelControl.Margin = new System.Windows.Forms.Padding(870, 1, 0, 2);
-            this.tlsbtnPanelControl.Name = "tlsbtnPanelControl";
-            this.tlsbtnPanelControl.Size = new System.Drawing.Size(29, 24);
-            this.tlsbtnPanelControl.Text = "Volver al panel de control";
-            this.tlsbtnPanelControl.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.tlsbtnPanelControl.Click += new System.EventHandler(this.tlsbtnPanelControl_Click);
-            // 
             // grpHistorialClientes
             // 
             this.grpHistorialClientes.Controls.Add(this.dgvClientes);
             this.grpHistorialClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpHistorialClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpHistorialClientes.Location = new System.Drawing.Point(6, 50);
+            this.grpHistorialClientes.Location = new System.Drawing.Point(6, 78);
             this.grpHistorialClientes.Name = "grpHistorialClientes";
-            this.grpHistorialClientes.Size = new System.Drawing.Size(1016, 241);
+            this.grpHistorialClientes.Size = new System.Drawing.Size(1016, 224);
             this.grpHistorialClientes.TabIndex = 1;
             this.grpHistorialClientes.TabStop = false;
             this.grpHistorialClientes.Text = "Historial de Clientes";
@@ -868,7 +846,7 @@
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(987, 198);
+            this.dgvClientes.Size = new System.Drawing.Size(987, 183);
             this.dgvClientes.TabIndex = 1;
             // 
             // MenuDGVClientes
@@ -898,7 +876,7 @@
             // btnCerrarSistema
             // 
             this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaAzul;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -915,7 +893,7 @@
             this.lblBunBunHub.AutoSize = true;
             this.lblBunBunHub.BackColor = System.Drawing.Color.Transparent;
             this.lblBunBunHub.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBunBunHub.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblBunBunHub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
             this.lblBunBunHub.Location = new System.Drawing.Point(64, 18);
             this.lblBunBunHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBunBunHub.Name = "lblBunBunHub";
@@ -926,7 +904,7 @@
             // picLogo
             // 
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoBeige;
+            this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoTeal;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picLogo.Location = new System.Drawing.Point(1, 3);
             this.picLogo.Margin = new System.Windows.Forms.Padding(4);
@@ -936,27 +914,138 @@
             this.picLogo.TabIndex = 127;
             this.picLogo.TabStop = false;
             // 
-            // label1
+            // lblEncabezado
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(391, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 35);
-            this.label1.TabIndex = 129;
-            this.label1.Text = "Actualización de Registros";
+            this.lblEncabezado.AutoSize = true;
+            this.lblEncabezado.BackColor = System.Drawing.Color.Transparent;
+            this.lblEncabezado.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lblEncabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.lblEncabezado.Location = new System.Drawing.Point(425, 13);
+            this.lblEncabezado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEncabezado.Name = "lblEncabezado";
+            this.lblEncabezado.Size = new System.Drawing.Size(257, 35);
+            this.lblEncabezado.TabIndex = 129;
+            this.lblEncabezado.Text = "Historial de Usuarios";
+            // 
+            // tlsbtnNuevoRegistro
+            // 
+            this.tlsbtnNuevoRegistro.AutoSize = false;
+            this.tlsbtnNuevoRegistro.BackColor = System.Drawing.Color.SteelBlue;
+            this.tlsbtnNuevoRegistro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnNuevoRegistro.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnNuevoRegistro.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tlsbtnNuevoRegistro.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnNuevoRegistro.Margin = new System.Windows.Forms.Padding(10, 2, 10, 7);
+            this.tlsbtnNuevoRegistro.MergeAction = System.Windows.Forms.MergeAction.Remove;
+            this.tlsbtnNuevoRegistro.Name = "tlsbtnNuevoRegistro";
+            this.tlsbtnNuevoRegistro.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnNuevoRegistro.Text = "Nuevo";
+            this.tlsbtnNuevoRegistro.ToolTipText = "Registrar un nuevo cliente";
+            this.tlsbtnNuevoRegistro.Click += new System.EventHandler(this.tlsbtnNuevoRegistro_Click);
+            // 
+            // tlsbtnEliminarCliente
+            // 
+            this.tlsbtnEliminarCliente.AutoSize = false;
+            this.tlsbtnEliminarCliente.BackColor = System.Drawing.Color.RosyBrown;
+            this.tlsbtnEliminarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnEliminarCliente.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnEliminarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnEliminarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 10, 2);
+            this.tlsbtnEliminarCliente.Name = "tlsbtnEliminarCliente";
+            this.tlsbtnEliminarCliente.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnEliminarCliente.Text = "Eliminar";
+            this.tlsbtnEliminarCliente.ToolTipText = "Eliminar cliente del sistema";
+            this.tlsbtnEliminarCliente.Click += new System.EventHandler(this.tlsbtnEliminarCliente_Click);
+            // 
+            // tlsbtnActualizarCliente
+            // 
+            this.tlsbtnActualizarCliente.AutoSize = false;
+            this.tlsbtnActualizarCliente.BackColor = System.Drawing.Color.SteelBlue;
+            this.tlsbtnActualizarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tlsbtnActualizarCliente.ForeColor = System.Drawing.Color.White;
+            this.tlsbtnActualizarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnActualizarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 10, 2);
+            this.tlsbtnActualizarCliente.Name = "tlsbtnActualizarCliente";
+            this.tlsbtnActualizarCliente.Size = new System.Drawing.Size(79, 27);
+            this.tlsbtnActualizarCliente.Text = "Actualizar";
+            this.tlsbtnActualizarCliente.ToolTipText = "Actualizar datos del cliente";
+            this.tlsbtnActualizarCliente.Click += new System.EventHandler(this.tlsbtnActualizarCliente_Click);
+            // 
+            // tlsbtnPanelControl
+            // 
+            this.tlsbtnPanelControl.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tlsbtnPanelControl.Image = global::BunBunHub.Properties.Resources.HomeBeige;
+            this.tlsbtnPanelControl.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tlsbtnPanelControl.Margin = new System.Windows.Forms.Padding(695, 1, 0, 2);
+            this.tlsbtnPanelControl.Name = "tlsbtnPanelControl";
+            this.tlsbtnPanelControl.Size = new System.Drawing.Size(29, 24);
+            this.tlsbtnPanelControl.Text = "Volver al panel de control";
+            this.tlsbtnPanelControl.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.tlsbtnPanelControl.Click += new System.EventHandler(this.tlsbtnPanelControl_Click);
+            // 
+            // tlsVolver
+            // 
+            this.tlsVolver.AutoSize = false;
+            this.tlsVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.tlsVolver.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tlsVolver.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.tlsVolver.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsbtnNuevoRegistro,
+            this.tlsbtnActualizarCliente,
+            this.tlsbtnEliminarCliente,
+            this.tlsbtnPanelControl});
+            this.tlsVolver.Location = new System.Drawing.Point(3, 3);
+            this.tlsVolver.Name = "tlsVolver";
+            this.tlsVolver.Size = new System.Drawing.Size(1022, 46);
+            this.tlsVolver.TabIndex = 2;
+            this.tlsVolver.Text = "toolStrip1";
+            // 
+            // btnBuscarUsuario
+            // 
+            this.btnBuscarUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarUsuario.BackgroundImage = global::BunBunHub.Properties.Resources.BtnBuscar;
+            this.btnBuscarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(912, 54);
+            this.btnBuscarUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(34, 27);
+            this.btnBuscarUsuario.TabIndex = 168;
+            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
+            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
+            // 
+            // txtBuscarUsuario
+            // 
+            this.txtBuscarUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarUsuario.Location = new System.Drawing.Point(726, 55);
+            this.txtBuscarUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscarUsuario.Name = "txtBuscarUsuario";
+            this.txtBuscarUsuario.Size = new System.Drawing.Size(181, 26);
+            this.txtBuscarUsuario.TabIndex = 167;
+            this.txtBuscarUsuario.Click += new System.EventHandler(this.seleccionar_click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
+            this.label3.Location = new System.Drawing.Point(620, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 19);
+            this.label3.TabIndex = 166;
+            this.label3.Text = "Buscar usuario:";
             // 
             // ActualizarRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoLisoTeal;
+            this.BackgroundImage = global::BunBunHub.Properties.Resources.FondoTeal_Encabezado;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1080, 637);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblEncabezado);
             this.Controls.Add(this.lblBunBunHub);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnCerrarSistema);
@@ -978,18 +1067,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.MenuDGV.ResumeLayout(false);
             this.tabPageClientes.ResumeLayout(false);
+            this.tabPageClientes.PerformLayout();
             this.grpActualizarCliente.ResumeLayout(false);
             this.grpActualizarCliente.PerformLayout();
             this.grpContacto.ResumeLayout(false);
             this.grpContacto.PerformLayout();
             this.grpDatosCliente.ResumeLayout(false);
             this.grpDatosCliente.PerformLayout();
-            this.tlsVolver.ResumeLayout(false);
-            this.tlsVolver.PerformLayout();
             this.grpHistorialClientes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.MenuDGVClientes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.tlsVolver.ResumeLayout(false);
+            this.tlsVolver.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1006,7 +1096,7 @@
         private System.Windows.Forms.ToolStrip tlsUsuarios;
         private System.Windows.Forms.ToolStripButton tlsbtnVolver;
         private System.Windows.Forms.ToolStripButton tlsbtnHome;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEncabezado;
         private System.Windows.Forms.GroupBox grpCredenciales;
         private System.Windows.Forms.Label lblConfirmación;
         private System.Windows.Forms.Label lblValidacion;
@@ -1029,14 +1119,7 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tlsbtnEliminarUsuario;
-        private System.Windows.Forms.ToolStripButton tlsbtnExportarUsuario;
         private System.Windows.Forms.ToolStripButton tlsbtnActualizarUsuario;
-        private System.Windows.Forms.ToolStrip tlsVolver;
-        private System.Windows.Forms.ToolStripButton tlsbtnNuevoRegistro;
-        private System.Windows.Forms.ToolStripButton tlsbtnEliminarCliente;
-        private System.Windows.Forms.ToolStripButton tlsbtnActualizarCliente;
-        private System.Windows.Forms.ToolStripButton tlsbtnExportarHistorialCliente;
-        private System.Windows.Forms.ToolStripButton tlsbtnPanelControl;
         private System.Windows.Forms.GroupBox grpActualizarCliente;
         private System.Windows.Forms.Button btnGuardarCambiosCliente;
         private System.Windows.Forms.ComboBox cmbEditarEstadoCliente;
@@ -1061,5 +1144,16 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCancelarActualizacion;
         private System.Windows.Forms.Label lblValidarCorreo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuscarUsuario;
+        private System.Windows.Forms.TextBox txtBuscarUsuario;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStrip tlsVolver;
+        private System.Windows.Forms.ToolStripButton tlsbtnNuevoRegistro;
+        private System.Windows.Forms.ToolStripButton tlsbtnEliminarCliente;
+        private System.Windows.Forms.ToolStripButton tlsbtnActualizarCliente;
+        private System.Windows.Forms.ToolStripButton tlsbtnPanelControl;
     }
 }

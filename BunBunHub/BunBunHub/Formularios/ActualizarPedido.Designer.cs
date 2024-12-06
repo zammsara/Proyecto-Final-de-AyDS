@@ -80,9 +80,10 @@
             this.btnPanelControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPanelControl.FlatAppearance.BorderSize = 0;
             this.btnPanelControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPanelControl.Location = new System.Drawing.Point(772, 480);
+            this.btnPanelControl.Location = new System.Drawing.Point(1030, 591);
+            this.btnPanelControl.Margin = new System.Windows.Forms.Padding(4);
             this.btnPanelControl.Name = "btnPanelControl";
-            this.btnPanelControl.Size = new System.Drawing.Size(34, 27);
+            this.btnPanelControl.Size = new System.Drawing.Size(46, 33);
             this.btnPanelControl.TabIndex = 126;
             this.btnPanelControl.UseVisualStyleBackColor = false;
             this.btnPanelControl.Click += new System.EventHandler(this.btnPanelControl_Click);
@@ -94,9 +95,10 @@
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Location = new System.Drawing.Point(1, 477);
+            this.btnVolver.Location = new System.Drawing.Point(1, 587);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(34, 33);
+            this.btnVolver.Size = new System.Drawing.Size(45, 41);
             this.btnVolver.TabIndex = 127;
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -106,23 +108,25 @@
             this.lblRegistrarPedido.AutoSize = true;
             this.lblRegistrarPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblRegistrarPedido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lblRegistrarPedido.ForeColor = System.Drawing.Color.White;
-            this.lblRegistrarPedido.Location = new System.Drawing.Point(292, 7);
+            this.lblRegistrarPedido.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblRegistrarPedido.Location = new System.Drawing.Point(402, 8);
+            this.lblRegistrarPedido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrarPedido.Name = "lblRegistrarPedido";
-            this.lblRegistrarPedido.Size = new System.Drawing.Size(199, 28);
+            this.lblRegistrarPedido.Size = new System.Drawing.Size(246, 35);
             this.lblRegistrarPedido.TabIndex = 128;
             this.lblRegistrarPedido.Text = "Registro de Pedidos";
             // 
             // btnCerrarSistema
             // 
             this.btnCerrarSistema.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarSistemaCeleste;
+            this.btnCerrarSistema.BackgroundImage = global::BunBunHub.Properties.Resources.CerrarBlanco;
             this.btnCerrarSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCerrarSistema.FlatAppearance.BorderSize = 0;
             this.btnCerrarSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarSistema.Location = new System.Drawing.Point(776, 11);
+            this.btnCerrarSistema.Location = new System.Drawing.Point(1035, 13);
+            this.btnCerrarSistema.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSistema.Name = "btnCerrarSistema";
-            this.btnCerrarSistema.Size = new System.Drawing.Size(24, 24);
+            this.btnCerrarSistema.Size = new System.Drawing.Size(32, 30);
             this.btnCerrarSistema.TabIndex = 129;
             this.btnCerrarSistema.UseVisualStyleBackColor = false;
             this.btnCerrarSistema.Click += new System.EventHandler(this.btnCerrarSistema_Click);
@@ -133,9 +137,10 @@
             this.lblBunBunHub.BackColor = System.Drawing.Color.Transparent;
             this.lblBunBunHub.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBunBunHub.ForeColor = System.Drawing.Color.SeaShell;
-            this.lblBunBunHub.Location = new System.Drawing.Point(48, 15);
+            this.lblBunBunHub.Location = new System.Drawing.Point(64, 18);
+            this.lblBunBunHub.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBunBunHub.Name = "lblBunBunHub";
-            this.lblBunBunHub.Size = new System.Drawing.Size(113, 23);
+            this.lblBunBunHub.Size = new System.Drawing.Size(137, 29);
             this.lblBunBunHub.TabIndex = 131;
             this.lblBunBunHub.Text = "BunBunHub";
             // 
@@ -144,9 +149,10 @@
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.BackgroundImage = global::BunBunHub.Properties.Resources.LogoBeige;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLogo.Location = new System.Drawing.Point(1, 2);
+            this.picLogo.Location = new System.Drawing.Point(1, 3);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(56, 50);
+            this.picLogo.Size = new System.Drawing.Size(75, 61);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 130;
             this.picLogo.TabStop = false;
@@ -157,14 +163,14 @@
             this.grpHistorialPedidos.Controls.Add(this.dgvPedidos);
             this.grpHistorialPedidos.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.grpHistorialPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.grpHistorialPedidos.Location = new System.Drawing.Point(52, 110);
-            this.grpHistorialPedidos.Margin = new System.Windows.Forms.Padding(2);
+            this.grpHistorialPedidos.Location = new System.Drawing.Point(69, 135);
+            this.grpHistorialPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpHistorialPedidos.Name = "grpHistorialPedidos";
-            this.grpHistorialPedidos.Padding = new System.Windows.Forms.Padding(2);
-            this.grpHistorialPedidos.Size = new System.Drawing.Size(705, 180);
+            this.grpHistorialPedidos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpHistorialPedidos.Size = new System.Drawing.Size(940, 221);
             this.grpHistorialPedidos.TabIndex = 132;
             this.grpHistorialPedidos.TabStop = false;
-            this.grpHistorialPedidos.Text = "Historial de Usuarios";
+            this.grpHistorialPedidos.Text = "Historial de Pedidos";
             // 
             // dgvPedidos
             // 
@@ -173,13 +179,13 @@
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPedidos.EnableHeadersVisualStyles = false;
-            this.dgvPedidos.Location = new System.Drawing.Point(2, 17);
-            this.dgvPedidos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvPedidos.Location = new System.Drawing.Point(3, 20);
+            this.dgvPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.ReadOnly = true;
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
-            this.dgvPedidos.Size = new System.Drawing.Size(701, 161);
+            this.dgvPedidos.Size = new System.Drawing.Size(934, 199);
             this.dgvPedidos.TabIndex = 15;
             // 
             // btnCancelarCambiosPedido
@@ -191,9 +197,10 @@
             this.btnCancelarCambiosPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnCancelarCambiosPedido.ForeColor = System.Drawing.Color.White;
             this.btnCancelarCambiosPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelarCambiosPedido.Location = new System.Drawing.Point(635, 451);
+            this.btnCancelarCambiosPedido.Location = new System.Drawing.Point(847, 555);
+            this.btnCancelarCambiosPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarCambiosPedido.Name = "btnCancelarCambiosPedido";
-            this.btnCancelarCambiosPedido.Size = new System.Drawing.Size(122, 30);
+            this.btnCancelarCambiosPedido.Size = new System.Drawing.Size(162, 37);
             this.btnCancelarCambiosPedido.TabIndex = 134;
             this.btnCancelarCambiosPedido.Text = "Cancelar";
             this.btnCancelarCambiosPedido.UseVisualStyleBackColor = false;
@@ -208,9 +215,10 @@
             this.btnGuardarCambiosPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardarCambiosPedido.ForeColor = System.Drawing.Color.White;
             this.btnGuardarCambiosPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardarCambiosPedido.Location = new System.Drawing.Point(635, 344);
+            this.btnGuardarCambiosPedido.Location = new System.Drawing.Point(847, 423);
+            this.btnGuardarCambiosPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambiosPedido.Name = "btnGuardarCambiosPedido";
-            this.btnGuardarCambiosPedido.Size = new System.Drawing.Size(122, 30);
+            this.btnGuardarCambiosPedido.Size = new System.Drawing.Size(162, 37);
             this.btnGuardarCambiosPedido.TabIndex = 133;
             this.btnGuardarCambiosPedido.Text = "Guardar Cambios";
             this.btnGuardarCambiosPedido.UseVisualStyleBackColor = false;
@@ -240,11 +248,9 @@
             this.grpDetallesPedidoEditar.Controls.Add(this.txtIDPedidoEditar);
             this.grpDetallesPedidoEditar.Controls.Add(this.label1);
             this.grpDetallesPedidoEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.grpDetallesPedidoEditar.Location = new System.Drawing.Point(52, 301);
-            this.grpDetallesPedidoEditar.Margin = new System.Windows.Forms.Padding(2);
+            this.grpDetallesPedidoEditar.Location = new System.Drawing.Point(69, 370);
             this.grpDetallesPedidoEditar.Name = "grpDetallesPedidoEditar";
-            this.grpDetallesPedidoEditar.Padding = new System.Windows.Forms.Padding(2);
-            this.grpDetallesPedidoEditar.Size = new System.Drawing.Size(552, 194);
+            this.grpDetallesPedidoEditar.Size = new System.Drawing.Size(736, 239);
             this.grpDetallesPedidoEditar.TabIndex = 135;
             this.grpDetallesPedidoEditar.TabStop = false;
             this.grpDetallesPedidoEditar.Text = "Editar detalles del Pedido";
@@ -255,20 +261,20 @@
             this.lblColaboradorValidacion.BackColor = System.Drawing.Color.Transparent;
             this.lblColaboradorValidacion.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColaboradorValidacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblColaboradorValidacion.Location = new System.Drawing.Point(16, 97);
-            this.lblColaboradorValidacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblColaboradorValidacion.Location = new System.Drawing.Point(22, 119);
             this.lblColaboradorValidacion.Name = "lblColaboradorValidacion";
-            this.lblColaboradorValidacion.Size = new System.Drawing.Size(0, 12);
+            this.lblColaboradorValidacion.Size = new System.Drawing.Size(0, 15);
             this.lblColaboradorValidacion.TabIndex = 150;
             // 
             // txtUsuarioClienteEditar
             // 
             this.txtUsuarioClienteEditar.Enabled = false;
             this.txtUsuarioClienteEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuarioClienteEditar.Location = new System.Drawing.Point(111, 48);
+            this.txtUsuarioClienteEditar.Location = new System.Drawing.Point(148, 59);
+            this.txtUsuarioClienteEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuarioClienteEditar.Name = "txtUsuarioClienteEditar";
             this.txtUsuarioClienteEditar.ReadOnly = true;
-            this.txtUsuarioClienteEditar.Size = new System.Drawing.Size(106, 22);
+            this.txtUsuarioClienteEditar.Size = new System.Drawing.Size(140, 26);
             this.txtUsuarioClienteEditar.TabIndex = 149;
             // 
             // lblValidarColaborador
@@ -277,10 +283,9 @@
             this.lblValidarColaborador.BackColor = System.Drawing.Color.Transparent;
             this.lblValidarColaborador.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValidarColaborador.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblValidarColaborador.Location = new System.Drawing.Point(85, 266);
-            this.lblValidarColaborador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValidarColaborador.Location = new System.Drawing.Point(113, 327);
             this.lblValidarColaborador.Name = "lblValidarColaborador";
-            this.lblValidarColaborador.Size = new System.Drawing.Size(0, 12);
+            this.lblValidarColaborador.Size = new System.Drawing.Size(0, 15);
             this.lblValidarColaborador.TabIndex = 148;
             // 
             // cmbEstadoEditar
@@ -294,37 +299,41 @@
             "Listo para entrega",
             "Completado",
             "Cancelado"});
-            this.cmbEstadoEditar.Location = new System.Drawing.Point(302, 128);
+            this.cmbEstadoEditar.Location = new System.Drawing.Point(403, 158);
+            this.cmbEstadoEditar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbEstadoEditar.Name = "cmbEstadoEditar";
-            this.cmbEstadoEditar.Size = new System.Drawing.Size(159, 21);
+            this.cmbEstadoEditar.Size = new System.Drawing.Size(211, 27);
             this.cmbEstadoEditar.TabIndex = 147;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(251, 132);
+            this.label12.Location = new System.Drawing.Point(335, 162);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.Size = new System.Drawing.Size(53, 19);
             this.label12.TabIndex = 146;
             this.label12.Text = "Estado:";
             // 
             // txtDescripcionEditar
             // 
             this.txtDescripcionEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcionEditar.Location = new System.Drawing.Point(251, 67);
+            this.txtDescripcionEditar.Location = new System.Drawing.Point(335, 82);
+            this.txtDescripcionEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcionEditar.Multiline = true;
             this.txtDescripcionEditar.Name = "txtDescripcionEditar";
-            this.txtDescripcionEditar.Size = new System.Drawing.Size(266, 54);
+            this.txtDescripcionEditar.Size = new System.Drawing.Size(353, 65);
             this.txtDescripcionEditar.TabIndex = 145;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(248, 48);
+            this.label11.Location = new System.Drawing.Point(331, 59);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 13);
+            this.label11.Size = new System.Drawing.Size(86, 19);
             this.label11.TabIndex = 144;
             this.label11.Text = "Descripción:";
             // 
@@ -336,27 +345,30 @@
             this.cmbPuntoEntregaEditar.Items.AddRange(new object[] {
             "Metrocentro",
             "Plaza Naturas"});
-            this.cmbPuntoEntregaEditar.Location = new System.Drawing.Point(342, 20);
+            this.cmbPuntoEntregaEditar.Location = new System.Drawing.Point(456, 24);
+            this.cmbPuntoEntregaEditar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPuntoEntregaEditar.Name = "cmbPuntoEntregaEditar";
-            this.cmbPuntoEntregaEditar.Size = new System.Drawing.Size(177, 21);
+            this.cmbPuntoEntregaEditar.Size = new System.Drawing.Size(235, 27);
             this.cmbPuntoEntregaEditar.TabIndex = 143;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(248, 24);
+            this.label10.Location = new System.Drawing.Point(331, 29);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 13);
+            this.label10.Size = new System.Drawing.Size(119, 19);
             this.label10.TabIndex = 142;
             this.label10.Text = "Punto de entrega:";
             // 
             // txtCostoMaterialEditar
             // 
             this.txtCostoMaterialEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoMaterialEditar.Location = new System.Drawing.Point(111, 150);
+            this.txtCostoMaterialEditar.Location = new System.Drawing.Point(148, 184);
+            this.txtCostoMaterialEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostoMaterialEditar.Name = "txtCostoMaterialEditar";
-            this.txtCostoMaterialEditar.Size = new System.Drawing.Size(103, 22);
+            this.txtCostoMaterialEditar.Size = new System.Drawing.Size(136, 26);
             this.txtCostoMaterialEditar.TabIndex = 141;
             this.txtCostoMaterialEditar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.montos_KeyPress);
             // 
@@ -364,18 +376,20 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 155);
+            this.label8.Location = new System.Drawing.Point(14, 191);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 13);
+            this.label8.Size = new System.Drawing.Size(109, 19);
             this.label8.TabIndex = 140;
             this.label8.Text = "Monto material:";
             // 
             // txtCostoCompraEditar
             // 
             this.txtCostoCompraEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoCompraEditar.Location = new System.Drawing.Point(111, 117);
+            this.txtCostoCompraEditar.Location = new System.Drawing.Point(148, 144);
+            this.txtCostoCompraEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostoCompraEditar.Name = "txtCostoCompraEditar";
-            this.txtCostoCompraEditar.Size = new System.Drawing.Size(103, 22);
+            this.txtCostoCompraEditar.Size = new System.Drawing.Size(136, 26);
             this.txtCostoCompraEditar.TabIndex = 139;
             this.txtCostoCompraEditar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.montos_KeyPress);
             // 
@@ -383,9 +397,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(10, 123);
+            this.label9.Location = new System.Drawing.Point(14, 151);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 13);
+            this.label9.Size = new System.Drawing.Size(89, 19);
             this.label9.TabIndex = 138;
             this.label9.Text = "Monto Total:";
             // 
@@ -393,28 +408,31 @@
             // 
             this.dtpFechaCompraEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaCompraEditar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaCompraEditar.Location = new System.Drawing.Point(352, 154);
+            this.dtpFechaCompraEditar.Location = new System.Drawing.Point(470, 189);
+            this.dtpFechaCompraEditar.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaCompraEditar.Name = "dtpFechaCompraEditar";
-            this.dtpFechaCompraEditar.Size = new System.Drawing.Size(109, 22);
+            this.dtpFechaCompraEditar.Size = new System.Drawing.Size(144, 26);
             this.dtpFechaCompraEditar.TabIndex = 137;
-            this.dtpFechaCompraEditar.Value = new System.DateTime(2024, 12, 1, 0, 0, 0, 0);
+            this.dtpFechaCompraEditar.Value = new System.DateTime(2024, 12, 3, 0, 0, 0, 0);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(252, 158);
+            this.label7.Location = new System.Drawing.Point(336, 195);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.Size = new System.Drawing.Size(118, 19);
             this.label7.TabIndex = 136;
             this.label7.Text = "Fecha de compra:";
             // 
             // txtColaboradorEditar
             // 
             this.txtColaboradorEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColaboradorEditar.Location = new System.Drawing.Point(111, 76);
+            this.txtColaboradorEditar.Location = new System.Drawing.Point(148, 93);
+            this.txtColaboradorEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtColaboradorEditar.Name = "txtColaboradorEditar";
-            this.txtColaboradorEditar.Size = new System.Drawing.Size(106, 22);
+            this.txtColaboradorEditar.Size = new System.Drawing.Size(140, 26);
             this.txtColaboradorEditar.TabIndex = 134;
             this.txtColaboradorEditar.TextChanged += new System.EventHandler(this.txtColaboradorEditar_TextChanged);
             this.txtColaboradorEditar.Leave += new System.EventHandler(this.txtColaborador_Leave);
@@ -423,9 +441,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 78);
+            this.label2.Location = new System.Drawing.Point(15, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(90, 19);
             this.label2.TabIndex = 133;
             this.label2.Text = "Colaborador:";
             // 
@@ -433,9 +452,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 50);
+            this.label3.Location = new System.Drawing.Point(15, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.Size = new System.Drawing.Size(127, 19);
             this.label3.TabIndex = 130;
             this.label3.Text = "Usuario de Cliente:";
             // 
@@ -443,19 +463,21 @@
             // 
             this.txtIDPedidoEditar.Enabled = false;
             this.txtIDPedidoEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDPedidoEditar.Location = new System.Drawing.Point(36, 20);
+            this.txtIDPedidoEditar.Location = new System.Drawing.Point(48, 25);
+            this.txtIDPedidoEditar.Margin = new System.Windows.Forms.Padding(4);
             this.txtIDPedidoEditar.Name = "txtIDPedidoEditar";
             this.txtIDPedidoEditar.ReadOnly = true;
-            this.txtIDPedidoEditar.Size = new System.Drawing.Size(77, 22);
+            this.txtIDPedidoEditar.Size = new System.Drawing.Size(101, 26);
             this.txtIDPedidoEditar.TabIndex = 129;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 23);
+            this.label1.Location = new System.Drawing.Point(14, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.Size = new System.Drawing.Size(26, 19);
             this.label1.TabIndex = 128;
             this.label1.Text = "ID:";
             // 
@@ -468,9 +490,10 @@
             this.btnEditarPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditarPedido.ForeColor = System.Drawing.Color.White;
             this.btnEditarPedido.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEditarPedido.Location = new System.Drawing.Point(635, 307);
+            this.btnEditarPedido.Location = new System.Drawing.Point(847, 378);
+            this.btnEditarPedido.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarPedido.Name = "btnEditarPedido";
-            this.btnEditarPedido.Size = new System.Drawing.Size(122, 30);
+            this.btnEditarPedido.Size = new System.Drawing.Size(162, 37);
             this.btnEditarPedido.TabIndex = 136;
             this.btnEditarPedido.Text = "Editar Pedido";
             this.btnEditarPedido.UseVisualStyleBackColor = false;
@@ -483,20 +506,23 @@
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(729, 82);
+            this.btnBuscar.Location = new System.Drawing.Point(972, 101);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(26, 22);
+            this.btnBuscar.Size = new System.Drawing.Size(34, 27);
             this.btnBuscar.TabIndex = 159;
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
             // txtBusqueda
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(590, 83);
+            this.txtBusqueda.Location = new System.Drawing.Point(786, 102);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(137, 22);
+            this.txtBusqueda.Size = new System.Drawing.Size(181, 26);
             this.txtBusqueda.TabIndex = 158;
+            this.txtBusqueda.Click += new System.EventHandler(this.seleccionar_enter);
             // 
             // label4
             // 
@@ -504,27 +530,30 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.label4.Location = new System.Drawing.Point(520, 86);
+            this.label4.Location = new System.Drawing.Point(694, 106);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 157;
             this.label4.Text = "Buscar orden:";
             // 
             // cmbOrdenar
             // 
             this.cmbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOrdenar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
             this.cmbOrdenar.FormattingEnabled = true;
             this.cmbOrdenar.Items.AddRange(new object[] {
             "Predeterminado",
-            "Mayor a menor monto total",
-            "Menor a mayor monto total",
+            "Mayor a menor monto",
+            "Menor a mayor monto",
             "Más recientes",
             "Más antiguos"});
-            this.cmbOrdenar.Location = new System.Drawing.Point(297, 85);
+            this.cmbOrdenar.Location = new System.Drawing.Point(396, 105);
+            this.cmbOrdenar.Margin = new System.Windows.Forms.Padding(4);
             this.cmbOrdenar.Name = "cmbOrdenar";
-            this.cmbOrdenar.Size = new System.Drawing.Size(145, 21);
+            this.cmbOrdenar.Size = new System.Drawing.Size(192, 27);
             this.cmbOrdenar.TabIndex = 156;
-            this.cmbOrdenar.SelectedIndexChanged += new System.EventHandler(this.cmbOrdenar_SelectedIndexChanged);
+            this.cmbOrdenar.SelectedIndexChanged += new System.EventHandler(this.cmbOrdenar_SelectedIndexChanged_1);
             // 
             // lblOrdenar
             // 
@@ -532,15 +561,17 @@
             this.lblOrdenar.BackColor = System.Drawing.Color.Transparent;
             this.lblOrdenar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.lblOrdenar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.lblOrdenar.Location = new System.Drawing.Point(248, 89);
+            this.lblOrdenar.Location = new System.Drawing.Point(331, 109);
+            this.lblOrdenar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrdenar.Name = "lblOrdenar";
-            this.lblOrdenar.Size = new System.Drawing.Size(51, 13);
+            this.lblOrdenar.Size = new System.Drawing.Size(64, 19);
             this.lblOrdenar.TabIndex = 155;
             this.lblOrdenar.Text = "Ordenar:";
             // 
             // cmbFiltro
             // 
             this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFiltro.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold);
             this.cmbFiltro.FormattingEnabled = true;
             this.cmbFiltro.Items.AddRange(new object[] {
             "Todos",
@@ -549,11 +580,12 @@
             "Listo para entrega",
             "Completado",
             "Cancelado"});
-            this.cmbFiltro.Location = new System.Drawing.Point(87, 85);
+            this.cmbFiltro.Location = new System.Drawing.Point(116, 105);
+            this.cmbFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(145, 21);
+            this.cmbFiltro.Size = new System.Drawing.Size(192, 27);
             this.cmbFiltro.TabIndex = 154;
-            this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.cmbFiltro_SelectedIndexChanged);
+            this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.cmbFiltro_SelectedIndexChanged_1);
             // 
             // lblFiltrar
             // 
@@ -561,19 +593,20 @@
             this.lblFiltrar.BackColor = System.Drawing.Color.Transparent;
             this.lblFiltrar.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.lblFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(70)))), ((int)(((byte)(99)))));
-            this.lblFiltrar.Location = new System.Drawing.Point(50, 89);
+            this.lblFiltrar.Location = new System.Drawing.Point(67, 109);
+            this.lblFiltrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFiltrar.Name = "lblFiltrar";
-            this.lblFiltrar.Size = new System.Drawing.Size(40, 13);
+            this.lblFiltrar.Size = new System.Drawing.Size(50, 19);
             this.lblFiltrar.TabIndex = 153;
             this.lblFiltrar.Text = "Filtrar:";
             // 
             // ActualizarPedido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BunBunHub.Properties.Resources.fondoActualizarPedidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(810, 518);
+            this.ClientSize = new System.Drawing.Size(1080, 637);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.label4);
@@ -593,7 +626,6 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnPanelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ActualizarPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarPedido";

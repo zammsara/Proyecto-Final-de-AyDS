@@ -180,6 +180,7 @@
             this.txtUsuario.Size = new System.Drawing.Size(276, 30);
             this.txtUsuario.TabIndex = 111;
             this.txtUsuario.Click += new System.EventHandler(this.answer_Enter);
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minuculas_KeyPress);
             // 
             // btnIniciarSesion
             // 
